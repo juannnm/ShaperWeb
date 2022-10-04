@@ -12,11 +12,11 @@
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/material": "^5.10.8",
-    "@nicocappella/react-ui-controller": "^0.0.3",
     "@reduxjs/toolkit": "^1.8.5",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-ui-controller": "^0.0.1"
   },
   "devDependencies": {
     "@types/node": "18.8.2",
