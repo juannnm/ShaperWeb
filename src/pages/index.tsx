@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
-import {IntroCard, FullTimeCareer, ShaperFor1, Services, CourseCardEx, InterestCardEx, Certified, EventCardEx, CharacterCardEx} from '../components/Cards'
 import {Box} from '@mui/material'
 import { CareerCard } from '../components/card/CareerCard';
 import { ShaperFor } from '../components/card/ShaperFor';
@@ -12,6 +11,7 @@ import { CertifieCard } from '../components/card/CertifieCard';
 import { EventCard } from '../components/card/EventCard'
 import { ServiceCard } from '../components/card/ServiceCard'
 import { CharacterCard } from '../components/card/CharacterCard'
+import { Navbar } from '../components/Navbar';
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +23,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <Navbar />
         
         <Box sx={{ padding: "10px", background: "green" }}>
           <CareerCard />
