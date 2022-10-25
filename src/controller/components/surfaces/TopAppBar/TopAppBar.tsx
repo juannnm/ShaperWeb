@@ -99,7 +99,11 @@ export const TopAppBar = () => {
             otherButtons={otherButtons}
             background="transparent"
             logo={{
-                component: <LogoShaperBlue style={{ width: '120px' }} />,
+                component: (
+                    <Link href="/">
+                        <LogoShaperBlue style={{ width: '120px' }} />
+                    </Link>
+                ),
                 isSVG: true,
             }}
             boxShadow="0px 0px 0px 0px"
