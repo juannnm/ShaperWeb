@@ -3,15 +3,15 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 import { Box } from '@mui/material';
-import { CareerCard } from '../components/card/CareerCard';
-import { ShaperFor } from '../components/card/ShaperFor';
-import { CourseCard } from '../components/card/CourseCard';
-import { InterestCard } from '../components/card/InterestCard';
-import { CertifieCard } from '../components/card/CertifieCard';
-import { EventCard } from '../components/card/EventCard';
-import { ServiceCard } from '../components/card/ServiceCard';
-import { CharacterCard } from '../components/card/CharacterCard';
-import { Navbar } from '../components/surfaces/TopAppBar/TopAppBar';
+import { CareerCard } from '../controller/components/card/CareerCard';
+import { ShaperFor } from '../controller/components/card/ShaperFor';
+import { CourseCard } from '../controller/components/card/CourseCard';
+import { InterestCard } from '../controller/components/card/InterestCard';
+import { CertifieCard } from '../controller/components/card/CertifieCard';
+import { EventCard } from '../controller/components/card/EventCard';
+import { ServiceCard } from '../controller/components/card/ServiceCard';
+import { CharacterCard } from '../controller/components/card/CharacterCard';
+import { Navbar } from '../controller/components/surfaces/TopAppBar/TopAppBar';
 import { LogoShaperBlue } from '../../public/assets/svg/logo';
 
 const Home: NextPage = () => {
