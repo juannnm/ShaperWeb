@@ -2,47 +2,46 @@ import Link from 'next/link';
 import { Button as MuiButton } from '@mui/material';
 import { TopAppBar, Button } from 'react-ui-controller';
 import SearchIcon from '@mui/icons-material/Search';
-import { Logo } from '../../../images/TopAppBar/';
 
 const PagesButtons = [
     {
         component: (
-            <Link href={'/'}>
+            <Link href="/">
                 <Button text="Home" type="button" variant="text" />
             </Link>
         ),
     },
     {
         component: (
-            <Link href={'/academy'}>
+            <Link href="/academy">
                 <Button text="Academy" type="button" variant="text" />
             </Link>
         ),
     },
     {
         component: (
-            <Link href={'/membership'}>
+            <Link href="/membership">
                 <Button text="Membership" type="button" variant="text" />
             </Link>
         ),
     },
     {
         component: (
-            <Link href={'/businesses'}>
+            <Link href="/businesses">
                 <Button text="Businesses" type="button" variant="text" />
             </Link>
         ),
     },
     {
         component: (
-            <Link href={'/about-us'}>
+            <Link href="/about-us">
                 <Button text="About Us" type="button" variant="text" />
             </Link>
         ),
     },
     {
         component: (
-            <Link href={'/contact'}>
+            <Link href="/contact">
                 <Button text="Contact" type="button" variant="text" />
             </Link>
         ),
@@ -52,7 +51,7 @@ const PagesButtons = [
 const OtherButtons = [
     {
         component: (
-            <Link href={'/sign-in'}>
+            <Link href="/sign-in">
                 <MuiButton variant="contained" sx={{ bgcolor: 'white', backgroundFilter: 'blur', borderRadius: '100px' }}>
                     Sign In
                 </MuiButton>

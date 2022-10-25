@@ -12,7 +12,7 @@ import { EventCard } from '../components/card/EventCard';
 import { ServiceCard } from '../components/card/ServiceCard';
 import { CharacterCard } from '../components/card/CharacterCard';
 import { Navbar } from '../components/surfaces/TopAppBar/TopAppBar';
-import { Logo } from '../images/TopAppBar';
+import { LogoShaperBlue } from '../../public/assets/svg/logo';
 
 const Home: NextPage = () => {
     return (
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
             <main className={styles.main}>
                 <Navbar />
-                <Logo />
+                <LogoShaperBlue />
 
                 <Box sx={{ padding: '10px', background: 'green' }}>
                     <CareerCard />
