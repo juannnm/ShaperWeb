@@ -1,7 +1,7 @@
 import { Box, CardMedia, Typography } from "@mui/material";
 import { Card, Button } from "react-ui-controller";
 import Image from 'next/image'
-import birrete from '../../images/birrete_icon.png'
+import birrete from '../../../../public/assets/png/birrete_icon.png'
 
 export const InterestCard = () => {
   return (

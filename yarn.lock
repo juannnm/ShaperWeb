@@ -1359,14 +1359,9 @@
   dependencies:
     "glob" "7.1.7"
 
-"@next/swc-linux-x64-gnu@12.3.1":
-  "integrity" "sha512-JWEaMyvNrXuM3dyy9Pp5cFPuSSvG82+yABqsWugjWlvfmnlnx9HOQZY23bFq3cNghy5V/t0iPb6cffzRWylgsA=="
-  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-12.3.1.tgz"
-  "version" "12.3.1"
-
-"@next/swc-linux-x64-musl@12.3.1":
-  "integrity" "sha512-xoEWQQ71waWc4BZcOjmatuvPUXKTv6MbIFzpm4LFeCHsg2iwai0ILmNXf81rJR+L1Wb9ifEke2sQpZSPNz1Iyg=="
-  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-12.3.1.tgz"
+"@next/swc-win32-x64-msvc@12.3.1":
+  "integrity" "sha512-W1ijvzzg+kPEX6LAc+50EYYSEo0FVu7dmTE+t+DM4iOLqgGHoW9uYSz9wCVdkXOEEMP9xhXfGpcSxsfDucyPkA=="
+  "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.3.1.tgz"
   "version" "12.3.1"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -3205,10 +3200,10 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react-ui-controller@^0.0.19npm i":
-  "integrity" "sha512-i+MYf1xoru21jg6r/PPIbY/LmSbtPMVp9DW8hWL7359Hvl0xorPaAsMT0BFEwCtcB9pP05KW1sCCxaP4MI+yEw=="
-  "resolved" "https://registry.npmjs.org/react-ui-controller/-/react-ui-controller-0.0.19.tgz"
-  "version" "0.0.19"
+"react-ui-controller@^0.0.22":
+  "integrity" "sha512-95CU/i3po9Jb64o30/QGRvjt++ud9k49QPHQVLXdKlkHXJCpp0b09JwD3wbR8+1xymGZPU6Ga9+71bxOQHi96Q=="
+  "resolved" "https://registry.npmjs.org/react-ui-controller/-/react-ui-controller-0.0.22.tgz"
+  "version" "0.0.22"
   dependencies:
     "@emotion/react" "^11.10.4"
     "@emotion/styled" "^11.10.4"
