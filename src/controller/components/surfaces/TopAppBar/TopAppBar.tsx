@@ -51,6 +51,13 @@ export const TopAppBar = () => {
         },
         {
             component: (
+                <Link href="/jobs" passHref key="jobs">
+                    <Button text="jobs" type="button" variant="text" href="/jobs" color={pathname === '/jobs' ? 'primary' : 'inherit'} />
+                </Link>
+            ),
+        },
+        {
+            component: (
                 <Link href="/about-us" passHref key="about-us">
                     <Button text="About Us" type="button" variant="text" href="/about-us" color={pathname === '/about-us' ? 'primary' : 'inherit'} />
                 </Link>
