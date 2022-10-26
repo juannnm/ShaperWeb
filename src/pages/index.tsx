@@ -24,7 +24,7 @@ const Home: NextPage = () => {
                 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
-            <Box component="main" sx={{ backgroundColor: '#ccc', width: '100%' }}>
+            <Box component="main">
                 <Box
                     sx={{
                         width: '100%',

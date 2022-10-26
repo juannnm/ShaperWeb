@@ -100,7 +100,6 @@ export const TopAppBar = () => {
 
     return (
         <RUCTopAppBar
-            handleDrawerOpen={() => {}}
             open={false}
             navButtons={navButtons}
             otherButtons={otherButtons}
@@ -108,7 +107,7 @@ export const TopAppBar = () => {
             logo={{
                 component: (
                     <Link href="/">
-                        <LogoShaperBlue style={{ width: '120px' }} />
+                        <LogoShaperBlue style={{ fontSize: '150px' }} />
                     </Link>
                 ),
                 isSVG: true,
