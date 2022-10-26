@@ -6,7 +6,7 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
 export const Footer = () => {
   return (
-    <Box>
+    <Box bgcolor='violet'>
       <Box display="flex" flexDirection="column" textAlign='center' m='35px 25%'>
         <Typography variant="h3">
           We strive to deliver and ensure achivements beyond expected results.

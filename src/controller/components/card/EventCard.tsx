@@ -8,15 +8,14 @@ export const EventCard = () => {
       description={[
         <Box key="container" sx={{ display: "flex", flexDirection: "row" }}>
           <Box
-            key="container"
             sx={{
               width: "128px",
               height: "128px",
-              m: 0,
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
               bgcolor: "lightblue",
+              borderRadius:'20% 0 0 20%'
             }}
           >
             <Typography variant="h3">09</Typography>
@@ -30,8 +29,9 @@ export const EventCard = () => {
           </Box>
         </Box>,
       ]}
-      height="128"
+      height="130px"
       width="500px"
+      
     />
   );
 }

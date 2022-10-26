@@ -6,7 +6,7 @@ import { Typography, Box } from "@mui/material";
 export const ShaperFor = () => {
   return (
     <Card
-      background="white"
+      background="transparent"
       description={[
         <Box key='container' sx={{alignItems:'center', justifyContent:'center'}}>
           <Typography key='title' variant="h4" sx={{ textAlign: "center" }}>
