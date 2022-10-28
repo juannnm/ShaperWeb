@@ -1,0 +1,1 @@
+export { default as Birrete } from './birrete 1.svg';
