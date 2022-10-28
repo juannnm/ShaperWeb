@@ -1,7 +1,17 @@
 import { Card } from "react-ui-controller";
 import { Box, Typography } from '@mui/material'
 
-export const EventCard = () => {
+interface IProps {
+  dateNumber?: number;
+  dateMonth?: string;
+  title?: string;
+  description?: string;
+  bgcolor?: string;
+}
+
+
+
+export const EventCard = (props: IProps) => {
   return (
     <Card
       background="white"
@@ -14,17 +24,17 @@ export const EventCard = () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
-              bgcolor: "lightblue",
+              bgcolor: {props.bgcolor},
               borderRadius:'20% 0 0 20%'
             }}
           >
-            <Typography variant="h3">09</Typography>
-            <Typography variant="h5">nov</Typography>
+            <Typography variant="h3">{props.dateNumber}</Typography>
+            <Typography variant="h5">{props.dateMonth}</Typography>
           </Box>
           <Box key="container" sx={{ textAlign: "left" }}>
-            <Typography variant="h4">Evento a Desarrolarse</Typography>
+            <Typography variant="h4">props.title</Typography>
             <Typography variant="body1">
-              Descripcion del evento que es va a estar dando
+              props.description
             </Typography>
           </Box>
         </Box>,

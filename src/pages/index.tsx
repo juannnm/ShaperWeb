@@ -4,6 +4,10 @@ import { Box, Divider, List, ListItem, ListItemIcon, ListItemText, Typography } 
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import TabletImage from '../../public/assets/png/Home/imagenvideos.png'
 import MemberImage from '../../public/assets/png/Home/foto 3.png'
+import Ella from '../../public/assets/png/Home/ella.png'
+import Charlie from '../../public/assets/png/Home/charlie.png'
+import Arlo from '../../public/assets/png/Home/arlo.png'
+import Oliver from '../../public/assets/png/Home/oliver.png'
 import { MicrosoftLogo } from '../../public/assets/svg/Home/';
 import { CareerCard } from '../controller/components/card/CareerCard';
 import { ShaperFor } from '../controller/components/card/ShaperFor';
@@ -17,6 +21,7 @@ import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar
 import { Footer } from '../controller/components/surfaces/Footer/Footer';
 import Image from 'next/image';
 import { Button } from 'react-ui-controller';
+import { EventList } from '../controller/components/DataDisplay/EventList/EventList';
 
 const Home: NextPage = () => {
     return (
@@ -115,7 +120,7 @@ const Home: NextPage = () => {
             </Box>
           </Box>
 
-          {/* Here it should have a Calendar, the EventCards should be able to scroll down and the cards have a problem with padding, son listas no son cartas jeje, https://m3.material.io/components/lists/specs y https://mui.com/material-ui/react-list/#main-content */}
+          {/* Here it should have a Calendar*/}
           <Box
             component="section"
             id="events"
@@ -137,22 +142,7 @@ const Home: NextPage = () => {
               Community meetings
             </Typography>
             <Box>
-              <Box
-                sx={{
-                  mt: "40px",
-                  boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: "40vw",
-                  bgcolor: "green",
-                }}
-              >
-                <EventCard />
-                <EventCard />
-                <EventCard />
-              </Box>
+              <EventList/>
               <Box>{/*HERE GOES THE CALENDAR*/}</Box>
             </Box>
           </Box>
@@ -359,11 +349,52 @@ const Home: NextPage = () => {
             </Box>
             <Image src={MemberImage} alt='Member' width='460px' height='411px'/>
           </Box>
-          <Box component='div' id='options' display='flex' flexDirection='row'>
-            {/* <ShaperFor/>
-            <ShaperFor/> */}
+          <Box component='div' id='options' display='flex' flexDirection='row' justifyContent='space-evenly'>
+          <ShaperFor
+                title="shaper for"
+                titleBold={{ text: "business", color: "#3C7E1F" }}
+                description="If you are a company and would like to attract the best talent, this is your opportunity. Join Shaper Membership for business and enjoy the benefits."
+              />
+            <ShaperFor
+              title='shaper for'
+              titleBold={{ text:'universities', color:'#D2004A' }}
+              description='Are you an educational institution and want to promote your students? Shaper for universities is your best option. '
+            />
           </Box>
-          <Box></Box>
+          <Box component='div' id='team' display='flex' flexDirection='row' justifyContent='center' m='150px'>
+            <Box>
+              <Typography variant='h5' fontWeight='bold' color='violet'>
+                TEAM WORK
+              </Typography>
+              <Typography variant='h4' fontWeight='bold'>
+                Meet the <br/>
+                awesome <br/>
+                and creative<br/>
+                members of<br/>
+                our staff
+              </Typography>
+            </Box>
+            <Box m='0 55px'>
+              <Image src={Ella} alt='Ella' width='147.61px' height='217.07px'/>
+              <Typography fontWeight='bold'>Ella</Typography>
+              <Typography>Academy</Typography>
+            </Box>
+            <Box>
+              <Image src={Oliver} alt='Ella' width='147.61px' height='217.07px'/>
+              <Typography fontWeight='bold'>Oliver</Typography>
+              <Typography>Community</Typography>
+            </Box>
+            <Box m='0 55px'>
+              <Image src={Arlo} alt='Ella' width='147.61px' height='217.07px'/>
+              <Typography fontWeight='bold'>Arlo</Typography>
+              <Typography>Careers</Typography>
+            </Box>
+            <Box>
+              <Image src={Charlie} alt='Ella' width='147.61px' height='217.07px'/>
+              <Typography fontWeight='bold'>Charlie</Typography>
+              <Typography>Guide</Typography>
+            </Box>
+          </Box>
           <Footer />
           {/* <Box sx={{ padding: '10px', background: 'green' }}>
                     <CareerCard />
