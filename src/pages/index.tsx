@@ -9,7 +9,7 @@ import Ella from '../../public/assets/png/Home/ella.png';
 import Charlie from '../../public/assets/png/Home/charlie.png';
 import Arlo from '../../public/assets/png/Home/arlo.png';
 import Oliver from '../../public/assets/png/Home/oliver.png';
-import { MicrosoftLogo } from '../../public/assets/svg/Home/';
+import { GoogleLogo, MetaLogo, MicrosoftLogo, SpotifyLogo, TeslaLogo, TikTokLogo } from '../../public/assets/svg/Home/Clients';
 import { CareerCard } from '../controller/components/card/CareerCard';
 import { ShaperFor } from '../controller/components/card/ShaperFor';
 import { CourseCard } from '../controller/components/card/CourseCard';
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <Box component="main">
-                <TopAppBar />
+                <TopAppBar bgColor="none" />
                 <Box
                     sx={{
                         width: '100%',
@@ -70,13 +70,14 @@ const Home: NextPage = () => {
                     <Typography variant="h3">Helping clients worlwide</Typography>
                     <Box display="flex" flexDirection="row" justifyContent="space-evenly" alignContent="center" width="70vw" m="0 auto">
                         <MicrosoftLogo style={{ fontSize: '100px' }} />
-                        <MicrosoftLogo style={{ fontSize: '100px' }} />
-                        <MicrosoftLogo style={{ fontSize: '100px' }} />
-                        <MicrosoftLogo style={{ fontSize: '100px' }} />
-                        <MicrosoftLogo style={{ fontSize: '100px' }} />
-                        <MicrosoftLogo style={{ fontSize: '100px' }} />
+                        <GoogleLogo style={{ fontSize: '100px' }} />
+                        <SpotifyLogo style={{ fontSize: '100px' }} />
+                        <TeslaLogo style={{ fontSize: '100px' }} />
+                        <TikTokLogo style={{ fontSize: '100px' }} />
+                        {/* <MetaLogo style={{ fontSize: '100px' }} /> */}
                     </Box>
-                </Box>n
+                </Box>
+                n
                 <Box component="section" id="paths" sx={{ m: '50px' }}>
                     <Box display="flex" flexDirection="row" borderRadius="20px" justifyContent="center">
                         <ShaperFor
@@ -98,7 +99,6 @@ const Home: NextPage = () => {
                         />
                     </Box>
                 </Box>
-
                 {/* Here it should have a Calendar*/}
                 <Box
                     component="section"
@@ -111,10 +111,10 @@ const Home: NextPage = () => {
                         alignItems: 'center',
                     }}
                 >
-                    <Typography variant="h6" sx={{ color: 'violet', fontWeight: 'bold' }}>
+                    <Typography variant="h6" sx={{ fontWeight: 'bold' }} color="secondary">
                         Events
                     </Typography>
-                    <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+                    <Typography variant="h4" sx={{ fontWeight: 'bold' }} color="primary">
                         Community meetings
                     </Typography>
                     <Box>
@@ -135,38 +135,58 @@ const Home: NextPage = () => {
                 >
                     <Box display="flex" flexDirection="row" alignItems="center">
                         <Box display="flex" flexDirection="column" mr="60px">
-                            <Typography variant="h6" color="violet" fontWeight="bold">
+                            <Typography variant="h6" color="secondary" fontWeight="bold">
                                 LEARN AND GROW
                             </Typography>
-                            <Typography variant="h4" fontWeight="bold">
-                                A whole new level
-                                <br /> of commitment
+                            <Typography variant="h4" fontWeight="bold" color="primary" sx={{ whiteSpace: 'pre-line' }}>
+                                {'A whole new level\nof commitment'}
                             </Typography>
                         </Box>
-                        <Typography variant="body1">
-                            Our team of experts will help you define your <br />
-                            career goals and improve your skills to help
-                            <br /> you succeed in your job search.
+                        <Typography variant="body1" color="#737373" sx={{ whiteSpace: 'pre-line' }}>
+                            {
+                                'Our team of experts will help you define your\ncareer goals and improve your skills to help\nyou succeed in your job search.'
+                            }
                         </Typography>
                     </Box>
                     <Box display="flex" flexDirection="row" alignItems="center" mr="10%" ml="10%" gap="5%">
                         <Box>
-                            <Typography>We love teaching remotely</Typography>
-                            <Typography>
+                            <Box display="flex" gap={1}>
+                                <Typography variant="subtitle1" fontWeight="bold" color="secondary">
+                                    01
+                                </Typography>
+                                <Typography variant="subtitle1" fontWeight="bold" color="primary">
+                                    We love teaching remotely
+                                </Typography>
+                            </Box>
+                            <Typography variant="body2" color="#737373">
                                 A new world of possibilities will open the doors to your new life. All you need is a computer with internet access and
                                 you will dive deep into new experiences that will transform your reality into growth.
                             </Typography>
                         </Box>
                         <Box>
-                            <Typography>Knowledge into practice</Typography>
-                            <Typography>
+                            <Box display="flex" gap={1}>
+                                <Typography variant="subtitle1" fontWeight="bold" color="secondary">
+                                    02
+                                </Typography>
+                                <Typography variant="subtitle1" fontWeight="bold" color="primary">
+                                    Knowledge into practice
+                                </Typography>
+                            </Box>
+                            <Typography variant="body2" color="#737373">
                                 We provide you with the most sought-after skills in a high-demand world where you can put all your knowledge into
                                 practice on real projects with real companies, so you can stay competitive as you start your new career.
                             </Typography>
                         </Box>
                         <Box>
-                            <Typography>Your new life starts now</Typography>
-                            <Typography>
+                            <Box display="flex" gap={1}>
+                                <Typography variant="subtitle1" fontWeight="bold" color="secondary">
+                                    03
+                                </Typography>
+                                <Typography variant="subtitle1" fontWeight="bold" color="primary">
+                                    Your new life starts now
+                                </Typography>
+                            </Box>
+                            <Typography variant="body2" color="#737373">
                                 We invest in your future so you only have to focus on what really matters. KNOWLEDGE. You do not have to pay us now,
                                 just learn and when your career is completed, we will help you find your dream job, and only then will you pay us
                                 back.
@@ -176,7 +196,7 @@ const Home: NextPage = () => {
                 </Box>
                 <Box component="div" id="how-it-work" display="flex" flexDirection="column" m="150px">
                     <Box textAlign="center">
-                        <Typography variant="h5" fontWeight="bold" color="violet">
+                        <Typography variant="h5" fontWeight="bold" color="secondary">
                             HOW IT WORKS
                         </Typography>
                         <Typography variant="h4" fontWeight="bold">

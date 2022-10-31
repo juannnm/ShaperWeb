@@ -1,21 +1,21 @@
-import { createTheme } from '@mui/system';
-
-declare module '@mui/material/styles' {
-    interface Theme {
-      typography: {
-
-      }
-    }
-    interface ThemeOptions {
-       
-    }
-}
+import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
-    typography: {
-      
+    palette: {
+        primary: {
+            main: '#050E3F',
+            contrastText: '#FFFFFF',
+        },
+        secondary: {
+            main: '#A54CDB',
+            contrastText: '#FFFFFF',
+        },
     },
-    palette: {},
+    typography: {
+        subtitle1: {
+            fontWeight: 'bold',
+        },
+    },
 });
 
 export default theme;

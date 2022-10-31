@@ -1,37 +1,55 @@
 import Link from 'next/link';
 import { Button as MuiButton } from '@mui/material';
-import { TopAppBar as RUCTopAppBar, Button, IconButton } from 'react-ui-controller';
+import { TopAppBar as RUCTopAppBar, IconButton, LinkButton } from 'react-ui-controller';
 import SearchIcon from '@mui/icons-material/Search';
 import { LogoShaperBlue } from '../../../../../public/assets/svg/logo';
 import { useRouter } from 'next/router';
 
-export const TopAppBar = () => {
+interface IProps {
+    bgColor: string;
+}
+
+export const TopAppBar = ({ bgColor }: IProps) => {
     const { pathname } = useRouter();
 
     const navButtons = [
         {
             component: (
                 <Link href="/" passHref key="home">
-                    <Button text="Home" type="button" variant="text" href="/" color={pathname === '/' ? 'primary' : 'inherit'} />
+                    <LinkButton
+                        text="Home"
+                        color={(bgColor !== 'white' && pathname === '/') || (bgColor === 'white' && pathname !== '/') ? 'primary' : 'inherit'}
+                        href="/"
+                    />
                 </Link>
             ),
         },
         {
             component: (
                 <Link href="/academy" passHref key="academy">
-                    <Button text="Academy" type="button" variant="text" href="/academy" color={pathname === '/academy' ? 'primary' : 'inherit'} />
+                    <LinkButton
+                        text="Academy"
+                        color={
+                            (bgColor !== 'white' && pathname === '/academy') || (bgColor === 'white' && pathname !== '/academy')
+                                ? 'primary'
+                                : 'inherit'
+                        }
+                        href="/academy"
+                    />
                 </Link>
             ),
         },
         {
             component: (
                 <Link href="/membership" passHref key="membership">
-                    <Button
+                    <LinkButton
                         text="Membership"
-                        type="button"
-                        variant="text"
+                        color={
+                            (bgColor !== 'white' && pathname === '/membership') || (bgColor === 'white' && pathname !== '/membership')
+                                ? 'primary'
+                                : 'inherit'
+                        }
                         href="/membership"
-                        color={pathname === '/membership' ? 'primary' : 'inherit'}
                     />
                 </Link>
             ),
@@ -39,12 +57,14 @@ export const TopAppBar = () => {
         {
             component: (
                 <Link href="/businesses" passHref key="businesses">
-                    <Button
+                    <LinkButton
                         text="Businesses"
-                        type="button"
-                        variant="text"
+                        color={
+                            (bgColor !== 'white' && pathname === '/businesses') || (bgColor === 'white' && pathname !== '/businesses')
+                                ? 'primary'
+                                : 'inherit'
+                        }
                         href="/businesses"
-                        color={pathname === '/businesses' ? 'primary' : 'inherit'}
                     />
                 </Link>
             ),
@@ -52,21 +72,21 @@ export const TopAppBar = () => {
         {
             component: (
                 <Link href="/jobs" passHref key="jobs">
-                    <Button text="jobs" type="button" variant="text" href="/jobs" color={pathname === '/jobs' ? 'primary' : 'inherit'} />
+                    <LinkButton text="Jobs" color={pathname === '/jobs' ? 'primary' : 'inherit'} href="/jobs" />
                 </Link>
             ),
         },
         {
             component: (
                 <Link href="/about-us" passHref key="about-us">
-                    <Button text="About Us" type="button" variant="text" href="/about-us" color={pathname === '/about-us' ? 'primary' : 'inherit'} />
+                    <LinkButton text="About Us" color={pathname === '/about-us' ? 'primary' : 'inherit'} href="/about-us" />
                 </Link>
             ),
         },
         {
             component: (
                 <Link href="/contact" passHref key="contact">
-                    <Button text="Contact" type="button" variant="text" href="/contact" color={pathname === '/contact' ? 'primary' : 'inherit'} />
+                    <LinkButton text="Contact" color={pathname === '/contact' ? 'primary' : 'inherit'} href="/contact" />
                 </Link>
             ),
         },
@@ -86,7 +106,7 @@ export const TopAppBar = () => {
                     <MuiButton
                         variant="contained"
                         sx={{
-                            bgcolor: 'white',
+                            bgcolor: 'primary',
                             backgroundFilter: 'blur',
                             borderRadius: '100px',
                         }}
@@ -108,7 +128,7 @@ export const TopAppBar = () => {
             logo={{
                 component: (
                     <Link href="/">
-                        <LogoShaperBlue style={{ fontSize: '150px' }} />
+                        <LogoShaperBlue style={{ fontSize: '150px', cursor: 'pointer' }} />
                     </Link>
                 ),
                 isSVG: true,

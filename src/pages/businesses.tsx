@@ -24,7 +24,7 @@ const Businesses = () => {
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <Box component="main" sx={{ background: 'linear-gradient(180deg, #050E3F 0%, #A54CDB 100%);' }}>
-                <TopAppBar />
+                <TopAppBar bgColor="none" />
                 <Box display="flex" justifyContent="center" pt="10%">
                     <Box display="flex" flexDirection="column">
                         <Typography variant="h6">COMPANIES</Typography>
