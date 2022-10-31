@@ -10,14 +10,8 @@ import Charlie from '../../public/assets/png/Home/charlie.png';
 import Arlo from '../../public/assets/png/Home/arlo.png';
 import Oliver from '../../public/assets/png/Home/oliver.png';
 import { GoogleLogo, MetaLogo, MicrosoftLogo, SpotifyLogo, TeslaLogo, TikTokLogo } from '../../public/assets/svg/Home/Clients';
-import { CareerCard } from '../controller/components/card/CareerCard';
 import { ShaperFor } from '../controller/components/card/ShaperFor';
-import { CourseCard } from '../controller/components/card/CourseCard';
-import { InterestCard } from '../controller/components/card/InterestCard';
-import { CertifieCard } from '../controller/components/card/CertifieCard';
-import { EventCard } from '../controller/components/card/EventCard';
 import { ServiceCard } from '../controller/components/card/ServiceCard';
-import { CharacterCard } from '../controller/components/card/CharacterCard';
 import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar';
 import { Footer } from '../controller/components/surfaces/Footer/Footer';
 import Image from 'next/image';
@@ -67,8 +61,10 @@ const Home: NextPage = () => {
                         m: '40px',
                     }}
                 >
-                    <Typography variant="h3">Helping clients worlwide</Typography>
-                    <Box display="flex" flexDirection="row" justifyContent="space-evenly" alignContent="center" width="70vw" m="0 auto">
+                    <Typography variant="h3" color="primary">
+                        Helping clients worlwide
+                    </Typography>
+                    <Box display="flex" flexDirection="row" justifyContent="space-evenly" alignContent="center" gap={1} mt={4}>
                         <MicrosoftLogo style={{ fontSize: '100px' }} />
                         <GoogleLogo style={{ fontSize: '100px' }} />
                         <SpotifyLogo style={{ fontSize: '100px' }} />
@@ -148,7 +144,7 @@ const Home: NextPage = () => {
                             }
                         </Typography>
                     </Box>
-                    <Box display="flex" flexDirection="row" alignItems="center" mr="10%" ml="10%" gap="5%">
+                    <Box display="flex" flexDirection="row" alignItems="center" mr="10%" ml="10%" gap="5%" mt="2%">
                         <Box>
                             <Box display="flex" gap={1}>
                                 <Typography variant="subtitle1" fontWeight="bold" color="secondary">
@@ -194,32 +190,38 @@ const Home: NextPage = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Box component="div" id="how-it-work" display="flex" flexDirection="column" m="150px">
+                <Box component="div" id="how-it-work" display="flex" flexDirection="column">
                     <Box textAlign="center">
                         <Typography variant="h5" fontWeight="bold" color="secondary">
                             HOW IT WORKS
                         </Typography>
-                        <Typography variant="h4" fontWeight="bold">
+                        <Typography variant="h4" fontWeight="bold" color="primary">
                             We have created the highest standards <br />
                             for people like you
                         </Typography>
-                        <Typography variant="body1">
+                        <Typography variant="body1" color="#737373">
                             You can measure your needs over time and choose between 2 options.Full-time and Part-time.
                         </Typography>
                     </Box>
                     <Box display="flex" flexDirection="row" justifyContent="center">
                         <Box display="flex" flexDirection="column" justifyContent="space-between" mt="70px">
-                            <Box display="flex" flexDirection="row">
-                                <CheckCircleIcon />
-                                <Typography>100% Remote</Typography>
+                            <Box display="flex" flexDirection="row" alignItems="center">
+                                <CheckCircleIcon color="secondary" />
+                                <Typography variant="h6" color="primary">
+                                    100% Remote
+                                </Typography>
                             </Box>
-                            <Box display="flex" flexDirection="row">
-                                <CheckCircleIcon />
-                                <Typography>1:1 Support</Typography>
+                            <Box display="flex" flexDirection="row" alignItems="center">
+                                <CheckCircleIcon color="secondary" />
+                                <Typography variant="h6" color="primary">
+                                    1:1 Support
+                                </Typography>
                             </Box>
-                            <Box display="flex" flexDirection="row">
-                                <CheckCircleIcon />
-                                <Typography>Community</Typography>
+                            <Box display="flex" flexDirection="row" alignItems="center">
+                                <CheckCircleIcon color="secondary" />
+                                <Typography variant="h6" color="primary">
+                                    Community
+                                </Typography>
                             </Box>
                         </Box>
                         {/*COMPONENTE NUEVO O ALGO QUE YA EXISTE, NO LO SE, PREGUNTAR A NICO*/}
@@ -227,16 +229,15 @@ const Home: NextPage = () => {
                 </Box>
                 <Box component="div" id="WatchandLearn" display="flex" flexDirection="row" justifyContent="center">
                     <Image src={TabletImage} alt="image" width="436px" height="271px" />
-                    <Box display="flex" flexDirection="column" m="32px" justifyContent="left" mt="0">
-                        <Typography variant="h5" fontWeight="bold" color="violet">
+                    <Box display="flex" flexDirection="column" ml="5%" justifyContent="flex-start" mt="0">
+                        <Typography variant="h5" fontWeight="bold" color="secondary">
                             WATCH AND LEARN
                         </Typography>
-                        <Typography variant="h4" fontWeight="bold">
-                            {' '}
+                        <Typography variant="h4" fontWeight="bold" color="primary">
                             Enjoy our online
                             <br /> courses for free
                         </Typography>
-                        <Typography variant="body1">
+                        <Typography variant="body1" color="#737373">
                             Now you can learn with the best experts in the
                             <br /> sector without schedule and whenever you want,
                             <br /> no strings-attached.
@@ -246,60 +247,56 @@ const Home: NextPage = () => {
                 </Box>
                 <Box component="div" id="services" display="flex" flexDirection="column" m="150px">
                     <Box textAlign="center" mb="30px">
-                        <Typography variant="h5" fontWeight="bold" color="violet">
+                        <Typography variant="h5" fontWeight="bold" color="secondary">
                             THE SERVICES WE OFFERS
                         </Typography>
-                        <Typography variant="h4" fontWeight="bold">
+                        <Typography variant="h4" fontWeight="bold" color="primary">
                             Our business perception and exceptional
                             <br /> experience give us an edge over our competitors
                         </Typography>
-                        <Typography variant="h6">We analyze, explore, create and deliver.</Typography>
+                        <Typography variant="h6" color="primary">
+                            We analyze, explore, create and deliver.
+                        </Typography>
                     </Box>
                     <Box display="flex" flexDirection="row" justifyContent="center" gap="2%">
                         <ServiceCard
                             title="ON-Demand"
                             description="Get direct access to specialist permanent or contract talent."
                             background="#8BB5F3"
-                            icon={<Cast />}
+                            icon={<Cast color="primary" sx={{ fontSize: '45px' }} />}
                         />
                         <ServiceCard
-                            title="Project Resource"
+                            title={'Project\nResource'}
                             description="Experienced teams of interim project delivery professionals to help businesses deliver complex digital solutions."
                             background="#ADD59C"
-                            icon={<Settings />}
+                            icon={<Settings color="primary" sx={{ fontSize: '45px' }} />}
                         />
                         <ServiceCard
                             title="Bootcamp"
                             description="Our program will ensure you understand every bit of modern development technologies and metodologies used by top-tier companies with programs designed to stay ahead of the competition."
-                            icon={<Groups />}
+                            icon={<Groups color="primary" sx={{ fontSize: '45px' }} />}
                             background="#FFAD94"
                         />
                         <ServiceCard
                             title="Career"
                             description="Our process ensures we match candidates with opportunities to meet your company’s culture and hiring needs."
-                            icon={<Stairs />}
+                            icon={<Stairs color="primary" sx={{ fontSize: '45px' }} />}
                             background="#FFB8D1"
                         />
                     </Box>
                 </Box>
                 <Box component="div" id="membership" display="flex" flexDirection="row" justifyContent="center">
                     <Box justifyContent="left" textAlign="left" mt="70px">
-                        <Typography variant="h5" fontWeight="bold" color="violet">
+                        <Typography variant="h5" fontWeight="bold" color="secondary">
                             OUR MEMBERSHIP
                         </Typography>
-                        <Typography variant="h4" fontWeight="bold">
-                            We help our candidates in
-                            <br /> finding new and exciting jobs
+                        <Typography variant="h4" fontWeight="bold" color="primary" sx={{ whiteSpace: 'pre-line' }}>
+                            {'We help our candidates in\nfinding new and exciting jobs'}
                         </Typography>
-                        <Typography variant="body1">
-                            The Shaper program offers you the opportunity to work
-                            <br />
-                            with top companies. You can be tested by multiple
-                            <br />
-                            employers, as many as you have time to prove your
-                            <br /> skills. Our membership is designed to help you grow
-                            <br />
-                            and succeed.
+                        <Typography variant="body1" color="#737373" sx={{ whiteSpace: 'pre-line' }}>
+                            {
+                                'The Shaper program offers you the opportunity to work\nwith top companies. You can be tested by multiple\nemployers, as many as you have time to prove your\nskills. Our membership is designed to help you grow\nand succeed.'
+                            }
                         </Typography>
                     </Box>
                     <Image src={MemberImage} alt="Member" width="460px" height="411px" />
@@ -318,65 +315,43 @@ const Home: NextPage = () => {
                 </Box>
                 <Box component="div" id="team" display="flex" flexDirection="row" justifyContent="center" m="150px">
                     <Box>
-                        <Typography variant="h5" fontWeight="bold" color="violet">
+                        <Typography variant="h5" fontWeight="bold" color="secondary">
                             TEAM WORK
                         </Typography>
-                        <Typography variant="h4" fontWeight="bold">
-                            Meet the <br />
-                            awesome <br />
-                            and creative
-                            <br />
-                            members of
-                            <br />
-                            our staff
+                        <Typography variant="h4" fontWeight="bold" color="primary" sx={{ whiteSpace: 'pre-line' }}>
+                            {' Meet the\nawesome\nand creative\nmembers of\nour staff'}
                         </Typography>
                     </Box>
                     <Box m="0 55px">
                         <Image src={Ella} alt="Ella" width="147.61px" height="217.07px" />
-                        <Typography fontWeight="bold">Ella</Typography>
-                        <Typography>Academy</Typography>
+                        <Typography fontWeight="bold" color="primary">
+                            Ella
+                        </Typography>
+                        <Typography color="#737373">Academy</Typography>
                     </Box>
                     <Box>
                         <Image src={Oliver} alt="Ella" width="147.61px" height="217.07px" />
-                        <Typography fontWeight="bold">Oliver</Typography>
-                        <Typography>Community</Typography>
+                        <Typography fontWeight="bold" color="primary">
+                            Oliver
+                        </Typography>
+                        <Typography color="#737373">Community</Typography>
                     </Box>
                     <Box m="0 55px">
                         <Image src={Arlo} alt="Ella" width="147.61px" height="217.07px" />
-                        <Typography fontWeight="bold">Arlo</Typography>
-                        <Typography>Careers</Typography>
+                        <Typography fontWeight="bold" color="primary">
+                            Arlo
+                        </Typography>
+                        <Typography color="#737373">Careers</Typography>
                     </Box>
                     <Box>
                         <Image src={Charlie} alt="Ella" width="147.61px" height="217.07px" />
-                        <Typography fontWeight="bold">Charlie</Typography>
-                        <Typography>Guide</Typography>
+                        <Typography fontWeight="bold" color="primary">
+                            Charlie
+                        </Typography>
+                        <Typography color="#737373">Guide</Typography>
                     </Box>
                 </Box>
                 <Footer />
-                {/* <Box sx={{ padding: '10px', background: 'green' }}>
-                    <CareerCard />
-                </Box>
-                <Box sx={{ padding: '10px', background: 'green' }}>
-                    <ShaperFor />
-                </Box>
-                <Box sx={{ padding: '10px', background: 'green' }}>
-                    <CourseCard />
-                </Box>
-                <Box sx={{ padding: '10px', background: 'green' }}>
-                    <InterestCard />
-                </Box>
-                <Box sx={{ padding: '10px', background: 'green' }}>
-                    <CertifieCard />
-                </Box>
-                <Box sx={{ padding: '10px', background: 'green' }}>
-                    <EventCard />
-                </Box>
-                <Box sx={{ padding: '10px', background: 'green' }}>
-                    <ServiceCard />
-                </Box>
-                <Box sx={{ padding: '10px', background: 'green' }}>
-                    <CharacterCard />
-                </Box> */}
             </Box>
         </div>
     );

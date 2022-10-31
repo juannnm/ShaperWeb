@@ -16,12 +16,16 @@ export const ServiceCard = (props: IProps) => {
             background={props.background}
             description={
                 <Box key="container">
-                    <Box key="head" sx={{ display: 'flex', flexDirection: 'row' }}>
+                    <Box key="head" display="flex" gap="5%" alignItems="center" height="60px">
                         {props.icon}
-                        <Typography sx={{ fontSize: '20px', textAlign: 'left' }}>{props.title}</Typography>
+                        <Typography variant="h6" color="primary" sx={{ whiteSpace: 'pre-line' }}>
+                            {props.title}
+                        </Typography>
                     </Box>
                     <Box key="text" m="5px">
-                        <Typography variant="body1">{props.description}</Typography>
+                        <Typography variant="body2" color="primary">
+                            {props.description}
+                        </Typography>
                     </Box>
                 </Box>
             }
