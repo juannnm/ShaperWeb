@@ -72,21 +72,41 @@ export const TopAppBar = ({ bgColor }: IProps) => {
         {
             component: (
                 <Link href="/jobs" passHref key="jobs">
-                    <LinkButton text="Jobs" color={pathname === '/jobs' ? 'primary' : 'inherit'} href="/jobs" />
+                    <LinkButton
+                        text="Jobs"
+                        color={(bgColor !== 'white' && pathname === '/jobs') || (bgColor === 'white' && pathname !== '/jobs') ? 'primary' : 'inherit'}
+                        href="/jobs"
+                    />
                 </Link>
             ),
         },
         {
             component: (
                 <Link href="/about-us" passHref key="about-us">
-                    <LinkButton text="About Us" color={pathname === '/about-us' ? 'primary' : 'inherit'} href="/about-us" />
+                    <LinkButton
+                        text="About Us"
+                        color={
+                            (bgColor !== 'white' && pathname === '/about-us') || (bgColor === 'white' && pathname !== '/about-us')
+                                ? 'primary'
+                                : 'inherit'
+                        }
+                        href="/about-us"
+                    />
                 </Link>
             ),
         },
         {
             component: (
                 <Link href="/contact" passHref key="contact">
-                    <LinkButton text="Contact" color={pathname === '/contact' ? 'primary' : 'inherit'} href="/contact" />
+                    <LinkButton
+                        text="Contact"
+                        color={
+                            (bgColor !== 'white' && pathname === '/contact') || (bgColor === 'white' && pathname !== '/contact')
+                                ? 'primary'
+                                : 'inherit'
+                        }
+                        href="/contact"
+                    />
                 </Link>
             ),
         },

@@ -12,6 +12,12 @@ const theme = createTheme({
         },
     },
     typography: {
+        h3: {
+            fontWeight: 'bold',
+        },
+        h6: {
+            fontWeight: 'normal',
+        },
         subtitle1: {
             fontWeight: 'bold',
         },

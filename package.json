@@ -17,7 +17,7 @@
         "next": "12.3.1",
         "react": "18.2.0",
         "react-dom": "18.2.0",
-        "react-ui-controller": "^0.0.28"
+        "react-ui-controller": "^0.0.30"
     },
     "devDependencies": {
         "@types/node": "18.11.0",

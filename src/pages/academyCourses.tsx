@@ -33,51 +33,55 @@ const Courses: NextPage = () => {
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <Box component="main">
-                <TopAppBar />
-                <Box id="Intro" component="div" justifyContent="center" textAlign="center" m="200px">
+                <TopAppBar bgColor="white" />
+                <Box id="Intro" component="div" justifyContent="center" textAlign="center" mt="10%">
                     <Box>
-                        <Typography variant="h6" fontWeight="bold">
+                        <Typography variant="h6" fontWeight="bold" color="secondary">
                             COURSES
                         </Typography>
-                        <Typography variant="h4" fontWeight="bold">
+                        <Typography variant="h4" fontWeight="bold" color="primary">
                             We&apos;re transforming education from inside-out
                         </Typography>
-                        <Typography>You can watch every online course for free no strings-attached</Typography>
+                        <Typography variant="body1" color="primary" mb="1%">
+                            You can watch every online course for free no strings-attached
+                        </Typography>
                         <Button text="Start Now" type="button" variant="contained" />
                     </Box>
                     <Image src={groupImage} alt="group" width="865.75" height="492.27" />
                 </Box>
-                <Box id="characteristics" component="div" justifyContent="center" m="0 auto">
-                    <Box display="flex" flexDirection="row" justifyContent="center">
+                <Box id="characteristics" component="div" justifyContent="center">
+                    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
                         <Image src={girlImage} alt="girl" width="305.78" height="237.85" />
-                        <Box justifyContent="center" alignItems="center" ml="35px" mt="10px">
-                            <Typography variant="h4">In Shaper Academy you can enjoy</Typography>
-                            <Typography>
-                                The best online courses wherever you are, without
-                                <br /> schedule and whenever you want.
+                        <Box justifyContent="center" alignItems="center">
+                            <Typography variant="h5" color="primary" fontWeight="bold">
+                                In Shaper Academy you can enjoy
+                            </Typography>
+                            <Typography variant="body1" color="#737373" sx={{ whiteSpace: 'pre-line' }}>
+                                {'The best online courses wherever you are, without\nschedule and whenever you want.'}
                             </Typography>
                         </Box>
                     </Box>
-                    <Box display="flex" flexDirection="row" justifyContent="center">
+                    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
                         <Image src={phoneImage} alt="phone" width="305.78" height="237.85" />
-                        <Box justifyContent="center" alignItems="center" ml="35px" mt="10px">
-                            <Typography variant="h4">
-                                You will be able to learn the most
-                                <br /> useful methods and techniques
+                        <Box justifyContent="center" alignItems="center">
+                            <Typography variant="h5" color="primary" fontWeight="bold" sx={{ whiteSpace: 'pre-line' }}>
+                                {' You will be able to learn the most\n useful methods and techniques'}
                             </Typography>
-                            <Typography>
-                                On the market in high quality, so you will not miss a<br /> single detail, without limitations.
+                            <Typography variant="body1" color="#737373" sx={{ whiteSpace: 'pre-line' }}>
+                                {'On the market in high quality, so you will not miss a\n single detail, without limitations.'}
                             </Typography>
                         </Box>
                     </Box>
-                    <Box display="flex" flexDirection="row" justifyContent="center">
+                    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
                         <Image src={graphicImage} alt="graphic" width="305.78" height="237.85" />
-                        <Box justifyContent="center" alignItems="center" ml="35px" mt="10px">
-                            <Typography variant="h4">We offer courses in different areas </Typography>
-                            <Typography>
-                                To let you optimize your skills with a top team of
-                                <br /> professionals that we choose very carefully to
-                                <br /> guarantee an excellent learning experience.
+                        <Box justifyContent="center" alignItems="center">
+                            <Typography variant="h5" color="primary" fontWeight="bold">
+                                We offer courses in different areas
+                            </Typography>
+                            <Typography variant="body1" color="#737373" sx={{ whiteSpace: 'pre-line' }}>
+                                {
+                                    'To let you optimize your skills with a top team of\n professionals that we choose very carefully to\n guarantee an excellent learning experience.'
+                                }
                             </Typography>
                         </Box>
                     </Box>
@@ -148,20 +152,17 @@ const Courses: NextPage = () => {
                     </Accordion>
                 </Box>
                 <Box component="div" display="flex" flexDirection="row" justifyContent="center">
-                    <Box mt="50px">
-                        <Typography variant="h5" fontWeight="bold">
+                    <Box>
+                        <Typography variant="h5" fontWeight="bold" color="secondary">
                             OUR MEMBERSHIP
                         </Typography>
-                        <Typography variant="h4">
-                            We help our candidates in
-                            <br /> finding new and exciting jobs
+                        <Typography variant="h4" color="primary" sx={{ whiteSpace: 'pre-line' }}>
+                            {'We help our candidates in\nfinding new and exciting jobs'}
                         </Typography>
-                        <Typography>
-                            The Shaper program offers you the opportunity to work
-                            <br /> with top companies. You can be tested by multiple
-                            <br /> employers, as many as you have time to prove your
-                            <br /> skills. Our membership is designed to help you grow
-                            <br /> and succeed.
+                        <Typography color="#737373" variant="body1" mb="2%" sx={{ whiteSpace: 'pre-line' }}>
+                            {
+                                ' The Shaper program offers you the opportunity to work\nwith top companies. You can be tested by multiple\nemployers, as many as you have time to prove your\nskills. Our membership is designed to help you grow\nand succeed.'
+                            }
                         </Typography>
                         <Button text="Suscribe" type="button" variant="contained" />
                     </Box>
