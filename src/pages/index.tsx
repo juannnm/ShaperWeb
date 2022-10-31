@@ -76,7 +76,7 @@ const Home: NextPage = () => {
                         <MicrosoftLogo style={{ fontSize: '100px' }} />
                         <MicrosoftLogo style={{ fontSize: '100px' }} />
                     </Box>
-                </Box>
+                </Box>n
                 <Box component="section" id="paths" sx={{ m: '50px' }}>
                     <Box display="flex" flexDirection="row" borderRadius="20px" justifyContent="center">
                         <ShaperFor

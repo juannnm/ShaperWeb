@@ -104,6 +104,7 @@ export const TopAppBar = () => {
             navButtons={navButtons}
             otherButtons={otherButtons}
             background="transparent"
+            position="absolute"
             logo={{
                 component: (
                     <Link href="/">
