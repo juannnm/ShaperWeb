@@ -11,6 +11,11 @@ import {
     TrendingDownRounded,
 } from '@mui/icons-material';
 import { Footer } from '../controller/components/surfaces/Footer/Footer';
+import womenImage from '../../public/assets/png/Business/foto 5.png'
+import boyImage from '../../public/assets/png/Business/foto 6.png'
+import laptopImage from '../../public/assets/png/Business/Frame 293.png'
+import guyImage from '../../public/assets/png/Business/Foto 4.png'
+import Image from 'next/image';
 
 const Businesses = () => {
     return (
@@ -39,11 +44,12 @@ const Businesses = () => {
                             }
                         </Typography>
                     </Box>
+                    <Image src={womenImage} alt='women' width='501px' height='413px'/>
                 </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center">
                     <Box display="flex" alignItems="center">
-                        <Box display="flex" justifyContent="center" alignItems="center">
-                            <StarBorderRounded sx={{ fontSize: '150px' }} />
+                        <Box display="flex" justifyContent="center" alignItems="center" mr='40px' mt='20px' bgcolor='rgba(255,255,255,0.4)' borderRadius='20px'>
+                            <StarBorderRounded sx={{ fontSize: '150px', color:'#8BB5F3' }} />
                         </Box>
                         <Box>
                             <Typography variant="h6">Project Discovery</Typography>
@@ -55,8 +61,8 @@ const Businesses = () => {
                         </Box>
                     </Box>
                     <Box display="flex" alignItems="center">
-                        <Box display="flex" justifyContent="center" alignItems="center">
-                            <SettingsOutlined sx={{ fontSize: '150px' }} />
+                        <Box display="flex" justifyContent="center" alignItems="center" mr='40px' mt='20px' bgcolor='rgba(255,255,255,0.4)' borderRadius='20px'>
+                            <SettingsOutlined sx={{ fontSize: '150px', color:'#D8A2F1' }} />
                         </Box>
                         <Box>
                             <Typography variant="h6">Project Manager</Typography>
@@ -66,8 +72,8 @@ const Businesses = () => {
                         </Box>
                     </Box>
                     <Box display="flex" alignItems="center">
-                        <Box display="flex" justifyContent="center" alignItems="center">
-                            <PersonSearchOutlined sx={{ fontSize: '150px' }} />
+                        <Box display="flex" justifyContent="center" alignItems="center" mr='40px' mt='20px' bgcolor='rgba(255,255,255,0.4)' borderRadius='20px'>
+                            <PersonSearchOutlined sx={{ fontSize: '150px', color:'#FFB8D1' }} />
                         </Box>
                         <Box>
                             <Typography variant="h6">Candidates Selection</Typography>
@@ -79,8 +85,8 @@ const Businesses = () => {
                         </Box>
                     </Box>
                     <Box display="flex" alignItems="center">
-                        <Box display="flex" justifyContent="center" alignItems="center">
-                            <TimelineOutlined sx={{ fontSize: '150px' }} />
+                        <Box display="flex" justifyContent="center" alignItems="center" mr='40px' mt='20px' bgcolor='rgba(255,255,255,0.4)' borderRadius='20px'>
+                            <TimelineOutlined sx={{ fontSize: '150px', color:'#FFAD94' }} />
                         </Box>
                         <Box>
                             <Typography variant="h6">Measure Results</Typography>
@@ -92,8 +98,8 @@ const Businesses = () => {
                         </Box>
                     </Box>
                     <Box display="flex" alignItems="center">
-                        <Box display="flex" justifyContent="center" alignItems="center">
-                            <CreditCardOutlined sx={{ fontSize: '150px' }} />
+                        <Box display="flex" justifyContent="center" alignItems="center" mr='40px' mt='20px' bgcolor='rgba(255,255,255,0.4)' borderRadius='20px'>
+                            <CreditCardOutlined sx={{ fontSize: '150px', color:'#FFE3A2' }} />
                         </Box>
                         <Box>
                             <Typography variant="h6">Safe Payment</Typography>
@@ -105,8 +111,8 @@ const Businesses = () => {
                         </Box>
                     </Box>
                     <Box display="flex" alignItems="center">
-                        <Box display="flex" justifyContent="center" alignItems="center">
-                            <TrendingDownRounded sx={{ fontSize: '150px' }} />
+                        <Box display="flex" justifyContent="center" alignItems="center" mr='40px' mt='20px' bgcolor='rgba(255,255,255,0.4)' borderRadius='20px'>
+                            <TrendingDownRounded sx={{ fontSize: '150px',color:'#ADD59C' }} />
                         </Box>
                         <Box>
                             <Typography variant="h6">Reduces Hiring Risk</Typography>
@@ -116,8 +122,8 @@ const Businesses = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Box display="flex" justifyContent="center">
-                    <Box display="flex" flexDirection="column">
+                <Box display="flex" justifyContent="center" mt='150px'>
+                    <Box display="flex" flexDirection="column" mr='60px'>
                         <Typography variant="h6">UNIVERSITIES</Typography>
                         <Typography variant="h5" sx={{ whiteSpace: 'pre-line' }}>
                             {'We help clients attract, hire, and retain\n best in-class candidates worldwide.'}
@@ -128,9 +134,10 @@ const Businesses = () => {
                             }
                         </Typography>
                     </Box>
+                    <Image src={boyImage} alt='boy' width='430px' height='395px'/>
                 </Box>
-                <Box display="flex" justifyContent="center">
-                    <Box display="flex" flexDirection="column">
+                <Box display="flex" justifyContent="center" mt='150px'>
+                    <Box display="flex" flexDirection="column" mr='60px'>
                         <Typography variant="h5" sx={{ whiteSpace: 'pre-line' }}>
                             {'Drive value and growth'}
                         </Typography>
@@ -140,9 +147,10 @@ const Businesses = () => {
                             }
                         </Typography>
                     </Box>
+                    <Image src={laptopImage} alt='laptot' width='445px' height='420px'/>
                 </Box>
-                <Box display="flex" justifyContent="center">
-                    <Box display="flex" flexDirection="column">
+                <Box display="flex" justifyContent="center" mt='150px'>
+                    <Box display="flex" flexDirection="column" mr='60px'>
                         <Typography variant="h6">MEMBERSHIP</Typography>
                         <Typography variant="h5" sx={{ whiteSpace: 'pre-line' }}>
                             {'FOR BUSINESS'}
@@ -153,6 +161,7 @@ const Businesses = () => {
                             }
                         </Typography>
                     </Box>
+                    <Image src={guyImage} alt='guy' width='475px' height='495px'/>
                 </Box>
                 <Box display="flex" justifyContent="center">
                     <Box display="flex" flexDirection="column">

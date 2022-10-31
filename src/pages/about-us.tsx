@@ -35,7 +35,7 @@ const AboutUs = () => {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <Box>
-        <TopAppBar />
+        <TopAppBar bgColor="white"/>
         <Box
           component="div"
           id="intro"

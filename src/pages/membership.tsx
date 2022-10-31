@@ -1,10 +1,12 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import Head from 'next/head';
+import Image from 'next/image';
 import { Button } from 'react-ui-controller';
 import { ShaperFor } from '../controller/components/card/ShaperFor';
 import { Footer } from '../controller/components/surfaces/Footer/Footer';
 import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar';
+import girlLaptopImage from '../../public/assets/png/Membership/Group 306.png'
 
 const Membership = () => {
     return (
@@ -66,6 +68,7 @@ const Membership = () => {
                         </Typography>
                         <Button text="Suscribe" type="button" variant="contained" size="medium" />
                     </Box>
+                    <Image src={girlLaptopImage} alt='image' width='570' height='535'/>
                 </Box>
                 <Box display="flex" justifyContent="center" mt="10%">
                     <Box component="div" id="options" display="flex" flexDirection="row" justifyContent="center" gap="5%">
