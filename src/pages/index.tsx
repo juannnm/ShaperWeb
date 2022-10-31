@@ -22,7 +22,7 @@ import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar
 import { Footer } from '../controller/components/surfaces/Footer/Footer';
 import Image from 'next/image';
 import { Button } from 'react-ui-controller';
-import { EventList } from '../controller/components/DataDisplay/EventList/EventList';
+import { EventList } from '../controller/components/data-display/EventList/EventList';
 
 const Home: NextPage = () => {
     return (

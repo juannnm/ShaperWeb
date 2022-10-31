@@ -10,6 +10,7 @@ import {
     CreditCardOutlined,
     TrendingDownRounded,
 } from '@mui/icons-material';
+import { Footer } from '../controller/components/surfaces/Footer/Footer';
 
 const Businesses = () => {
     return (
@@ -22,9 +23,9 @@ const Businesses = () => {
                 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
-            <Box component="main">
+            <Box component="main" sx={{ background: 'linear-gradient(180deg, #050E3F 0%, #A54CDB 100%);' }}>
                 <TopAppBar />
-                <Box display="flex" justifyContent="center" mt="10%">
+                <Box display="flex" justifyContent="center" pt="10%">
                     <Box display="flex" flexDirection="column">
                         <Typography variant="h6">COMPANIES</Typography>
                         <Typography variant="h5">
@@ -115,6 +116,53 @@ const Businesses = () => {
                         </Box>
                     </Box>
                 </Box>
+                <Box display="flex" justifyContent="center">
+                    <Box display="flex" flexDirection="column">
+                        <Typography variant="h6">UNIVERSITIES</Typography>
+                        <Typography variant="h5" sx={{ whiteSpace: 'pre-line' }}>
+                            {'We help clients attract, hire, and retain\n best in-class candidates worldwide.'}
+                        </Typography>
+                        <Typography align="justify" sx={{ whiteSpace: 'pre-line' }}>
+                            {
+                                'Keep your students up to date on the latest job openings and find\n them a new, exciting role. By joining our network, your students will\n be exposed to some of the best employers in the industry.\n They can showcase their skills in confidential projects to promote\n them to their potential new employer and start a new career path.'
+                            }
+                        </Typography>
+                    </Box>
+                </Box>
+                <Box display="flex" justifyContent="center">
+                    <Box display="flex" flexDirection="column">
+                        <Typography variant="h5" sx={{ whiteSpace: 'pre-line' }}>
+                            {'Drive value and growth'}
+                        </Typography>
+                        <Typography align="justify" sx={{ whiteSpace: 'pre-line' }}>
+                            {
+                                'Benefit from innovative teaching and credentials that\n employers value - all with the flexibility and value they\n need for their first practice.'
+                            }
+                        </Typography>
+                    </Box>
+                </Box>
+                <Box display="flex" justifyContent="center">
+                    <Box display="flex" flexDirection="column">
+                        <Typography variant="h6">MEMBERSHIP</Typography>
+                        <Typography variant="h5" sx={{ whiteSpace: 'pre-line' }}>
+                            {'FOR BUSINESS'}
+                        </Typography>
+                        <Typography align="justify" sx={{ whiteSpace: 'pre-line' }}>
+                            {
+                                'Offers suppliers the opportunity to increase brand\n awareness and collaborate with a range of stakeholders\n to drive value and growth. Our membership offers\n several benefits for your business.'
+                            }
+                        </Typography>
+                    </Box>
+                </Box>
+                <Box display="flex" justifyContent="center">
+                    <Box display="flex" flexDirection="column">
+                        <Typography variant="h6">TESTIMONIAL</Typography>
+                        <Typography variant="h5" sx={{ whiteSpace: 'pre-line' }}>
+                            {'You still hesitate about studying with us?\n Check what they say about us'}
+                        </Typography>
+                    </Box>
+                </Box>
+                <Footer />
             </Box>
         </div>
     );
