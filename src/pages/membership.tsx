@@ -18,7 +18,7 @@ const Membership = () => {
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <Box component="main">
-                <TopAppBar />
+                <TopAppBar bgColor="white" />
                 <Box display="flex" justifyContent="center" mt="10%">
                     <Box display="flex" flexDirection="column">
                         <Typography variant="h6" fontWeight="bold">
