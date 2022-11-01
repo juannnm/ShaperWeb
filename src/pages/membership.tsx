@@ -1,13 +1,13 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import Head from 'next/head';
+import Image from 'next/image';
 import { Button } from 'react-ui-controller';
 import { ShaperFor } from '../controller/components/card/ShaperFor';
 import { Footer } from '../controller/components/surfaces/Footer/Footer';
 import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar';
 import PeopleMembership from '../../public/assets/png/membership/people.png';
 import GirlMembership from '../../public/assets/png/membership/girl.png';
-import Image from 'next/image';
 
 const Membership = () => {
     return (
