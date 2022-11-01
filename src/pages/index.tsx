@@ -79,19 +79,34 @@ const Home: NextPage = () => {
                         <ShaperFor
                             title="start at the"
                             titleBold={{ text: 'academy', color: 'blue' }}
-                            description="Enterate antess que nadie de los temas de negocios mas populares con nuestros cursos gratuitos"
+                            description={{
+                                text: 'Enterate antess que nadie de los temas de negocios mas populares con nuestros cursos gratuitos',
+                                color: '#737373',
+                            }}
+                            background="white"
+                            buttonColor="primary"
                         />
                         <Divider orientation="vertical" flexItem variant="middle" />
                         <ShaperFor
                             title="become a"
                             titleBold={{ text: 'tester', color: 'red' }}
-                            description="Crece como profesional compleando las certificaciones y agregando a tu perfil de Linkedin insignias reconocidas en la industria"
+                            description={{
+                                text: 'Crece como profesional compleando las certificaciones y agregando a tu perfil de Linkedin insignias reconocidas en la industria',
+                                color: '#737373',
+                            }}
+                            background="white"
+                            buttonColor="primary"
                         />
                         <Divider orientation="vertical" flexItem variant="middle" />
                         <ShaperFor
                             title="we help"
                             titleBold={{ text: 'companies', color: 'purple' }}
-                            description="Crece como profesional compleando las certificaciones y agregando a tu perfil de Linkedin insignias reconocidas en la industria  "
+                            description={{
+                                text: 'Crece como profesional compleando las certificaciones y agregando a tu perfil de Linkedin insignias reconocidas en la industria',
+                                color: 'primary',
+                            }}
+                            background="white"
+                            buttonColor="primary"
                         />
                     </Box>
                 </Box>
@@ -305,14 +320,22 @@ const Home: NextPage = () => {
                     <ShaperFor
                         title="shaper for"
                         titleBold={{ text: 'business', color: '#3C7E1F' }}
-                        description="If you are a company and would like to attract the best talent, this is your opportunity. Join Shaper Membership for business and enjoy the benefits."
-                        
+                        description={{
+                            text: 'If you are a company and would like to attract the best talent, this is your opportunity. Join Shaper Membership for business and enjoy the benefits.',
+                            color: 'primary',
+                        }}
+                        background="#ffffff"
+                        buttonColor="primary"
                     />
                     <ShaperFor
                         title="shaper for"
                         titleBold={{ text: 'universities', color: '#D2004A' }}
-                        description="Are you an educational institution and want to promote your students? Shaper for universities is your best option."
-                        
+                        description={{
+                            text: 'Are you an educational institution and want to promote your students? Shaper for universities is your best option.',
+                            color: 'primary',
+                        }}
+                        background="#ffffff"
+                        buttonColor="primary"
                     />
                 </Box>
                 <Box component="div" id="team" display="flex" flexDirection="row" justifyContent="center" m="150px">

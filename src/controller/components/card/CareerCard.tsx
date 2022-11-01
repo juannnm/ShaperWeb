@@ -30,13 +30,13 @@ export const CareerCard = (props: IProps) => {
                                     /monthly hours
                                 </Typography>
                             </Box>
-                            <Button text="Apply" type="button">
-                                Apply
-                            </Button>
+                            <Button text="Apply" type="button" variant="contained" />
                         </CardActions>
                     </Box>
                 </Box>,
             ]}
+            background="#ffffff"
+            height="inherit"
             width="450px"
             alignment="left"
         />

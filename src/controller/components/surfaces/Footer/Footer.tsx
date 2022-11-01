@@ -34,7 +34,15 @@ export const Footer = () => {
                         Register To Our Newsletter
                     </Typography>
                     <Box display="flex" alignItems="center">
-                        <TextField label="example@shaper.com" name="shaper-newsletter" type="text" variant="standard" autoComplete />
+                        <TextField
+                            label="example@shaper.com"
+                            name="shaper-newsletter"
+                            variant="standard"
+                            handleChange={() => {}}
+                            value=""
+                            // @ts-ignore
+                            type="text"
+                        />
                         <Button text="L" type="button" variant="contained" />
                     </Box>
                     <Box mt="20px" justifyContent="space-between" display="flex">
@@ -51,31 +59,31 @@ export const Footer = () => {
                         <Typography fontWeight="bold" color="white" variant="h5">
                             Last seen
                         </Typography>
-                        <LinkButton text="Motion Graphics" color="white" />
-                        <LinkButton text="UX/UI Design" color="white" />
-                        <LinkButton text="Business" color="white" />
-                        <LinkButton text="Nombre Curso" color="white" />
-                        <LinkButton text="Nombre Curso" color="white" />
+                        <LinkButton text="Motion Graphics" color="white" href="/" />
+                        <LinkButton text="UX/UI Design" color="white" href="/" />
+                        <LinkButton text="Business" color="white" href="/" />
+                        <LinkButton text="Nombre Curso" color="white" href="/" />
+                        <LinkButton text="Nombre Curso" color="white" href="/" />
                     </Box>
                     <Box display="flex" flexDirection="column" mr="30px">
                         <Typography fontWeight="bold" color="white" variant="h5">
                             Resources
                         </Typography>
-                        <LinkButton text="REVISAR" color="white" />
-                        <LinkButton text="REVISAR" color="white" />
-                        <LinkButton text="REVISAR" color="white" />
-                        <LinkButton text="REVISAR" color="white" />
-                        <LinkButton text="REVISAR" color="white" />
+                        <LinkButton text="REVISAR" color="white" href="/" />
+                        <LinkButton text="REVISAR" color="white" href="/" />
+                        <LinkButton text="REVISAR" color="white" href="/" />
+                        <LinkButton text="REVISAR" color="white" href="/" />
+                        <LinkButton text="REVISAR" color="white" href="/" />
                     </Box>
                     <Box display="flex" flexDirection="column">
                         <Typography fontWeight="bold" color="white" variant="h5">
                             Shaper
                         </Typography>
-                        <LinkButton text="Academy" color="white" />
-                        <LinkButton text="Certified Careers" color="white" />
-                        <LinkButton text="Companies" color="white" />
-                        <LinkButton text="About Us" color="white" />
-                        <LinkButton text="Contact Us" color="white" />
+                        <LinkButton text="Academy" color="white" href="/" />
+                        <LinkButton text="Certified Careers" color="white" href="/" />
+                        <LinkButton text="Companies" color="white" href="/" />
+                        <LinkButton text="About Us" color="white" href="/" />
+                        <LinkButton text="Contact Us" color="white" href="/" />
                     </Box>
                 </Box>
             </Box>
