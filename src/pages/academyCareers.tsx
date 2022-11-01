@@ -9,7 +9,7 @@ import cellphoneImage from '../../public/assets/png/Academy/imagen.png';
 import { CareerCard } from '../controller/components/card/CareerCard';
 import Head from 'next/head';
 import { IsologotipoShaperBlue } from '../../public/assets/svg/logo';
-import { color } from '@mui/system';
+
 
 const Careers: NextPage = () => {
     return (

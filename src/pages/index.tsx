@@ -34,7 +34,7 @@ const Home: NextPage = () => {
                 <Box
                     sx={{
                         width: '100%',
-                        height: '600px',
+                        height: '650px',
                         position: 'relative',
                         background: 'linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706)',
                         backgroundSize: '600% 100%',
@@ -45,32 +45,22 @@ const Home: NextPage = () => {
                             '100%': { backgroundPosition: '100%' },
                         },
                     }}
-                    mt="10%"
                 >
                     <Typography variant="h2" position="absolute" top={200} left={200} fontWeight="bold" color="white">
                         {' '}
                         Transformation by Growth.
                     </Typography>
                 </Box>
-                <Box
-                    component="div"
-                    id="Companies"
-                    sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        textAlign: 'center',
-                        m: '40px',
-                    }}
-                >
+                <Box component="div" id="Companies" display="flex" flexDirection="column" justifyContent="center" mt="10%" alignItems="center">
                     <Typography variant="h3" color="primary">
                         Helping clients worlwide
                     </Typography>
-                    <Box display="flex" flexDirection="row" justifyContent="space-evenly" alignContent="center" gap={1} mt={4}>
-                        <MicrosoftLogo style={{ fontSize: '100px' }} />
-                        <GoogleLogo style={{ fontSize: '100px' }} />
-                        <SpotifyLogo style={{ fontSize: '100px' }} />
-                        <TeslaLogo style={{ fontSize: '100px' }} />
-                        <TikTokLogo style={{ fontSize: '100px' }} />
+                    <Box display="flex" flexDirection="row" justifyContent="space-evenly" alignContent="center" gap={5} mt="4%">
+                        <MicrosoftLogo style={{ fontSize: '150px' }} />
+                        <GoogleLogo style={{ fontSize: '150px' }} />
+                        <SpotifyLogo style={{ fontSize: '150px' }} />
+                        <TeslaLogo style={{ fontSize: '150px' }} />
+                        <TikTokLogo style={{ fontSize: '150px' }} />
                         {/* <MetaLogo style={{ fontSize: '100px' }} /> */}
                     </Box>
                 </Box>
@@ -135,7 +125,7 @@ const Home: NextPage = () => {
                         alignItems: 'center',
                     }}
                 >
-                    <Box display="flex" flexDirection="row" alignItems="center" mt="10%">
+                    <Box display="flex" flexDirection="row" alignItems="center" mt="10%" gap={4}>
                         <Box display="flex" flexDirection="column">
                             <Typography variant="h6" color="secondary" fontWeight="bold">
                                 LEARN AND GROW
