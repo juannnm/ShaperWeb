@@ -12,11 +12,24 @@ const theme = createTheme({
         },
     },
     typography: {
+        fontFamily: 'UbuntuRegular, UbuntuMedium, UbuntuBold, RobotoRegular, RobotoMedium',
         h3: {
-            fontWeight: 'bold',
+            fontFamily: 'UbuntuBold',
+        },
+        h4: {
+            fontFamily: 'UbuntuBold',
+        },
+        h5: {
+            fontFamily: 'UbuntuRegular',
         },
         h6: {
             fontWeight: 'normal',
+        },
+        body1: {
+            fontFamily: 'RobotoRegular',
+        },
+        body2: {
+            fontFamily: 'RobotoRegular',
         },
         subtitle1: {
             fontWeight: 'bold',

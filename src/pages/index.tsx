@@ -225,14 +225,16 @@ const Home: NextPage = () => {
                 </Box>
                 <Box component="div" id="WatchandLearn" display="flex" flexDirection="row" justifyContent="center" mt="10%">
                     <Image src={TabletImage} alt="image" width="436px" height="271px" />
-                    <Box display="flex" flexDirection="column" ml="5%" justifyContent="flex-start" mt="0">
-                        <Typography variant="h5" fontWeight="bold" color="secondary">
-                            WATCH AND LEARN
-                        </Typography>
-                        <Typography variant="h4" fontWeight="bold" color="primary">
-                            Enjoy our online
-                            <br /> courses for free
-                        </Typography>
+                    <Box display="flex" flexDirection="column" ml="5%" justifyContent="space-between" mt="0">
+                        <Box>
+                            <Typography variant="h5" fontWeight="bold" color="secondary">
+                                WATCH AND LEARN
+                            </Typography>
+                            <Typography variant="h4" fontWeight="bold" color="primary">
+                                Enjoy our online
+                                <br /> courses for free
+                            </Typography>
+                        </Box>
                         <Typography variant="body1" color="#737373">
                             Now you can learn with the best experts in the
                             <br /> sector without schedule and whenever you want,
