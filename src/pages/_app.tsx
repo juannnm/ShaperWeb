@@ -4,11 +4,11 @@ import { CssBaseline, ThemeProvider } from '@mui/material';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-//        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>
             <CssBaseline>
                 <Component {...pageProps} />
             </CssBaseline>
- //       </ThemeProvider>
+        </ThemeProvider>
     );
 }
 

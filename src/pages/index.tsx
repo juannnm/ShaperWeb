@@ -301,16 +301,18 @@ const Home: NextPage = () => {
                     </Box>
                     <Image src={MemberImage} alt="Member" width="460px" height="411px" />
                 </Box>
-                <Box component="div" id="options" display="flex" flexDirection="row" justifyContent="center" gap="5%">
+                <Box component="div" id="options" display="flex" flexDirection="row" justifyContent="center" gap="5%" mb="10%">
                     <ShaperFor
                         title="shaper for"
                         titleBold={{ text: 'business', color: '#3C7E1F' }}
                         description="If you are a company and would like to attract the best talent, this is your opportunity. Join Shaper Membership for business and enjoy the benefits."
+                        
                     />
                     <ShaperFor
                         title="shaper for"
                         titleBold={{ text: 'universities', color: '#D2004A' }}
-                        description="Are you an educational institution and want to promote your students? Shaper for universities is your best option. "
+                        description="Are you an educational institution and want to promote your students? Shaper for universities is your best option."
+                        
                     />
                 </Box>
                 <Box component="div" id="team" display="flex" flexDirection="row" justifyContent="center" m="150px">

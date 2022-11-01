@@ -19,7 +19,7 @@ export const Footer = () => {
                 },
             }}
         >
-            <Box display="flex" flexDirection="column" textAlign="center" p="35px 25%">
+            <Box display="flex" flexDirection="column" alignItems="center" textAlign="center" p="35px 25%" justifyContent="center" gap={2}>
                 <Typography variant="h3" color="white">
                     We strive to deliver and ensure achivements beyond expected results.
                 </Typography>
@@ -33,8 +33,8 @@ export const Footer = () => {
                     <Typography variant="h6" color="white" fontWeight="bold">
                         Register To Our Newsletter
                     </Typography>
-                    <Box>
-                        <TextField label="example@shaper.com" name="shaper-newsletter" type="text" />
+                    <Box display="flex" alignItems="center">
+                        <TextField label="example@shaper.com" name="shaper-newsletter" type="text" variant="standard" autoComplete />
                         <Button text="L" type="button" variant="contained" />
                     </Box>
                     <Box mt="20px" justifyContent="space-between" display="flex">
