@@ -45,6 +45,7 @@ const Home: NextPage = () => {
                             '100%': { backgroundPosition: '100%' },
                         },
                     }}
+                    mt="10%"
                 >
                     <Typography variant="h2" position="absolute" top={200} left={200} fontWeight="bold" color="white">
                         {' '}
@@ -74,7 +75,7 @@ const Home: NextPage = () => {
                     </Box>
                 </Box>
                 n
-                <Box component="section" id="paths" sx={{ m: '50px' }}>
+                <Box component="section" id="paths" mt="10%">
                     <Box display="flex" flexDirection="row" borderRadius="20px" justifyContent="center">
                         <ShaperFor
                             title="start at the"
@@ -103,7 +104,7 @@ const Home: NextPage = () => {
                             titleBold={{ text: 'companies', color: 'purple' }}
                             description={{
                                 text: 'Crece como profesional compleando las certificaciones y agregando a tu perfil de Linkedin insignias reconocidas en la industria',
-                                color: 'primary',
+                                color: '#737373',
                             }}
                             background="white"
                             buttonColor="primary"
@@ -111,17 +112,7 @@ const Home: NextPage = () => {
                     </Box>
                 </Box>
                 {/* Here it should have a Calendar*/}
-                <Box
-                    component="section"
-                    id="events"
-                    sx={{
-                        m: '50px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                    }}
-                >
+                <Box component="section" id="events" display="flex" flexDirection="column" justifyContent="center" alignItems="center" mt="10%">
                     <Typography variant="h6" sx={{ fontWeight: 'bold' }} color="secondary">
                         Events
                     </Typography>
@@ -144,8 +135,8 @@ const Home: NextPage = () => {
                         alignItems: 'center',
                     }}
                 >
-                    <Box display="flex" flexDirection="row" alignItems="center">
-                        <Box display="flex" flexDirection="column" mr="60px">
+                    <Box display="flex" flexDirection="row" alignItems="center" mt="10%">
+                        <Box display="flex" flexDirection="column">
                             <Typography variant="h6" color="secondary" fontWeight="bold">
                                 LEARN AND GROW
                             </Typography>
@@ -205,7 +196,7 @@ const Home: NextPage = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Box component="div" id="how-it-work" display="flex" flexDirection="column">
+                <Box component="div" id="how-it-work" display="flex" flexDirection="column" mt="10%">
                     <Box textAlign="center">
                         <Typography variant="h5" fontWeight="bold" color="secondary">
                             HOW IT WORKS
@@ -242,7 +233,7 @@ const Home: NextPage = () => {
                         {/*COMPONENTE NUEVO O ALGO QUE YA EXISTE, NO LO SE, PREGUNTAR A NICO*/}
                     </Box>
                 </Box>
-                <Box component="div" id="WatchandLearn" display="flex" flexDirection="row" justifyContent="center">
+                <Box component="div" id="WatchandLearn" display="flex" flexDirection="row" justifyContent="center" mt="10%">
                     <Image src={TabletImage} alt="image" width="436px" height="271px" />
                     <Box display="flex" flexDirection="column" ml="5%" justifyContent="flex-start" mt="0">
                         <Typography variant="h5" fontWeight="bold" color="secondary">
