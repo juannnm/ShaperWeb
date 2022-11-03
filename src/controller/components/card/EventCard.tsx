@@ -13,30 +13,19 @@ export const EventCard = (props: IProps) => {
     return (
         <Card
             background="white"
+            // Arreglar padding tarjeta
             description={[
-                <Box key="container" sx={{ display: 'flex', flexDirection: 'row' }}>
-                    <Box
-                        sx={{
-                            width: '128px',
-                            height: '128px',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'center',
-                            bgcolor: props.bgcolor,
-                            borderRadius: '20% 0 0 20%',
-                        }}
-                    >
-                        <Typography variant="h3">{props.dateNumber}</Typography>
-                        <Typography variant="h5">{props.dateMonth}</Typography>
+                <Box key="container" display="flex" alignItems="center" gap="15%">
+                    <Box sx={{ backgroundColor: '#ccc' }}>
+                        <Typography variant="h4">{props.dateNumber}</Typography>
+                        <Typography variant="h6">{props.dateMonth}</Typography>
                     </Box>
                     <Box key="container" sx={{ textAlign: 'left' }}>
-                        <Typography variant="h4">props.title</Typography>
-                        <Typography variant="body1">props.description</Typography>
+                        <Typography variant="h5">{props.title}</Typography>
+                        <Typography variant="body1">{props.description}</Typography>
                     </Box>
                 </Box>,
             ]}
-            height="130px"
-            width="500px"
         />
     );
 };

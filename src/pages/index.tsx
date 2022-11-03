@@ -17,12 +17,14 @@ import { Footer } from '../controller/components/surfaces/Footer/Footer';
 import Image from 'next/image';
 import { Button } from 'react-ui-controller';
 import { EventList } from '../controller/components/data-display/EventList/EventList';
+import { CareerCard } from '../controller/components/card/CareerCard';
 
 const Home: NextPage = () => {
     return (
         <div>
             <Head>
                 <title>Shaper</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
@@ -110,8 +112,7 @@ const Home: NextPage = () => {
                         Community meetings
                     </Typography>
                     <Box>
-                        {/*<EventList/>*/}
-                        <Box>{/*HERE GOES THE CALENDAR*/}</Box>
+                        <EventList />
                     </Box>
                 </Box>
                 <Box
@@ -220,7 +221,16 @@ const Home: NextPage = () => {
                                 </Typography>
                             </Box>
                         </Box>
+
                         {/*COMPONENTE NUEVO O ALGO QUE YA EXISTE, NO LO SE, PREGUNTAR A NICO*/}
+                    </Box>
+                    <Box>
+                        {' '}
+                        <CareerCard
+                            title="Full-time Career"
+                            description="Our full-time career is designed to fully support you and guide you through a detailed process that will give you all the answers you are looking for to be the best in your new profession."
+                            hours="80"
+                        />
                     </Box>
                 </Box>
                 <Box component="div" id="WatchandLearn" display="flex" flexDirection="row" justifyContent="center" mt="10%">
