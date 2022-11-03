@@ -148,7 +148,7 @@ export const TopAppBar = ({ bgColor }: IProps) => {
             logo={{
                 component: (
                     <Link href="/">
-                        <LogoShaperBlue style={{ fontSize: '150px', cursor: 'pointer' }} />
+                        <LogoShaperBlue style={{ fontSize: '100px', cursor: 'pointer' }} />
                     </Link>
                 ),
                 isSVG: true,

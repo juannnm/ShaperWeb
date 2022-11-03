@@ -1,4 +1,4 @@
-import { List, ListItem } from '@mui/material';
+import { Box, List, ListItem } from '@mui/material';
 import { EventCard } from '../../card/EventCard';
 
 export const EventList = () => {
@@ -41,12 +41,20 @@ export const EventList = () => {
     ];
 
     return (
-        <List>
-            {activities.map((d, i) => (
-                <ListItem key={i}>
-                    <EventCard bgcolor={d.bgcolor} dateNumber={d.dateNumber} dateMonth={d.dateMonth} title={d.title} description={d.description} />
-                </ListItem>
-            ))}
-        </List>
+        <Box sx={{ overflowY: 'scroll', height: '300px' }}>
+            <List>
+                {activities.map((d, i) => (
+                    <ListItem key={i}>
+                        <EventCard
+                            bgcolor={d.bgcolor}
+                            dateNumber={d.dateNumber}
+                            dateMonth={d.dateMonth}
+                            title={d.title}
+                            description={d.description}
+                        />
+                    </ListItem>
+                ))}
+            </List>
+        </Box>
     );
 };

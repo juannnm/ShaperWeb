@@ -21,7 +21,7 @@ export const Footer = () => {
         >
             <Box display="flex" flexDirection="column" alignItems="center" textAlign="center" p="35px 25%" justifyContent="center" gap={2}>
                 <Typography variant="h3" color="white">
-                    We strive to deliver and ensure achivements beyond expected results.
+                    We strive to deliver and ensure achivements beyond expected results
                 </Typography>
                 <Button text="Register now" type="button" variant="contained" />
             </Box>
