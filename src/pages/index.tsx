@@ -17,14 +17,12 @@ import { Footer } from '../controller/components/surfaces/Footer/Footer';
 import Image from 'next/image';
 import { Button } from 'react-ui-controller';
 import { EventList } from '../controller/components/data-display/EventList/EventList';
-import { CareerCard } from '../controller/components/card/CareerCard';
 
 const Home: NextPage = () => {
     return (
         <div>
             <Head>
                 <title>Shaper</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
@@ -63,9 +61,10 @@ const Home: NextPage = () => {
                         <SpotifyLogo style={{ fontSize: '150px' }} />
                         <TeslaLogo style={{ fontSize: '150px' }} />
                         <TikTokLogo style={{ fontSize: '150px' }} />
+                        {/* <MetaLogo style={{ fontSize: '100px' }} /> */}
                     </Box>
                 </Box>
-
+                n
                 <Box component="section" id="paths" mt="10%">
                     <Box display="flex" flexDirection="row" borderRadius="20px" justifyContent="center">
                         <ShaperFor
@@ -111,7 +110,7 @@ const Home: NextPage = () => {
                         Community meetings
                     </Typography>
                     <Box>
-                        {/*<EventList/>*/}
+                        <EventList/>
                         <Box>{/*HERE GOES THE CALENDAR*/}</Box>
                     </Box>
                 </Box>
@@ -141,7 +140,7 @@ const Home: NextPage = () => {
                             }
                         </Typography>
                     </Box>
-                    <Box display="flex" flexDirection="row" alignItems="center" mr="20%" ml="20%" gap="5%" mt="2%">
+                    <Box display="flex" flexDirection="row" alignItems="center" mr="10%" ml="10%" gap="5%" mt="2%">
                         <Box>
                             <Box display="flex" gap={1}>
                                 <Typography variant="subtitle1" fontWeight="bold" color="secondary">
@@ -221,14 +220,7 @@ const Home: NextPage = () => {
                                 </Typography>
                             </Box>
                         </Box>
-                    </Box>
-                    <Box>
-                        {' '}
-                        <CareerCard
-                            title="Full-time Career"
-                            description="Our full-time career is designed to fully support you and guide you through a detailed process that will give you all the answers you are looking for to be the best in your new profession."
-                            hours="80"
-                        />
+                        {/*COMPONENTE NUEVO O ALGO QUE YA EXISTE, NO LO SE, PREGUNTAR A NICO*/}
                     </Box>
                 </Box>
                 <Box component="div" id="WatchandLearn" display="flex" flexDirection="row" justifyContent="center" mt="10%">
@@ -248,12 +240,7 @@ const Home: NextPage = () => {
                             <br /> sector without schedule and whenever you want,
                             <br /> no strings-attached.
                         </Typography>
-                        <Button
-                            text="Watch now"
-                            type="button"
-                            variant="contained"
-                            padding="16px 48px"
-                        />
+                        <Button text="Watch now" type="button" variant="contained" />
                     </Box>
                 </Box>
                 <Box component="div" id="services" display="flex" flexDirection="column" m="150px">
