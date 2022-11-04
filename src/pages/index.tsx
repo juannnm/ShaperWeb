@@ -63,10 +63,9 @@ const Home: NextPage = () => {
                         <SpotifyLogo style={{ fontSize: '150px' }} />
                         <TeslaLogo style={{ fontSize: '150px' }} />
                         <TikTokLogo style={{ fontSize: '150px' }} />
-                        {/* <MetaLogo style={{ fontSize: '100px' }} /> */}
                     </Box>
                 </Box>
-                n
+
                 <Box component="section" id="paths" mt="10%">
                     <Box display="flex" flexDirection="row" borderRadius="20px" justifyContent="center">
                         <ShaperFor
@@ -221,8 +220,6 @@ const Home: NextPage = () => {
                                 </Typography>
                             </Box>
                         </Box>
-
-                        {/*COMPONENTE NUEVO O ALGO QUE YA EXISTE, NO LO SE, PREGUNTAR A NICO*/}
                     </Box>
                     <Box>
                         {' '}

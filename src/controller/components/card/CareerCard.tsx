@@ -26,7 +26,7 @@ export const CareerCard = (props: IProps) => {
                                 <Typography component="span" color="primary" fontWeight="bold">
                                     {props.hours}
                                 </Typography>{' '}
-                                <Typography component="span" color="#737373">
+                                <Typography component="span" color="#737373" >
                                     /monthly hours
                                 </Typography>
                             </Box>
@@ -39,6 +39,7 @@ export const CareerCard = (props: IProps) => {
             height="inherit"
             width="450px"
             alignment="left"
+            
         />
     );
 };

@@ -151,7 +151,6 @@ export const TopAppBar = ({ bgColor }: IProps) => {
                         <LogoShaperBlue style={{ fontSize: '100px', cursor: 'pointer' }} />
                     </Link>
                 ),
-                isSVG: true,
             }}
             boxShadow="0px 0px 0px 0px"
             horizontalPadding="10%"

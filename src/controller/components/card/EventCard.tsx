@@ -15,7 +15,7 @@ export const EventCard = (props: IProps) => {
             background="white"
             // Arreglar padding tarjeta
             description={[
-                <Box key="container" display="flex" alignItems="center" gap="15%">
+                <Box key="container" display="flex" alignItems="center" >
                     <Box sx={{ backgroundColor: '#ccc' }}>
                         <Typography variant="h4">{props.dateNumber}</Typography>
                         <Typography variant="h6">{props.dateMonth}</Typography>
@@ -26,6 +26,9 @@ export const EventCard = (props: IProps) => {
                     </Box>
                 </Box>,
             ]}
+            padding="0px 0px 0px 0px"
+            
+            
         />
     );
 };

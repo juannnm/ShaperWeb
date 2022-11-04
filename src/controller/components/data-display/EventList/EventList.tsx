@@ -51,6 +51,7 @@ export const EventList = () => {
                             dateMonth={d.dateMonth}
                             title={d.title}
                             description={d.description}
+                            
                         />
                     </ListItem>
                 ))}
