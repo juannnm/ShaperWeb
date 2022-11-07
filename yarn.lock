@@ -1369,20 +1369,10 @@
   "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.3.2.tgz"
   "version" "12.3.2"
 
-"@next/swc-linux-x64-gnu@13.0.0":
-  "integrity" "sha512-VSQwTX9EmdbotArtA1J67X8964oQfe0xHb32x4tu+JqTR+wOHyG6wGzPMdXH2oKAp6rdd7BzqxUXXf0J+ypHlw=="
-  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.0.0.tgz"
-  "version" "13.0.0"
-
-"@next/swc-linux-x64-musl@12.3.2":
-  "integrity" "sha512-o+GifBIQ2K+/MEFxHsxUZoU3bsuVFLXZYWd3idimFHiVdDCVYiKsY6mYMmKDlucX+9xRyOCkKL9Tjf+3tuXJpw=="
-  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-12.3.2.tgz"
-  "version" "12.3.2"
-
-"@next/swc-linux-x64-musl@13.0.0":
-  "integrity" "sha512-xBCP0nnpO0q4tsytXkvIwWFINtbFRyVY5gxa1zB0vlFtqYR9lNhrOwH3CBrks3kkeaePOXd611+8sjdUtrLnXA=="
-  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.0.0.tgz"
-  "version" "13.0.0"
+"@next/swc-win32-x64-msvc@13.0.2":
+  "integrity" "sha512-fA9uW1dm7C0mEYGcKlbmLcVm2sKcye+1kPxh2cM4jVR+kQQMtHWsjIzeSpe2grQLSDan06z4n6hbr8b1c3hA8w=="
+  "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-13.0.2.tgz"
+  "version" "13.0.2"
 
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
@@ -3257,10 +3247,10 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react-ui-controller@^0.0.31":
-  "integrity" "sha512-yqdggHOkrIX+a+oAW9ngcs2+MudmRCeG9i+Q5ublbgResAc4ZORyvqbqf66GBNatiexmqeU/38lDoJuhq7unNQ=="
-  "resolved" "https://registry.npmjs.org/react-ui-controller/-/react-ui-controller-0.0.31.tgz"
-  "version" "0.0.31"
+"react-ui-controller@^0.0.37":
+  "integrity" "sha512-CJJiDFPBG7kSo3EA6ZGxh2EJPW4FCxvytYbr5HZtueLb52HEuMX2+Amz5IIJL1wNfajVnafdO+lm1X+aLtSL+g=="
+  "resolved" "https://registry.npmjs.org/react-ui-controller/-/react-ui-controller-0.0.37.tgz"
+  "version" "0.0.37"
   dependencies:
     "@emotion/react" "^11.10.5"
     "@emotion/styled" "^11.10.5"
