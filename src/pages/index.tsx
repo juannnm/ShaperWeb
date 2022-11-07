@@ -80,20 +80,22 @@ const Home: NextPage = () => {
           <Typography
             variant="h1"
             position="absolute"
-            top={250}
-            left={200}
+            top={{xs:100, md:80, lg:250}}
+            left={{xs:55, md:150 ,lg:200}}
             fontWeight="bold"
             color="white"
             textAlign="center"
+            //fontSize={{xs:40, md:128, lg:128}}
           >
             {" "}
             Transformation
             <br /> by Growth.
           </Typography>
-          <Box sx={{ position: "absolute", top: "100px", right: "200px" }}>
+          <Box sx={{ position: "absolute", top: {xs:"300px", md:"300px",lg:"100px"}, right: {md:"170px" ,lg:"200px"} }}>
             <Image
               src={Characters}
               alt="group"
+              
               height="504.5px"
               width="621.5px"
             />
@@ -116,7 +118,8 @@ const Home: NextPage = () => {
             flexDirection="row"
             justifyContent="space-evenly"
             alignContent="center"
-            gap={5}
+            flexWrap='wrap'
+            gap={{xs:0 ,lg:5}}
             mt="4%"
           >
             <MicrosoftLogo style={{ fontSize: "150px" }} />
@@ -127,11 +130,10 @@ const Home: NextPage = () => {
             {/* <MetaLogo style={{ fontSize: '100px' }} /> */}
           </Box>
         </Box>
-        n
         <Box component="section" id="paths" mt="10%">
           <Box
             display="flex"
-            flexDirection="row"
+            flexDirection={{xs:"column", lg:"row"}}
             borderRadius="20px"
             justifyContent="center"
           >
