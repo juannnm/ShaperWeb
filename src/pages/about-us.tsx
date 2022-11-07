@@ -253,7 +253,7 @@ const AboutUs = () => {
                         <br /> lacus dui. convallis. malesuada sed ac{' '}
                     </Typography>
                     <Box position="relative" height="400px">
-                        <Image src={GroupImage} alt="people" layout="fill" objectFit='contain' />
+                        <Image src={GroupImage} alt="people" layout="fill" objectFit="contain" />
                     </Box>
                 </Box>
                 <Footer />
