@@ -23,7 +23,7 @@ export const Footer = () => {
                 <Typography variant="h3" color="white">
                     We strive to deliver and ensure achivements beyond expected results
                 </Typography>
-                <Button text="Register now" type="button" variant="contained" />
+                <Button text="Register now" type="button" variant="contained" padding="16px 48px" />
             </Box>
 
             <Divider />

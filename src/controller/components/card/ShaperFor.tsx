@@ -14,23 +14,29 @@ export const ShaperFor = (props: IProps) => {
     return (
         <Card
             background={props.background}
-            description={[
-                <Box key="container" display="flex" flexDirection="column" height="225px" gap="2%">
-                    <Typography key="title" variant="h5" sx={{ textAlign: 'center', color: props.titleBold.color }}>
-                        {props.title && props.title.toUpperCase()}
-                    </Typography>
-                    <Typography key="title" variant="h4" sx={{ textAlign: 'center', fontWeight: 'bold', color: props.titleBold.color }}>
-                        {props.titleBold && props.titleBold.text.toUpperCase()}
-                    </Typography>
-                    <Typography key="paragraph" variant="body1" sx={{ textAlign: 'center' }} color={props.description.color}>
-                        {props.description.text}
-                    </Typography>
-                </Box>,
-            ]}
+            description={{
+                components: (
+                    <Box key="container" display="flex" flexDirection="column" height="250px" gap="2%">
+                        <Box>
+                            <Typography key="title" variant="h5" sx={{ textAlign: 'center', color: props.titleBold.color }}>
+                                {props.title && props.title.toUpperCase()}
+                            </Typography>
+                            <Typography key="title" variant="h4" sx={{ textAlign: 'center', fontWeight: 'bold', color: props.titleBold.color }}>
+                                {props.titleBold && props.titleBold.text.toUpperCase()}
+                            </Typography>
+                        </Box>
+                        <Typography key="paragraph" variant="body1" sx={{ textAlign: 'center' }} color={props.description.color}>
+                            {props.description.text}
+                        </Typography>
+                    </Box>
+                ),
+                padding: '0px',
+            }}
             direction="column"
-            width="300px"
-            actions={<Button text="Learn More" type="button" key="LearnMore" variant="contained" color={props.buttonColor} />}
-            height="inherit"
+            width="400px"
+            actions={<Button text="Learn More" type="button" key="LearnMore" variant="contained" color={props.buttonColor} padding="16px 48px" />}
+            boxShadow="0px 2 12 0px #00000040"
+            padding="24px"
         />
     );
 };

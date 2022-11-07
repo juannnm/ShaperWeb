@@ -6,9 +6,9 @@ import type { NextPage } from 'next';
 import { Button } from 'react-ui-controller';
 import Image from 'next/image';
 import groupImage from '../../public/assets/png/Academy/Group of Guys.png';
-import girlImage from '../../public/assets/png/Academy/Mask group.png';
-import phoneImage from '../../public/assets/png/Academy/Mask group 2.png';
-import graphicImage from '../../public/assets/png/Academy/Mask group 3.png';
+import girlImage from '../../public/assets/png/Academy/Mask group.jpg';
+import phoneImage from '../../public/assets/png/Academy/Mask group 1.jpg';
+import graphicImage from '../../public/assets/png/Academy/Mask group 2.jpg';
 import girl2Image from '../../public/assets/png/Academy/foto 2.png';
 import { InterestCard } from '../controller/components/card/InterestCard';
 import { CourseCard } from '../controller/components/card/CourseCard';
@@ -40,20 +40,20 @@ const Courses: NextPage = () => {
                         <Typography variant="h6" fontWeight="bold" color="secondary">
                             COURSES
                         </Typography>
-                        <Typography variant="h4" fontWeight="bold" color="primary">
+                        <Typography variant="h3" fontWeight="bold" color="primary">
                             We&apos;re transforming education from inside-out
                         </Typography>
-                        <Typography variant="body1" color="primary" mb="1%">
+                        <Typography variant="h6" color="primary" mb="1%">
                             You can watch every online course for free no strings-attached
                         </Typography>
-                        <Button text="Start Now" type="button" variant="contained" />
+                        <Button text="Start Now" type="button" variant="contained" padding="16px 48px" />
                     </Box>
                     <Image src={groupImage} alt="group" width="865.75" height="492.27" />
                 </Box>
-                <Box id="characteristics" component="div" justifyContent="center">
-                    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-                        <Image src={girlImage} alt="girl" width="305.78" height="237.85" />
-                        <Box justifyContent="center" alignItems="center">
+                <Box id="characteristics" component="div" display="flex" flexDirection="column" gap={4}>
+                    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" gap="2%">
+                        <Image src={girlImage} alt="girl" width="300px" height="237.85" />
+                        <Box display="flex" flexDirection="column" width="500px">
                             <Typography variant="h5" color="primary" fontWeight="bold">
                                 In Shaper Academy you can enjoy
                             </Typography>
@@ -62,10 +62,10 @@ const Courses: NextPage = () => {
                             </Typography>
                         </Box>
                     </Box>
-                    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-                        <Image src={phoneImage} alt="phone" width="305.78" height="237.85" />
-                        <Box justifyContent="center" alignItems="center">
-                            <Typography variant="h5" color="primary" fontWeight="bold" sx={{ whiteSpace: 'pre-line' }}>
+                    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" gap="2%">
+                        <Image src={phoneImage} alt="phone" width="300px" height="237.85" />
+                        <Box display="flex" flexDirection="column" width="500px">
+                            <Typography variant="h5" color="primary" fontWeight="bold" sx={{ whiteSpace: 'pre-line' }} width="500px">
                                 {' You will be able to learn the most\n useful methods and techniques'}
                             </Typography>
                             <Typography variant="body1" color="#737373" sx={{ whiteSpace: 'pre-line' }}>
@@ -73,9 +73,9 @@ const Courses: NextPage = () => {
                             </Typography>
                         </Box>
                     </Box>
-                    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-                        <Image src={graphicImage} alt="graphic" width="305.78" height="237.85" />
-                        <Box justifyContent="center" alignItems="center">
+                    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" gap="2%">
+                        <Image src={graphicImage} alt="graphic" width="300px" height="237.85" />
+                        <Box display="flex" flexDirection="column" width="500px">
                             <Typography variant="h5" color="primary" fontWeight="bold">
                                 We offer courses in different areas
                             </Typography>
@@ -165,12 +165,12 @@ const Courses: NextPage = () => {
                                 ' The Shaper program offers you the opportunity to work\nwith top companies. You can be tested by multiple\nemployers, as many as you have time to prove your\nskills. Our membership is designed to help you grow\nand succeed.'
                             }
                         </Typography>
-                        <Button text="Suscribe" type="button" variant="contained" />
+                        <Button text="Suscribe" type="button" variant="contained" padding="16px 48px" />
                     </Box>
                     <Image src={girl2Image} alt="girl" width="422px" height="368px" />
                 </Box>
                 <Box component="div" display="flex" justifyContent="center" m="100px 0">
-                    <InterestCard title="Are you interested in looking at study careers?" button="Apply" />
+                    <InterestCard title={'Are you interested in\nlooking at study careers?'} button="Apply" />
                 </Box>
                 <Footer />
             </Box>

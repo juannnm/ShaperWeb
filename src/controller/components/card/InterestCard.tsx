@@ -12,18 +12,24 @@ export const InterestCard = (props: IProps) => {
     return (
         <Card
             background="white"
-            description={[
-                <Box key="container" display="flex" flexDirection="row" justifyContent="space-between" alignItems="center">
-                    <Birrete style={{ fontSize: '100px', m: '35px' }} />
-                    <Typography key="text" variant="h4" textAlign="center">
-                        {props.title}
-                    </Typography>
-                </Box>,
-            ]}
-            actions={<Button key="button" type="button" variant="contained" text={props.button} size="large" />}
+            header={{ title: <Birrete style={{ fontSize: '100px', m: '35px' }} /> }}
+            description={{
+                components: (
+                    <Box key="container" display="flex" flexDirection="row" alignItems="center">
+                        <Typography key="text" variant="h5" textAlign="center" fontWeight="bold" sx={{ whiteSpace: 'pre-line' }}>
+                            {props.title}
+                        </Typography>
+                    </Box>
+                ),
+                padding: '16px',
+            }}
+            actions={<Button key="button" type="button" variant="contained" text={props.button} size="large" padding="16px 48px" />}
             height="120px"
             width="60vw"
             direction="row"
+            elevated={false}
+            boxShadow="0px 2px 11px 0px #00000040;
+"
         />
     );
 };

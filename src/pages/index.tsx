@@ -140,7 +140,7 @@ const Home: NextPage = () => {
                             }
                         </Typography>
                     </Box>
-                    <Box display="flex" flexDirection="row" alignItems="center" mr="10%" ml="10%" gap="5%" mt="2%">
+                    <Box display="flex" flexDirection="row" alignItems="center" mr="20%" ml="20%" gap="5%" mt="2%">
                         <Box>
                             <Box display="flex" gap={1}>
                                 <Typography variant="subtitle1" fontWeight="bold" color="secondary">
@@ -247,7 +247,12 @@ const Home: NextPage = () => {
                             <br /> sector without schedule and whenever you want,
                             <br /> no strings-attached.
                         </Typography>
-                        <Button text="Watch now" type="button" variant="contained" />
+                        <Button
+                            text="Watch now"
+                            type="button"
+                            variant="contained"
+                            padding="16px 48px"
+                        />
                     </Box>
                 </Box>
                 <Box component="div" id="services" display="flex" flexDirection="column" m="150px">

@@ -38,7 +38,7 @@ const Membership = () => {
                             Memberships have come
                             <br /> to change your life
                         </Typography>
-                        <Typography color="#737373">
+                        <Typography color="#737373" variant="body1">
                             Shaper testers can participate in real projects with
                             <br /> real companies and get their dream job. With the help
                             <br /> of our leadership team, our candidates get better day
@@ -160,7 +160,7 @@ const Membership = () => {
                             <br /> skills. Our membership is designed to help you grow
                             <br /> and succeed.
                         </Typography>
-                        <Button text="Suscribe" type="button" variant="contained" size="medium" />
+                        <Button text="Suscribe" type="button" variant="contained" size="medium" padding="16px 48px" />
                     </Box>
                     <Image src={GirlMembership} alt="girl" />
                 </Box>
@@ -179,7 +179,7 @@ const Membership = () => {
                         <ShaperFor
                             background="#050E3F"
                             title="shaper for"
-                            titleBold={{ text: 'universities', color: '#D2004A' }}
+                            titleBold={{ text: 'universities', color: '#FF9CBF' }}
                             description={{
                                 text: 'Are you an educational institution and want to promote your students? Shaper for universities is your best option.',
                                 color: 'white',

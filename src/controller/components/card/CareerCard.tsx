@@ -10,36 +10,40 @@ interface IProps {
 export const CareerCard = (props: IProps) => {
     return (
         <Card
-            description={[
-                <Box key="container">
-                    <Box key="Main text">
-                        <Typography gutterBottom variant="h5" sx={{ fontWeight: 'bold' }} align="center" color="secondary">
-                            {props.title}
-                        </Typography>
-                        <Typography variant="body1" color="#737373" height="100px">
-                            {props.description}
+            description={{
+                components: (
+                    <Box key="container">
+                        <Box key="Main text" height="250px">
+                            <Typography gutterBottom variant="h6" sx={{ fontWeight: 'bold' }} align="center" color="secondary">
+                                {props.title}
+                            </Typography>
+                            <Typography variant="body1" color="#737373">
+                                {props.description}
+                            </Typography>
+                        </Box>
+                    </Box>
+                ),
+                padding: '16px',
+            }}
+            actions={
+                <Box display="flex" justifyContent="space-between" alignItems="center" width="100%">
+                    <Box>
+                        <Typography component="span" color="primary" fontWeight="bold">
+                            {props.hours}
+                        </Typography>{' '}
+                        <Typography component="span" color="#737373">
+                            /monthly hours
                         </Typography>
                     </Box>
-                    <Box key="hours" sx={{ mt: '10px' }}>
-                        <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Box>
-                                <Typography component="span" color="primary" fontWeight="bold">
-                                    {props.hours}
-                                </Typography>{' '}
-                                <Typography component="span" color="#737373" >
-                                    /monthly hours
-                                </Typography>
-                            </Box>
-                            <Button text="Apply" type="button" variant="contained" />
-                        </CardActions>
-                    </Box>
-                </Box>,
-            ]}
+                    <Button text="Apply" type="button" variant="contained" padding="16px 48px" />
+                </Box>
+            }
             background="#ffffff"
             height="inherit"
             width="450px"
+            direction="column"
             alignment="left"
-            
+            boxShadow="0px 2px 12px 0px #00000040"
         />
     );
 };

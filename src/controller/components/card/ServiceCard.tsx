@@ -14,24 +14,28 @@ export const ServiceCard = (props: IProps) => {
     return (
         <Card
             background={props.background}
-            description={
-                <Box key="container">
-                    <Box key="head" display="flex" gap="5%" alignItems="center" height="60px">
-                        {props.icon}
-                        <Typography variant="h6" color="primary" sx={{ whiteSpace: 'pre-line' }}>
-                            {props.title}
-                        </Typography>
+            description={{
+                components: (
+                    <Box key="container">
+                        <Box key="head" display="flex" gap="5%" alignItems="center" height="60px">
+                            {props.icon}
+                            <Typography variant="h6" color="primary" sx={{ whiteSpace: 'pre-line' }}>
+                                {props.title}
+                            </Typography>
+                        </Box>
+                        <Box key="text" m="5px">
+                            <Typography variant="body2" color="primary">
+                                {props.description}
+                            </Typography>
+                        </Box>
                     </Box>
-                    <Box key="text" m="5px">
-                        <Typography variant="body2" color="primary">
-                            {props.description}
-                        </Typography>
-                    </Box>
-                </Box>
-            }
+                ),
+                padding: '8px',
+            }}
             height="298px"
             width="220px"
             alignment="left"
+
         />
     );
 };
