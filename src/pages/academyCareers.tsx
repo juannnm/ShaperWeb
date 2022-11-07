@@ -10,7 +10,6 @@ import { CareerCard } from '../controller/components/card/CareerCard';
 import Head from 'next/head';
 import { IsologotipoShaperBlue } from '../../public/assets/svg/logo';
 
-
 const Careers: NextPage = () => {
     return (
         <div>
@@ -106,7 +105,20 @@ const Careers: NextPage = () => {
                     </Typography>
                 </Box>
                 <Box></Box>
-                <Box></Box>
+                <Box>
+                    <Typography variant="h5" fontWeight="bold" color="secondary">
+                        OUR MEMBERSHIP
+                    </Typography>
+                    <Typography variant="h4" color="primary" sx={{ whiteSpace: 'pre-line' }}>
+                        {'We help our candidates in\nfinding new and exciting jobs'}
+                    </Typography>
+                    <Typography color="#737373" variant="body1" mb="2%" sx={{ whiteSpace: 'pre-line' }}>
+                        {
+                            ' The Shaper program offers you the opportunity to work\nwith top companies. You can be tested by multiple\nemployers, as many as you have time to prove your\nskills. Our membership is designed to help you grow\nand succeed.'
+                        }
+                    </Typography>
+                    <Button text="Suscribe" type="button" variant="contained" padding="16px 48px" />
+                </Box>
                 <Box></Box>
                 <Footer />
             </Box>

@@ -110,8 +110,7 @@ const Home: NextPage = () => {
                         Community meetings
                     </Typography>
                     <Box>
-                        <EventList/>
-                        <Box>{/*HERE GOES THE CALENDAR*/}</Box>
+                        <EventList />
                     </Box>
                 </Box>
                 <Box
