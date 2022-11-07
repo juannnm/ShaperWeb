@@ -41,21 +41,12 @@ export const EventList = () => {
     ];
 
     return (
-        <Box sx={{ overflowY: 'scroll', height: '300px' }}>
-            <List>
-                {activities.map((d, i) => (
-                    <ListItem key={i}>
-                        <EventCard
-                            bgcolor={d.bgcolor}
-                            dateNumber={d.dateNumber}
-                            dateMonth={d.dateMonth}
-                            title={d.title}
-                            description={d.description}
-                            
-                        />
-                    </ListItem>
-                ))}
-            </List>
-        </Box>
+        <List>
+            {activities.map((d, i) => (
+                <ListItem key={i}>
+                    <EventCard bgcolor={d.bgcolor} dateNumber={d.dateNumber} dateMonth={d.dateMonth} title={d.title} description={d.description} />
+                </ListItem>
+            ))}
+        </List>
     );
 };
