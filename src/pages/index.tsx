@@ -1,38 +1,24 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import {
-  Box,
-  Divider,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Typography,
-} from "@mui/material";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import { Cast, Settings, Groups, Stairs } from "@mui/icons-material";
-import TabletImage from "../../public/assets/png/Home/imagenvideos.png";
-import MemberImage from "../../public/assets/png/Home/foto 3.png";
-import Ella from "../../public/assets/png/Home/ella.png";
-import Charlie from "../../public/assets/png/Home/charlie.png";
-import Arlo from "../../public/assets/png/Home/arlo.png";
-import Oliver from "../../public/assets/png/Home/oliver.png";
-import {
-  GoogleLogo,
-  MetaLogo,
-  MicrosoftLogo,
-  SpotifyLogo,
-  TeslaLogo,
-  TikTokLogo,
-} from "../../public/assets/svg/Home/Clients";
-import { ShaperFor } from "../controller/components/card/ShaperFor";
-import { ServiceCard } from "../controller/components/card/ServiceCard";
-import { TopAppBar } from "../controller/components/surfaces/TopAppBar/TopAppBar";
-import { Footer } from "../controller/components/surfaces/Footer/Footer";
-import Image from "next/image";
-import { Button } from "react-ui-controller";
-import { EventList } from "../controller/components/data-display/EventList/EventList";
-import Characters from "../../public/assets/png/Home/imagen header.png";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import { Box, Divider, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { Cast, Settings, Groups, Stairs } from '@mui/icons-material';
+import TabletImage from '../../public/assets/png/Home/imagenvideos.png';
+import MemberImage from '../../public/assets/png/Home/foto 3.png';
+import Ella from '../../public/assets/png/Home/ella.png';
+import Charlie from '../../public/assets/png/Home/charlie.png';
+import Arlo from '../../public/assets/png/Home/arlo.png';
+import Oliver from '../../public/assets/png/Home/oliver.png';
+import { GoogleLogo, MetaLogo, MicrosoftLogo, SpotifyLogo, TeslaLogo, TikTokLogo } from '../../public/assets/svg/Home/Clients';
+import { ShaperFor } from '../controller/components/card/ShaperFor';
+import { ServiceCard } from '../controller/components/card/ServiceCard';
+import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar';
+import { Footer } from '../controller/components/surfaces/Footer/Footer';
+import Image from 'next/image';
+import { Button } from 'react-ui-controller';
+import { EventList } from '../controller/components/data-display/EventList/EventList';
+import Characters from '../../public/assets/png/Home/imagen header.png';
+import { CareerCard } from '../controller/components/card/CareerCard';
 
 const Home: NextPage = () => {
   return (
@@ -256,24 +242,92 @@ const Home: NextPage = () => {
                   fontWeight="bold"
                   color="primary"
                 >
-                  We love teaching remotely
-                </Typography>
-              </Box>
-              <Typography variant="body2" color="#737373">
-                A new world of possibilities will
-                <br /> open the doors to your new life.
-                <br /> All you need is a computer with
-                <br /> internet access and you will dive
-                <br /> deep into new experiences that will
-                <br /> transform your reality into growth.
-              </Typography>
-            </Box>
-            <Box>
-              <Box display="flex" gap={1}>
-                <Typography
-                  variant="subtitle1"
-                  fontWeight="bold"
-                  color="secondary"
+                    <Typography variant="h1" position="absolute" top={250} left={200} fontWeight="bold" color="white" textAlign="center">
+                        {' '}
+                        Transformation
+                        <br /> by Growth.
+                    </Typography>
+                    <Box sx={{ position: 'absolute', top: '100px', right: '200px' }}>
+                        <Image src={Characters} alt="group" height="504.5px" width="621.5px" />
+                    </Box>
+                </Box>
+                <Box component="div" id="Companies" display="flex" flexDirection="column" justifyContent="center" mt="10%" alignItems="center">
+                    <Typography variant="h3" color="primary">
+                        Helping clients worlwide
+                    </Typography>
+                    <Box display="flex" flexDirection="row" justifyContent="space-evenly" alignContent="center" gap={5} mt="4%">
+                        <MicrosoftLogo style={{ fontSize: '150px' }} />
+                        <GoogleLogo style={{ fontSize: '150px' }} />
+                        <SpotifyLogo style={{ fontSize: '150px' }} />
+                        <TeslaLogo style={{ fontSize: '150px' }} />
+                        <TikTokLogo style={{ fontSize: '150px' }} />
+                        {/* <MetaLogo style={{ fontSize: '100px' }} /> */}
+                    </Box>
+                </Box>
+                <Box component="section" id="paths" mt="10%" display="flex" justifyContent="center" alignItems="center">
+                    <Box
+                        display="flex"
+                        flexDirection="row"
+                        borderRadius="20px"
+                        justifyContent="center"
+                        sx={{ background: 'linear-gradient(90deg, #9BBECF40, #DAAFE840, #FEBEC040, #FFC49E40, #FFC49E40)', width: 'fit-content' }}
+                    >
+                        <ShaperFor
+                            title="start at the"
+                            titleBold={{ text: 'academy', color: 'blue' }}
+                            description={{
+                                text: 'Enterate antess que nadie de los temas de negocios mas populares con nuestros cursos gratuitos',
+                                color: '#737373',
+                            }}
+                            background="transparent"
+                            buttonColor="primary"
+                        />
+                        <Divider orientation="vertical" flexItem variant="middle" />
+                        <ShaperFor
+                            title="become a"
+                            titleBold={{ text: 'tester', color: 'red' }}
+                            description={{
+                                text: 'Crece como profesional compleando las certificaciones y agregando a tu perfil de Linkedin insignias reconocidas en la industria',
+                                color: '#737373',
+                            }}
+                            background="transparent"
+                            buttonColor="primary"
+                        />
+                        <Divider orientation="vertical" flexItem variant="middle" />
+                        <ShaperFor
+                            title="we help"
+                            titleBold={{ text: 'companies', color: 'purple' }}
+                            description={{
+                                text: 'Crece como profesional compleando las certificaciones y agregando a tu perfil de Linkedin insignias reconocidas en la industria',
+                                color: '#737373',
+                            }}
+                            background="transparent"
+                            buttonColor="primary"
+                        />
+                    </Box>
+                </Box>
+                {/* Here it should have a Calendar*/}
+                <Box component="section" id="events" display="flex" flexDirection="column" justifyContent="center" alignItems="center" mt="10%">
+                    <Typography variant="h6" sx={{ fontWeight: 'bold' }} color="secondary">
+                        Events
+                    </Typography>
+                    <Typography variant="h4" sx={{ fontWeight: 'bold' }} color="primary">
+                        Community meetings
+                    </Typography>
+                    <Box>
+                        <EventList />
+                    </Box>
+                </Box>
+                <Box
+                    component="div"
+                    id="learn"
+                    sx={{
+                        m: '50px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                    }}
                 >
                   02
                 </Typography>

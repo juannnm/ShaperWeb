@@ -5,9 +5,10 @@ interface IProps {
     title: string;
     description: string;
     hours: string;
+    background?: string;
 }
 
-export const CareerCard = (props: IProps) => {
+export const CareerCard = ({ title, description, hours, background = '#FFFFFF' }: IProps) => {
     return (
         <Card
             description={{
@@ -15,10 +16,10 @@ export const CareerCard = (props: IProps) => {
                     <Box key="container">
                         <Box key="Main text" height="200px">
                             <Typography gutterBottom variant="h6" sx={{ fontWeight: 'bold' }} align="center" color="secondary">
-                                {props.title}
+                                {title}
                             </Typography>
                             <Typography variant="body1" color="#737373">
-                                {props.description}
+                                {description}
                             </Typography>
                         </Box>
                     </Box>
@@ -29,7 +30,7 @@ export const CareerCard = (props: IProps) => {
                 <Box display="flex" justifyContent="space-between" alignItems="center" width="100%">
                     <Box>
                         <Typography component="span" color="primary" fontWeight="bold">
-                            {props.hours}
+                            {hours}
                         </Typography>{' '}
                         <Typography component="span" color="#737373">
                             /monthly hours
@@ -38,7 +39,7 @@ export const CareerCard = (props: IProps) => {
                     <Button text="Apply" type="button" variant="contained" padding="24px 48px" />
                 </Box>
             }
-            background="#ffffff"
+            background={background}
             height="inherit"
             width="460px"
             direction="column"
