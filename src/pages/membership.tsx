@@ -130,7 +130,7 @@ const Membership = () => {
             <Box component="main">
                 <TopAppBar bgColor="white" />
 
-                <Box display="flex" justifyContent="center" mt="10%" alignItems="center" gap="2%" mb="10%">
+                <Box display="flex" justifyContent="center" alignItems="center" gap="2%" m={{xs:"40% 10%", lg:"10% 0"}}>
                     <Box display="flex" flexDirection="column">
                         <Typography variant="h6" fontWeight="bold" color="secondary">
                             JOIN OUR COMMUNITY
