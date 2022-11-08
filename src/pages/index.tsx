@@ -85,17 +85,15 @@ const Home: NextPage = () => {
             fontWeight="bold"
             color="white"
             textAlign="center"
-            //fontSize={{xs:40, md:128, lg:128}}
           >
             {" "}
             Transformation
             <br /> by Growth.
           </Typography>
-          <Box sx={{ position: "absolute", top: {xs:"300px", md:"300px",lg:"100px"}, right: {md:"170px" ,lg:"200px"} }}>
+          <Box sx={{ position: "absolute", top: {xs:"200px", md:"300px",lg:"100px"}, right: {md:"170px" ,lg:"200px"}, m:{xs:'10vw', lg:0} }}>
             <Image
               src={Characters}
               alt="group"
-              
               height="504.5px"
               width="621.5px"
             />
@@ -208,7 +206,7 @@ const Home: NextPage = () => {
         >
           <Box
             display="flex"
-            flexDirection="row"
+            flexDirection={{xs:"column", lg:"row"}}
             alignItems="center"
             mt="10%"
             gap={4}
@@ -238,7 +236,7 @@ const Home: NextPage = () => {
           </Box>
           <Box
             display="flex"
-            flexDirection="row"
+            flexDirection={{xs:"column", lg:"row"}}
             mr="10%"
             ml="10%"
             mt="2%"
@@ -384,7 +382,9 @@ const Home: NextPage = () => {
           justifyContent="center"
           mt="10%"
         >
-          <Image src={TabletImage} alt="image" width="436px" height="271px" />
+          <Box width={{xs:0, md:'500px', lg:'500px'}}>
+            <Image src={TabletImage} alt="image" width="436px" height="271px" />
+          </Box>
           <Box
             display="flex"
             flexDirection="column"
@@ -419,7 +419,7 @@ const Home: NextPage = () => {
           id="services"
           display="flex"
           flexDirection="column"
-          m="150px"
+          m={{xs:"150px 0px" ,lg:"150px 0"}}
         >
           <Box textAlign="center" mb="30px">
             <Typography variant="h5" fontWeight="bold" color="secondary">
@@ -437,6 +437,7 @@ const Home: NextPage = () => {
             display="flex"
             flexDirection="row"
             justifyContent="center"
+            flexWrap='wrap'
             gap="2%"
           >
             <ServiceCard
@@ -471,6 +472,7 @@ const Home: NextPage = () => {
           display="flex"
           flexDirection="row"
           justifyContent="center"
+          mb="10%"
         >
           <Box justifyContent="left" textAlign="left" mt="70px">
             <Typography variant="h5" fontWeight="bold" color="secondary">
@@ -482,7 +484,7 @@ const Home: NextPage = () => {
               color="primary"
               sx={{ whiteSpace: "pre-line" }}
             >
-              {"We help our candidates in\nfinding new and exciting jobs"}
+              {"New and exciting jobs"}
             </Typography>
             <Typography
               variant="body1"
@@ -490,11 +492,14 @@ const Home: NextPage = () => {
               sx={{ whiteSpace: "pre-line" }}
             >
               {
-                "The Shaper program offers you the opportunity to work\nwith top companies. You can be tested by multiple\nemployers, as many as you have time to prove your\nskills. Our membership is designed to help you grow\nand succeed."
+                "We help you discover a challenging new career. Our\n platform gives you the opportunity to work with top\n companies. You can prove your skills and get hired."
               }
             </Typography>
+            <Button text="Suscribe" type="button" variant="contained" padding="0 40px"/>
           </Box>
-          <Image src={MemberImage} alt="Member" width="460px" height="411px" />
+          <Box width={{xs:0, md:'500px', lg:'500px'}}>
+            <Image src={MemberImage} alt="Member" width="460px" height="411px" />
+          </Box>
         </Box>
         <Box
           component="div"
@@ -502,6 +507,7 @@ const Home: NextPage = () => {
           display="flex"
           flexDirection="row"
           justifyContent="center"
+          flexWrap="wrap"
           gap="5%"
           mb="10%"
         >
@@ -531,6 +537,7 @@ const Home: NextPage = () => {
           id="team"
           display="flex"
           flexDirection="row"
+          flexWrap="wrap"
           justifyContent="center"
           m="150px"
         >
@@ -547,38 +554,40 @@ const Home: NextPage = () => {
               {" Meet the\nawesome\nand creative\nmembers of\nour staff"}
             </Typography>
           </Box>
-          <Box m="0 55px">
-            <Image src={Ella} alt="Ella" width="147.61px" height="217.07px" />
-            <Typography fontWeight="bold" color="primary">
-              Ella
-            </Typography>
-            <Typography color="#737373">Academy</Typography>
-          </Box>
-          <Box>
-            <Image src={Oliver} alt="Ella" width="147.61px" height="217.07px" />
-            <Typography fontWeight="bold" color="primary">
-              Oliver
-            </Typography>
-            <Typography color="#737373">Community</Typography>
-          </Box>
-          <Box m="0 55px">
-            <Image src={Arlo} alt="Ella" width="147.61px" height="217.07px" />
-            <Typography fontWeight="bold" color="primary">
-              Arlo
-            </Typography>
-            <Typography color="#737373">Careers</Typography>
-          </Box>
-          <Box>
-            <Image
-              src={Charlie}
-              alt="Ella"
-              width="147.61px"
-              height="217.07px"
-            />
-            <Typography fontWeight="bold" color="primary">
-              Charlie
-            </Typography>
-            <Typography color="#737373">Guide</Typography>
+          <Box  display="flex" flexDirection="row" justifyContent="center" flexWrap="wrap" gap={3}>
+            <Box>
+              <Image src={Ella} alt="Ella" width="147.61px" height="217.07px" />
+              <Typography fontWeight="bold" color="primary">
+                Ella
+              </Typography>
+              <Typography color="#737373">Academy</Typography>
+            </Box>
+            <Box>
+              <Image src={Oliver} alt="Ella" width="147.61px" height="217.07px" />
+              <Typography fontWeight="bold" color="primary">
+                Oliver
+              </Typography>
+              <Typography color="#737373">Community</Typography>
+            </Box>
+            <Box>
+              <Image src={Arlo} alt="Ella" width="147.61px" height="217.07px" />
+              <Typography fontWeight="bold" color="primary">
+                Arlo
+              </Typography>
+              <Typography color="#737373">Careers</Typography>
+            </Box>
+            <Box>
+              <Image
+                src={Charlie}
+                alt="Ella"
+                width="147.61px"
+                height="217.07px"
+              />
+              <Typography fontWeight="bold" color="primary">
+                Charlie
+              </Typography>
+              <Typography color="#737373">Guide</Typography>
+            </Box>
           </Box>
         </Box>
         <Footer />
