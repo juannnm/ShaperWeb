@@ -8,6 +8,7 @@ interface IProps {
     description: { text: string; color: string };
     background: string;
     buttonColor: 'inherit' | 'error' | 'info' | 'primary' | 'secondary' | 'success' | 'warning' | undefined;
+    borderRadius: string;
 }
 
 export const ShaperFor = (props: IProps) => {
@@ -18,7 +19,7 @@ export const ShaperFor = (props: IProps) => {
                 components: (
                     <Box key="container" display="flex" flexDirection="column" height="250px" gap="2%">
                         <Box>
-                            <Typography key="title" variant="h5"  sx={{ textAlign: 'center', color: props.titleBold.color }}>
+                            <Typography key="title" variant="h5" sx={{ textAlign: 'center', color: props.titleBold.color }}>
                                 {props.title && props.title.toUpperCase()}
                             </Typography>
                             <Typography key="title" variant="h4" sx={{ textAlign: 'center', fontWeight: 'bold', color: props.titleBold.color }}>
@@ -32,12 +33,13 @@ export const ShaperFor = (props: IProps) => {
                 ),
                 padding: '0px',
             }}
-            direction={{xs:"row" ,lg:"column"}}
+            direction={{ xs: 'row', lg: 'column' }}
             width="400px"
             actions={<Button text="Learn More" type="button" key="LearnMore" variant="contained" color={props.buttonColor} padding="16px 48px" />}
             boxShadow="0px 2px 24px 3px #00000040"
             padding="32px"
             elevated={false}
+            borderRadius={props.borderRadius}
         />
     );
 };

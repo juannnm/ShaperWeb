@@ -1364,14 +1364,24 @@
   dependencies:
     "glob" "7.1.7"
 
-"@next/swc-win32-x64-msvc@12.3.2":
-  "integrity" "sha512-tpQJYUH+TzPMIsdVl9fH8uDg47iwiNjKY+8e9da3dXqlkztKzjSw0OwSADoqh3KrifplXeKSta+BBGLdBqg3sg=="
-  "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.3.2.tgz"
+"@next/swc-linux-x64-gnu@12.3.2":
+  "integrity" "sha512-fCPkLuwDwY8/QeXxciJJjDHG09liZym/Bhb4A+RLFQ877wUkwFsNWDUTSdUx0YXlYK/1gf67BKauqKkOKp6CYw=="
+  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-12.3.2.tgz"
   "version" "12.3.2"
 
-"@next/swc-win32-x64-msvc@13.0.2":
-  "integrity" "sha512-fA9uW1dm7C0mEYGcKlbmLcVm2sKcye+1kPxh2cM4jVR+kQQMtHWsjIzeSpe2grQLSDan06z4n6hbr8b1c3hA8w=="
-  "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-13.0.2.tgz"
+"@next/swc-linux-x64-gnu@13.0.2":
+  "integrity" "sha512-pi63RoxvG4ES1KS06Zpm0MATVIXTs/TIbLbdckeLoM40u1d3mQl/+hSSrLRSxzc2OtyL8fh92sM4gkJrQXAMAw=="
+  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.0.2.tgz"
+  "version" "13.0.2"
+
+"@next/swc-linux-x64-musl@12.3.2":
+  "integrity" "sha512-o+GifBIQ2K+/MEFxHsxUZoU3bsuVFLXZYWd3idimFHiVdDCVYiKsY6mYMmKDlucX+9xRyOCkKL9Tjf+3tuXJpw=="
+  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-12.3.2.tgz"
+  "version" "12.3.2"
+
+"@next/swc-linux-x64-musl@13.0.2":
+  "integrity" "sha512-9Pv91gfYnDONgjtRm78n64b/c54+azeHtlnqBLTnIFWSMBDRl1/WDkhKWIj3fBGPLimtK7Tko3ULR3og9RRUPw=="
+  "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.0.2.tgz"
   "version" "13.0.2"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -3247,10 +3257,10 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react-ui-controller@^0.0.41":
-  "integrity" "sha512-JCpRwIOBV7p5G4AWE5I8aDrjVAW3QGjYsgDHadJTenMAGBXBoiLQyrHDscwMLdy3hMXxugRAtj8UMxItNpxAQg=="
-  "resolved" "https://registry.npmjs.org/react-ui-controller/-/react-ui-controller-0.0.41.tgz"
-  "version" "0.0.41"
+"react-ui-controller@^0.0.42":
+  "integrity" "sha512-bewB7Al+eopoIey0hRC6TAJHfpx5uCdvQ8IQ6AswEhqESuPEmkZ8pN5hHZdzfx7KK/J26zlhsnJzhB8Q0Dqz0w=="
+  "resolved" "https://registry.npmjs.org/react-ui-controller/-/react-ui-controller-0.0.42.tgz"
+  "version" "0.0.42"
   dependencies:
     "@emotion/react" "^11.10.5"
     "@emotion/styled" "^11.10.5"

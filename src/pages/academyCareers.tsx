@@ -6,7 +6,7 @@ import { Button } from 'react-ui-controller';
 import Image from 'next/image';
 import jumpImage from '../../public/assets/png/Academy/FOTOS.png';
 import cellphoneImage from '../../public/assets/png/Academy/imagen.png';
-import guyImage from '../../public/assets/png/Academy/foto 1.png'
+import guyImage from '../../public/assets/png/Academy/foto 1.png';
 import { CareerCard } from '../controller/components/card/CareerCard';
 import Head from 'next/head';
 import { IsologotipoShaperBlue } from '../../public/assets/svg/logo';
@@ -90,7 +90,7 @@ const Careers: NextPage = () => {
                         You can measure your needs over time
                         <br /> and choose between 2 options
                     </Typography>
-                    <Box display="flex" flexDirection="row" justifyContent='center' gap={4} mt="35px">
+                    <Box display="flex" flexDirection="row" justifyContent="center" gap={4} mt="35px">
                         <CareerCard
                             title="Part-time Career"
                             description="Within our part-time career you can learn remotely with our team of experts and even complete assignments after work with our online academic campus."
@@ -106,33 +106,33 @@ const Careers: NextPage = () => {
                         {'Once you have chosen your specific framework, you\ncan now apply and our team will reach you'}
                     </Typography>
                 </Box>
-                <Box textAlign='center' mb='12%'>
-                  <Typography variant='h5' fontWeight='bold' color='secondary'>
-                    ALL CAREERS
-                  </Typography>
-                  <Box display='flex' flexDirection='row' justifyContent='center' gap={4} mt='2%'>
-                    <CertifieCard/>
-                    <CertifieCard/>
-                    <CertifieCard/>
-                    <CertifieCard/>
-                  </Box>
+                <Box textAlign="center" mb="12%">
+                    <Typography variant="h5" fontWeight="bold" color="secondary">
+                        ALL CAREERS
+                    </Typography>
+                    <Box display="flex" flexDirection="row" justifyContent="center" gap={4} mt="2%">
+                        <CertifieCard />
+                        <CertifieCard />
+                        <CertifieCard />
+                        <CertifieCard />
+                    </Box>
                 </Box>
-                <Box display='flex' flexDirection='row' justifyContent='center' alignItems='center'>
-                  <Box>
-                      <Typography variant="h5" fontWeight="bold" color="secondary">
-                          OUR MEMBERSHIP
-                      </Typography>
-                      <Typography variant="h4" color="primary" sx={{ whiteSpace: 'pre-line' }}>
-                          {'We help our candidates in\nfinding new and exciting jobs'}
-                      </Typography>
-                      <Typography color="#737373" variant="body1" mb="2%" sx={{ whiteSpace: 'pre-line' }}>
-                          {
-                              ' The Shaper program offers you the opportunity to work\nwith top companies. You can be tested by multiple\nemployers, as many as you have time to prove your\nskills. Our membership is designed to help you grow\nand succeed.'
-                          }
-                      </Typography>
-                      <Button text="Suscribe" type="button" variant="contained" padding="16px 48px" />
-                  </Box>
-                  <Image src={guyImage} alt='guy' height='470px' width='511.5px'/>
+                <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
+                    <Box>
+                        <Typography variant="h5" fontWeight="bold" color="secondary">
+                            OUR MEMBERSHIP
+                        </Typography>
+                        <Typography variant="h4" color="primary" sx={{ whiteSpace: 'pre-line' }}>
+                            {'We help our candidates in\nfinding new and exciting jobs'}
+                        </Typography>
+                        <Typography color="#737373" variant="body1" mb="2%" sx={{ whiteSpace: 'pre-line' }}>
+                            {
+                                ' The Shaper program offers you the opportunity to work\nwith top companies. You can be tested by multiple\nemployers, as many as you have time to prove your\nskills. Our membership is designed to help you grow\nand succeed.'
+                            }
+                        </Typography>
+                        <Button text="Suscribe" type="button" variant="contained" padding="16px 48px" />
+                    </Box>
+                    <Image src={guyImage} alt="guy" height="470px" width="511.5px" />
                 </Box>
                 <Footer />
             </Box>

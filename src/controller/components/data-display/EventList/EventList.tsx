@@ -41,7 +41,7 @@ export const EventList = () => {
     ];
 
     return (
-        <List sx={{overflowY: 'scroll', height: '400px'}}>
+        <List sx={{ overflowY: 'scroll', height: '400px' }}>
             {activities.map((d, i) => (
                 <ListItem key={i}>
                     <EventCard bgcolor={d.bgcolor} dateNumber={d.dateNumber} dateMonth={d.dateMonth} title={d.title} description={d.description} />
