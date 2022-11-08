@@ -32,8 +32,8 @@ export const ServiceCard = (props: IProps) => {
                 ),
                 padding: '8px',
             }}
-            height="298px"
-            width="220px"
+            height={{xs:"160px" ,lg:"298px"}}
+            width={{xs:"160px", lg:"220px"}}
             alignment="left"
         />
     );
