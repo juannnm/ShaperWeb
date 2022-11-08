@@ -35,7 +35,6 @@ export const ServiceCard = (props: IProps) => {
             height="298px"
             width="220px"
             alignment="left"
-
         />
     );
 };
