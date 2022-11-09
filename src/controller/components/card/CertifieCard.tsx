@@ -8,55 +8,45 @@ export const CertifieCard = () => {
     return (
         <Card
             background="white"
+            header={{
+                title: (
+                    <Typography variant="body1" fontWeight="bold" color="primary" mb="20px">
+                        Certified MicroDegree for UX/UI Designer
+                    </Typography>
+                ),
+                padding: '0px',
+            }}
             description={{
                 components: (
-                    <Box key="container">
-                        <Typography variant="h6" sx={{ margin: 2, textAlign: 'left' }}>
-                            Certified MicroDegree for UX/UI Designer
-                        </Typography>
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                justifyContent: 'left',
-                                leftMargin: '5px',
-                            }}
-                        >
-                            <AccessTimeIcon sx={{ margin: '0 2px' }} />
-                            <Typography variant="body1">Duracion 4 meses</Typography>
+                    <>
+                        <Box display="flex" gap={1}>
+                            <AccessTimeIcon color="primary" />
+                            <Typography variant="body2" color="primary">
+                                Duracion 4 meses
+                            </Typography>
                         </Box>
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                justifyContent: 'left',
-                                leftMargin: '5px',
-                                maxWidth: '160px',
-                            }}
-                        >
-                            <EventNoteIcon sx={{ margin: '0 2px' }} />
-                            <Typography variant="body1">07/NOV inicio de clases</Typography>
+                        <Box display="flex" gap={1}>
+                            <EventNoteIcon color="primary" />
+                            <Typography variant="body2" color="primary">
+                                07/NOV
+                            </Typography>
                         </Box>
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                justifyContent: 'left',
-                                leftMargin: '5px',
-                                maxWidth: '160px',
-                            }}
-                        >
-                            <AccountBoxIcon sx={{ margin: '0 2px' }} />
-                            <Typography variant="body1">Profesor: Charles Xavier</Typography>
+                        <Box display="flex" gap={1}>
+                            <AccountBoxIcon color="primary" />
+                            <Typography variant="body2" color="primary">
+                                Profesor: Charles Xavier
+                            </Typography>
                         </Box>
-                    </Box>
+                    </>
                 ),
-                padding: '5px',
+                padding: '0px',
             }}
             height="300px"
-            width="180px"
-            boxShadow="2px 0 10px black"
-            elevated
+            width="200px"
+            boxShadow="2px 0 10px #00000025"
+            direction="column"
+            alignment="left"
+            justifyContent="center"
         />
     );
 };

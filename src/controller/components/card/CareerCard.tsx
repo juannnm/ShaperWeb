@@ -14,7 +14,7 @@ export const CareerCard = ({ title, description, hours, background = '#FFFFFF' }
             description={{
                 components: (
                     <Box key="container">
-                        <Box key="Main text" height="200px">
+                        <Box key="Main text" height="225px">
                             <Typography gutterBottom variant="h6" sx={{ fontWeight: 'bold' }} align="center" color="secondary">
                                 {title}
                             </Typography>

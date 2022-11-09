@@ -12,7 +12,7 @@ export const InterestCard = (props: IProps) => {
     return (
         <Card
             background="white"
-            header={{ title: <Birrete style={{ fontSize: '100px', m: '35px'}} />, }}
+            header={{ title: <Birrete style={{ fontSize: '100px', m: '35px' }} /> }}
             description={{
                 components: (
                     <Box key="container" display="flex" flexDirection="row" alignItems="center">
@@ -29,6 +29,7 @@ export const InterestCard = (props: IProps) => {
             direction="row"
             elevated={false}
             boxShadow="0px 2px 11px 0px #00000040;"
+            justifyContent="space-between"
         />
     );
 };

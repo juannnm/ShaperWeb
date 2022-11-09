@@ -1,6 +1,6 @@
 import { Box, Divider, Typography } from '@mui/material';
-import { Button, LinkButton, TextField } from 'react-ui-controller';
-import { Facebook, Twitter, Instagram, LinkedIn, YouTube } from '@mui/icons-material';
+import { Button, IconButton, LinkButton, TextField } from 'react-ui-controller';
+import { Facebook, Twitter, Instagram, LinkedIn, YouTube, Send } from '@mui/icons-material';
 
 export const Footer = () => {
     return (
@@ -33,17 +33,19 @@ export const Footer = () => {
                     <Typography variant="h6" color="white" fontWeight="bold">
                         Register To Our Newsletter
                     </Typography>
-                    <Box display="flex" alignItems="center">
+                    <Box display="flex" alignItems="center" justifyContent="space-between">
                         <TextField
                             label="example@shaper.com"
                             name="shaper-newsletter"
                             variant="standard"
+                            size="medium"
                             handleChange={() => {}}
                             value=""
-                            // @ts-ignore
                             type="text"
                         />
-                        <Button text="L" type="button" variant="contained" />
+                        <IconButton color="primary">
+                            <Send />
+                        </IconButton>
                     </Box>
                     <Box mt="20px" justifyContent="space-between" display="flex">
                         <Facebook sx={{ fontSize: '35px', color: 'white' }} />
@@ -64,16 +66,6 @@ export const Footer = () => {
                         <LinkButton text="Business" color="white" href="/" />
                         <LinkButton text="Nombre Curso" color="white" href="/" />
                         <LinkButton text="Nombre Curso" color="white" href="/" />
-                    </Box>
-                    <Box display="flex" flexDirection="column" mr="30px">
-                        <Typography fontWeight="bold" color="white" variant="h5">
-                            Resources
-                        </Typography>
-                        <LinkButton text="REVISAR" color="white" href="/" />
-                        <LinkButton text="REVISAR" color="white" href="/" />
-                        <LinkButton text="REVISAR" color="white" href="/" />
-                        <LinkButton text="REVISAR" color="white" href="/" />
-                        <LinkButton text="REVISAR" color="white" href="/" />
                     </Box>
                     <Box display="flex" flexDirection="column">
                         <Typography fontWeight="bold" color="white" variant="h5">
