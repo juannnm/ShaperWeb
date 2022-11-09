@@ -26,9 +26,11 @@ const Membership = () => {
       bgcolor="#050E3F"
       key="member"
     >
-      <Box display="flex" flexDirection="row">
-        <Image src={groupImage} alt="group" height="300px" width="400px" />
-        <Box display="flex" flexDirection="column" ml="150px" mt="74px">
+      <Box display="flex" flexDirection={{ mobile: "column", laptop: "row" }}>
+        <Box mt={{mobile:"10%"}}>
+          <Image src={groupImage} alt="group" height="300px" width="400px" />
+        </Box>
+        <Box display="flex" flexDirection="column" ml="150px" mt="74px" m={{mobile:"30px", laptop:"74px 0 0 150px"}}>
           <Typography variant="h6" color="white" fontWeight="bold">
             1. BECOME A MEMBER OF OUR COMMUNITY
           </Typography>
@@ -50,9 +52,11 @@ const Membership = () => {
       bgcolor="#050E3F"
       key="senior"
     >
-      <Box display="flex" flexDirection="row">
-        <Image src={graphics} alt="apply" height="300px" width="500px" />
-        <Box display="flex" flexDirection="column" ml="150px" mt="74px">
+      <Box display="flex" flexDirection={{ mobile: "column", laptop: "row" }}>
+        <Box mt={{mobile:"10%"}}>
+          <Image src={graphics} alt="apply" height="300px" width="500px" />
+        </Box>
+        <Box display="flex" flexDirection="column" ml="150px" mt="74px" m={{mobile:"30px", laptop:"74px 0 0 150px"}}>
           <Typography variant="h6" color="white" fontWeight="bold">
             2. THERE IS NO SENIOR WITHOUT A JUNIOR
           </Typography>
@@ -72,9 +76,11 @@ const Membership = () => {
       bgcolor="#050E3F"
       key="job"
     >
-      <Box display="flex" flexDirection="row">
-        <Image src={Apply} alt="graphics" height="300px" width="500px" />
-        <Box display="flex" flexDirection="column" ml="150px" mt="74px">
+      <Box display="flex" flexDirection={{ mobile: "column", laptop: "row" }}>
+        <Box mt={{mobile:"10%"}}>
+          <Image src={Apply} alt="graphics" height="300px" width="500px" />
+        </Box>
+        <Box display="flex" flexDirection="column" ml="150px" mt="74px" m={{mobile:"30px", laptop:"74px 0 0 150px"}}>
           <Typography variant="h6" color="white" fontWeight="bold">
             3. JOB OPPORTUNITIES
           </Typography>
@@ -94,9 +100,11 @@ const Membership = () => {
       bgcolor="#050E3F"
       key="measure"
     >
-      <Box display="flex" flexDirection="row">
-        <Image src={graphics2} alt="graphics" height="300px" width="500px" />
-        <Box display="flex" flexDirection="column" ml="150px" mt="74px">
+      <Box display="flex" flexDirection={{ mobile: "column", laptop: "row" }}>
+        <Box mt={{mobile:"10%"}}>
+          <Image src={graphics2} alt="graphics" height="300px" width="500px" />
+        </Box>
+        <Box display="flex" flexDirection="column" ml="150px" mt="74px" m={{mobile:"30px", laptop:"74px 0 0 150px"}}>
           <Typography variant="h6" color="white" fontWeight="bold">
             4. MEASURE YOUR ABILITIES
           </Typography>
@@ -117,9 +125,16 @@ const Membership = () => {
       bgcolor="#050E3F"
       key="moment"
     >
-      <Box display="flex" flexDirection="row">
-        <Image src={frame5Image} alt="graphics" height="400px" width="400px" />
-        <Box display="flex" flexDirection="column" ml="150px" mt="74px">
+      <Box display="flex" flexDirection={{ mobile: "column", laptop: "row" }}>
+        <Box>
+          <Image
+            src={frame5Image}
+            alt="graphics"
+            height="400px"
+            width="400px"
+          />
+        </Box>
+        <Box display="flex" flexDirection="column" ml="150px" mt="74px" m={{mobile:"30px", laptop:"74px 0 0 150px"}}>
           <Typography variant="h6" color="white" fontWeight="bold">
             5. TO THE LAST MOMENT
           </Typography>
@@ -139,9 +154,16 @@ const Membership = () => {
       bgcolor="#050E3F"
       key="money"
     >
-      <Box display="flex" flexDirection="row">
-        <Image src={frame6Image} alt="graphics" height="400px" width="500px" />
-        <Box display="flex" flexDirection="column" ml="150px" mt="74px">
+      <Box display="flex" flexDirection={{ mobile: "column", laptop: "row" }}>
+        <Box>
+          <Image
+            src={frame6Image}
+            alt="graphics"
+            height="400px"
+            width="500px"
+          />
+        </Box>
+        <Box display="flex" flexDirection="column" ml="150px" mt="74px" m={{mobile:"30px", laptop:"74px 0 0 150px"}}>
           <Typography variant="h6" color="white" fontWeight="bold">
             6. DON’T WORRY ABOUT MONEY
           </Typography>
