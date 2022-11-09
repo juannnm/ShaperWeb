@@ -17,27 +17,41 @@ export const ShaperFor = (props: IProps) => {
             background={props.background}
             description={{
                 components: (
-                    <Box key="container" display="flex" flexDirection="column" height={{xs:"100px" ,lg:"250px"}} gap="2%">
-                        <Box>
+                    <Box key="container" display="flex" flexDirection="column" height={{ mobile: '150px', laptop: '250px' }} gap="2%">
+                        <Box display="flex" flexDirection={{ mobile: 'row', laptop: 'column' }} alignItems="center">
                             <Typography key="title" variant="h5" sx={{ textAlign: 'center', color: props.titleBold.color }}>
                                 {props.title && props.title.toUpperCase()}
                             </Typography>
-                            <Typography key="title" variant="h4" sx={{ textAlign: 'center', fontWeight: 'bold', color: props.titleBold.color }}>
+                            <Typography key="title" variant="h3" sx={{ textAlign: 'center', fontWeight: 'bold', color: props.titleBold.color }}>
                                 {props.titleBold && props.titleBold.text.toUpperCase()}
                             </Typography>
                         </Box>
-                        <Typography key="paragraph" variant="body1" sx={{ textAlign: 'center' }} color={props.description.color}>
+                        <Typography
+                            key="paragraph"
+                            variant="body1"
+                            sx={{ textAlign: { mobile: 'left', laptop: 'center' } }}
+                            color={props.description.color}
+                        >
                             {props.description.text}
                         </Typography>
                     </Box>
                 ),
                 padding: '0px',
             }}
-            direction={{ xs: 'row', lg: 'column' }}
-            width="400px"
-            actions={<Button text="Learn More" type="button" key="LearnMore" variant="contained" color={props.buttonColor} padding="16px 48px" />}
+            direction={{ mobile: 'row', laptop: 'column' }}
+            width={{ mobile: '370px', laptop: '400px' }}
+            actions={
+                <Button
+                    text="Learn More"
+                    type="button"
+                    key="LearnMore"
+                    variant="contained"
+                    color={props.buttonColor}
+                    padding={{ mobile: '16px 32px', laptop: '16px 48px' }}
+                />
+            }
             boxShadow="0px 2px 24px 3px #00000040"
-            padding="32px"
+            padding={{ mobile: '16px', laptop: '32px' }}
             elevated={false}
             borderRadius={props.borderRadius}
         />

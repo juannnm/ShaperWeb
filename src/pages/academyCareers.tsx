@@ -24,8 +24,17 @@ const Careers: NextPage = () => {
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <Box>
-                <TopAppBar bgColor="white" />
-                <Box id="Intro" component="div" justifyContent="center" textAlign="center" m={{ xs: '10%' }} mt={{ xs: '20%', lg: '10%' }}>
+                <Box sx={{ display: { mobile: 'none', laptop: 'block' } }}>
+                    <TopAppBar bgColor="white" />
+                </Box>
+                <Box
+                    id="Intro"
+                    component="div"
+                    justifyContent="center"
+                    textAlign="center"
+                    m={{ mobile: '10%' }}
+                    mt={{ mobile: '20%', laptop: '10%' }}
+                >
                     <Box>
                         <Typography variant="h6" fontWeight="bold" color="secondary">
                             CAREERS
@@ -47,9 +56,9 @@ const Careers: NextPage = () => {
                     flexDirection="row"
                     justifyContent="center"
                     alignItems="center"
-                    m={{ xs: '50px' }}
+                    m={{ mobile: '50px' }}
                 >
-                    <Box width={{ xs: 0, md: '500px', lg: '500px' }}>
+                    <Box display={{ mobile: 'none', laptop: 'block' }}>
                         <Image src={cellphoneImage} alt="cellphone" width="504.5" height="297" />
                     </Box>
                     <List>
@@ -59,12 +68,7 @@ const Careers: NextPage = () => {
                             </ListItemIcon>{' '}
                             <ListItemText primaryTypographyProps={{ color: 'primary' }}>
                                 <b>This program</b> will allow you to
-                                <b>
-                                    optimize
-                                    <br /> your skills
-                                </b>
-                                , both professionally and
-                                <br /> personally.
+                                <b>optimize your skills</b>, both professionally and personally.
                             </ListItemText>
                         </ListItem>
                         <ListItem>
@@ -72,26 +76,20 @@ const Careers: NextPage = () => {
                                 <IsologotipoShaperBlue />
                             </ListItemIcon>
                             <ListItemText primaryTypographyProps={{ color: 'primary' }}>
-                                Our team of experts will help you
-                                <b>
-                                    define
-                                    <br /> your career goals
-                                </b>{' '}
-                                and improve your skills
-                                <br /> to <b>help you succeed</b> in your job search.
+                                Our team of experts will help you<b>define your career goals</b> and improve your skills to <b>help you succeed</b> in
+                                your job search.
                             </ListItemText>
                         </ListItem>
                     </List>
                 </Box>
-                <Box id="careerTypes" component="div" m={{ xs: '100px 50px', lg: '200px 0' }} textAlign="center">
+                <Box id="careerTypes" component="div" m={{ mobile: '100px 50px', laptop: '200px 0' }} textAlign="center">
                     <Typography variant="h6" mb="10px" fontWeight="bold" color="secondary">
                         OUR PROCESS IS REALLY SIMPLE
                     </Typography>
                     <Typography variant="h4" fontWeight="bold" color="primary">
-                        You can measure your needs over time
-                        <br /> and choose between 2 options
+                        You can measure your needs over time and choose between 2 options
                     </Typography>
-                    <Box display="flex" flexDirection="row" justifyContent="center" gap={4} mt="35px" flexWrap="wrap">
+                    <Box display="flex" flexDirection="row" justifyContent="center" gap={4} m="35px 0px" flexWrap="wrap">
                         <CareerCard
                             title="Part-time Career"
                             description="Within our part-time career you can learn remotely with our team of experts and even complete assignments after work with our online academic campus."
@@ -104,7 +102,7 @@ const Careers: NextPage = () => {
                         />
                     </Box>
                     <Typography variant="h6" textAlign="center" mt="5%" color="primary" sx={{ whiteSpace: 'pre-line' }}>
-                        {'Once you have chosen your specific framework, you\ncan now apply and our team will reach you'}
+                        {'Once you have chosen your specific framework, you can now apply and our team will reach you'}
                     </Typography>
                 </Box>
                 <Box textAlign="center" mb="12%">
@@ -118,7 +116,7 @@ const Careers: NextPage = () => {
                         <CertifieCard />
                     </Box>
                 </Box>
-                <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" flexWrap="wrap-reverse" m={{ xs: '50px' }}>
+                <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" flexWrap="wrap-reverse" m={{ mobile: '50px' }}>
                     <Box>
                         <Typography variant="h5" fontWeight="bold" color="secondary">
                             OUR MEMBERSHIP
@@ -126,9 +124,9 @@ const Careers: NextPage = () => {
                         <Typography variant="h4" color="primary" sx={{ whiteSpace: 'pre-line' }}>
                             {'We help our candidates in\nfinding new and exciting jobs'}
                         </Typography>
-                        <Typography color="#737373" variant="body1" mb="2%" sx={{ whiteSpace: 'pre-line' }}>
+                        <Typography color="#737373" variant="body1" mb="2%">
                             {
-                                ' The Shaper program offers you the opportunity to work\nwith top companies. You can be tested by multiple\nemployers, as many as you have time to prove your\nskills. Our membership is designed to help you grow\nand succeed.'
+                                ' The Shaper program offers you the opportunity to work with top companies. You can be tested by multiple employers, as many as you have time to prove your skills. Our membership is designed to help you grow and succeed.'
                             }
                         </Typography>
                         <Button text="Suscribe" type="button" variant="contained" padding="16px 48px" />

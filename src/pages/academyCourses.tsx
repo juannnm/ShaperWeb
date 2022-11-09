@@ -34,7 +34,9 @@ const Courses: NextPage = () => {
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <Box component="main">
-                <TopAppBar bgColor="white" />
+                <Box sx={{ display: { mobile: 'none', laptop: 'block' } }}>
+                    <TopAppBar bgColor="white" />
+                </Box>
                 <Box id="Intro" component="div" justifyContent="center" textAlign="center" m={{ xs: '10%' }} mt={{ xs: '20%', lg: '10%' }}>
                     <Box>
                         <Typography variant="h6" fontWeight="bold" color="secondary">
@@ -160,25 +162,24 @@ const Courses: NextPage = () => {
                         </AccordionDetails>
                     </Accordion>
                 </Box>
-                <Box component="div" display="flex" flexDirection="row" justifyContent="center" flexWrap="wrap-reverse" m={{ xs: '10%' }}>
+                <Box component="div" display="flex" flexDirection="row" justifyContent="center" flexWrap="wrap-reverse" m={{ mobile: '10% 10px' }}>
                     <Box>
                         <Typography variant="h5" fontWeight="bold" color="secondary">
                             OUR MEMBERSHIP
                         </Typography>
-                        <Typography variant="h4" color="primary" sx={{ whiteSpace: 'pre-line' }}>
-                            {'We help our candidates in\nfinding new and exciting jobs'}
+                        <Typography variant="h4" color="primary">
+                            {'We help our candidates in finding new and exciting jobs'}
                         </Typography>
-                        <Typography color="#737373" variant="body1" mb="2%" sx={{ whiteSpace: 'pre-line' }}>
-                            {
-                                ' The Shaper program offers you the opportunity to work\nwith top companies. You can be tested by multiple\nemployers, as many as you have time to prove your\nskills. Our membership is designed to help you grow\nand succeed.'
-                            }
+                        <Typography color="#737373" variant="body1" mb="2%">
+                            The Shaper program offers you the opportunity to work with top companies. You can be tested by multiple employers, as many
+                            as you have time to prove your skills. Our membership is designed to help you grow and succeed.
                         </Typography>
                         <Button text="Suscribe" type="button" variant="contained" padding="16px 48px" />
                     </Box>
                     <Image src={girl2Image} alt="girl" width="422px" height="368px" />
                 </Box>
                 <Box component="div" display="flex" justifyContent="center" m="100px 0">
-                    <InterestCard title={'Are you interested in\nlooking at study careers?'} button="Apply" />
+                    <InterestCard title={'Are you interested in looking at study careers?'} button="Apply" />
                 </Box>
                 <Footer />
             </Box>

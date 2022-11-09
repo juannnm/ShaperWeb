@@ -4,6 +4,7 @@ import { TopAppBar as RUCTopAppBar, IconButton, LinkButton } from 'react-ui-cont
 import SearchIcon from '@mui/icons-material/Search';
 import { LogoShaperBlue } from '../../../../../public/assets/svg/logo';
 import { useRouter } from 'next/router';
+import React from 'react';
 
 interface IProps {
     bgColor: string;
@@ -11,6 +12,7 @@ interface IProps {
 
 export const TopAppBar = ({ bgColor }: IProps) => {
     const { pathname } = useRouter();
+    const [open, setOpen] = React.useState(false);
 
     const navButtons = [
         {
@@ -26,6 +28,21 @@ export const TopAppBar = ({ bgColor }: IProps) => {
         },
         {
             component: (
+                <Link href="/get-started" passHref key="get-started">
+                    <LinkButton
+                        text="Get Started"
+                        color={
+                            (bgColor !== 'white' && pathname === '/get-started') || (bgColor === 'white' && pathname !== '/get-started')
+                                ? 'primary'
+                                : 'inherit'
+                        }
+                        href="/get-started"
+                    />
+                </Link>
+            ),
+        },
+        {
+            component: (
                 <Link href="/academy" passHref key="academy">
                     <LinkButton
                         text="Academy"
@@ -35,21 +52,6 @@ export const TopAppBar = ({ bgColor }: IProps) => {
                                 : 'inherit'
                         }
                         href="/academy"
-                    />
-                </Link>
-            ),
-        },
-        {
-            component: (
-                <Link href="/membership" passHref key="membership">
-                    <LinkButton
-                        text="Membership"
-                        color={
-                            (bgColor !== 'white' && pathname === '/membership') || (bgColor === 'white' && pathname !== '/membership')
-                                ? 'primary'
-                                : 'inherit'
-                        }
-                        href="/membership"
                     />
                 </Link>
             ),
@@ -140,7 +142,6 @@ export const TopAppBar = ({ bgColor }: IProps) => {
 
     return (
         <RUCTopAppBar
-            open={false}
             navButtons={navButtons}
             otherButtons={otherButtons}
             background="transparent"

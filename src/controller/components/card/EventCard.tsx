@@ -7,7 +7,7 @@ interface IProps {
     title?: string;
     description?: string;
     background?: string;
-    direction?: 'row' | 'column' | 'row-inverse' | 'column-inverse';
+    direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
 }
 
 export const EventCard = ({ dateNumber, dateMonth, title, description, background = 'white', direction = 'row' }: IProps) => {
