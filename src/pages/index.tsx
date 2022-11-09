@@ -74,7 +74,7 @@ const Home: NextPage = () => {
                         justifyContent="space-evenly"
                         alignContent="center"
                         flexWrap="wrap"
-                        gap={{ xs: 0, lg: 5 }}
+                        gap={{ mobile: 0, desktop: 5 }}
                         mt="4%"
                     >
                         <MicrosoftLogo style={{ fontSize: '150px' }} />
@@ -91,7 +91,7 @@ const Home: NextPage = () => {
                     display="flex"
                     justifyContent="center"
                     alignItems="center"
-                    flexDirection={{ xs: 'column', lg: 'row' }}
+                    flexDirection={{ mobile: 'column', desktop: 'row' }}
                 >
                     <Box
                         display="flex"
@@ -163,7 +163,7 @@ const Home: NextPage = () => {
                         alignItems: 'center',
                     }}
                 >
-                    <Box display="flex" flexDirection={{ xs: 'column', lg: 'row' }} alignItems="center" mt="10%" gap={4}>
+                    <Box display="flex" flexDirection={{ mobile: 'column', desktop: 'row' }} alignItems="center" mt="10%" gap={4}>
                         <Box display="flex" flexDirection="column">
                             <Typography variant="h6" color="secondary" fontWeight="bold">
                                 LEARN AND GROW
@@ -178,7 +178,7 @@ const Home: NextPage = () => {
                             }
                         </Typography>
                     </Box>
-                    <Box display="flex" flexDirection={{ xs: 'column', lg: 'row' }} mr="10%" ml="10%" mt="2%" gap={8}>
+                    <Box display="flex" flexDirection={{ mobile: 'column', desktop: 'row' }} mr="10%" ml="10%" mt="2%" gap={8}>
                         <Box>
                             <Box display="flex" gap={1}>
                                 <Typography variant="subtitle1" fontWeight="bold" color="secondary">
@@ -287,7 +287,7 @@ const Home: NextPage = () => {
                     </Box>
                 </Box>
                 <Box component="div" id="WatchandLearn" display="flex" flexDirection="row" justifyContent="center" mt="10%">
-                    <Box width={{ xs: 0, md: '500px', lg: '500px' }}>
+                    <Box width={{ mobile: 0, md: '500px', desktop: '500px' }}>
                         <Image src={TabletImage} alt="image" width="436px" height="271px" />
                     </Box>
                     <Box display="flex" flexDirection="column" ml="5%" justifyContent="space-between" mt="0">
@@ -365,7 +365,7 @@ const Home: NextPage = () => {
                         </Box>
                         <Button text="Suscribe" type="button" variant="contained" padding="0 40px" />
                     </Box>
-                    <Box width={{ xs: 0, md: '500px', lg: '500px' }}>
+                    <Box width={{ mobile: 0, md: '500px', desktop: '500px' }}>
                         <Image src={MemberImage} alt="Member" width="460px" height="411px" />
                     </Box>
                 </Box>

@@ -25,7 +25,7 @@ const Careers: NextPage = () => {
             </Head>
             <Box>
                 <TopAppBar bgColor="white" />
-                <Box id="Intro" component="div" justifyContent="center" textAlign="center" m={{ xs: '10%' }} mt={{ xs: '20%', lg: '10%' }}>
+                <Box id="Intro" component="div" justifyContent="center" textAlign="center" m={{ mobile: '10%' }} mt={{ mobile: '20%', desktop: '10%' }}>
                     <Box>
                         <Typography variant="h6" fontWeight="bold" color="secondary">
                             CAREERS
@@ -47,9 +47,9 @@ const Careers: NextPage = () => {
                     flexDirection="row"
                     justifyContent="center"
                     alignItems="center"
-                    m={{ xs: '50px' }}
+                    m={{ mobile: '50px' }}
                 >
-                    <Box width={{ xs: 0, md: '500px', lg: '500px' }}>
+                    <Box width={{ mobile: 0, md: '500px', desktop: '500px' }}>
                         <Image src={cellphoneImage} alt="cellphone" width="504.5" height="297" />
                     </Box>
                     <List>
@@ -83,7 +83,7 @@ const Careers: NextPage = () => {
                         </ListItem>
                     </List>
                 </Box>
-                <Box id="careerTypes" component="div" m={{ xs: '100px 50px', lg: '200px 0' }} textAlign="center">
+                <Box id="careerTypes" component="div" m={{ mobile: '100px 50px', desktop: '200px 0' }} textAlign="center">
                     <Typography variant="h6" mb="10px" fontWeight="bold" color="secondary">
                         OUR PROCESS IS REALLY SIMPLE
                     </Typography>
@@ -118,7 +118,7 @@ const Careers: NextPage = () => {
                         <CertifieCard />
                     </Box>
                 </Box>
-                <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" flexWrap="wrap-reverse" m={{ xs: '50px' }}>
+                <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" flexWrap="wrap-reverse" m={{ mobile: '50px' }}>
                     <Box>
                         <Typography variant="h5" fontWeight="bold" color="secondary">
                             OUR MEMBERSHIP
