@@ -52,15 +52,15 @@ const Courses: NextPage = () => {
                     </Box>
                     <Box
                         sx={{
-                            top: { xs: '200px', md: '300px', lg: '100px' },
-                            right: { md: '170px', lg: '200px' },
-                            m: { xs: '10vw', lg: 0 },
+                            top: { mobile: '200px', md: '300px', desktop: '100px' },
+                            right: { md: '170px', desktop: '200px' },
+                            m: { mobile: '10vw', desktop: 0 },
                         }}
                     >
                         <Image src={groupImage} alt="group" width="865.75" height="492.27" />
                     </Box>
                 </Box>
-                <Box id="characteristics" component="div" display="flex" flexDirection="column" gap={4} m={{ xs: '10%' }}>
+                <Box id="characteristics" component="div" display="flex" flexDirection="column" gap={4} m={{ mobile: '10%' }}>
                     <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" gap="2%">
                         <Image src={girlImage} alt="girl" width="300px" height="237.85" />
                         <Box display="flex" flexDirection="column" width="500px">
@@ -75,7 +75,7 @@ const Courses: NextPage = () => {
                     <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" gap="2%">
                         <Image src={phoneImage} alt="phone" width="300px" height="237.85" />
                         <Box display="flex" flexDirection="column" width="500px">
-                            <Typography variant="h5" color="primary" fontWeight="bold" sx={{ whiteSpace: 'pre-line' }} width={{ lg: '500px' }}>
+                            <Typography variant="h5" color="primary" fontWeight="bold" sx={{ whiteSpace: 'pre-line' }} width={{ desktop: '500px' }}>
                                 {' You will be able to learn the most\n useful methods and techniques'}
                             </Typography>
                             <Typography variant="body1" color="#737373" sx={{ whiteSpace: 'pre-line' }}>

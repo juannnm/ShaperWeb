@@ -52,14 +52,22 @@ const AboutUs = () => {
                         <br /> Donec tortor. vitae consectetur placerat in Lorem tempor Sed odio Praesent tempor malesuada
                         <br /> fringilla ex id dui. convallis. Praesent risus ipsum{' '}
                     </Typography>
-                    <Box mb="5%" mt="5%">
+                    <Box display="flex" justifyContent="center" mb="5%" mt="5%" flexWrap="wrap" gap={3}>
+                      <Box width={{mobile:"150px"}}>
                         <Image src={Oliver} alt="character" width="228px" height="236.62px" />
+                      </Box>
+                      <Box width={{mobile:"150px"}}>
                         <Image src={Arlo} alt="character" width="228px" height="236.62px" />
+                      </Box>
+                      <Box width={{mobile:"150px"}}>
                         <Image src={Charlie} alt="character" width="228px" height="236.62px" />
+                      </Box>
+                      <Box width={{mobile:"150px"}}>
                         <Image src={Ella} alt="character" width="228px" height="236.62px" />
+                      </Box>
                     </Box>
                 </Box>
-                <Box component="div" id="values" width="70vw" m="50px 300px" textAlign="center">
+                <Box component="div" id="values" width="70vw" m={{desktop:"50px 300px"}} textAlign="center">
                     <Typography variant="h5" color="secondary" fontWeight="bold">
                         OUR VALUES
                     </Typography>
@@ -165,7 +173,7 @@ const AboutUs = () => {
                     <Typography variant="subtitle1" color="primary">
                         quis urna libero, quam nec viverra volutpat sed lobortis, placerat Nam commodo faucibus vitae eu volutpat orci vitae risus{' '}
                     </Typography>
-                    <Box display="flex" flexDirection="row" justifyContent="center" mt="40px">
+                    <Box display="flex" flexDirection="row" justifyContent="center" mt="20%" m={{mobile:"20% 10%"}} flexWrap="wrap">
                         <Box textAlign="left" mr="30px">
                             <Box display="flex" gap="5%">
                                 <Typography fontWeight="bold" color="secondary">
