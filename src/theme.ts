@@ -30,6 +30,9 @@ let theme = createTheme({
             main: '#A54CDB',
             contrastText: '#FFFFFF',
         },
+        background: {
+            main: '#fff',
+        },
     },
     typography: {
         fontFamily: 'RobotoRegular, RobotoMedium, RobotoBold',

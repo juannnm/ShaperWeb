@@ -1,16 +1,16 @@
-import { Box, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
+import { Menu } from '@mui/icons-material';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { Button } from 'react-ui-controller';
+import { Button, IconButton } from 'react-ui-controller';
 import guyImage from '../../../public/assets/png/Academy/foto 1.png';
 import jumpImage from '../../../public/assets/png/Academy/FOTOS.png';
-import cellphoneImage from '../../../public/assets/png/Academy/imagen.png';
-import { IsologotipoShaperBlue } from '../../../public/assets/svg/logo/index';
 import { CareerCard } from '../../controller/components/card/CareerCard';
 import { CertifieCard } from '../../controller/components/card/CertifieCard';
 import { Footer } from '../../controller/components/surfaces/Footer/Footer';
 import { NavigationRail } from '../../controller/components/surfaces/NavigationRail/NavigationRail';
+import { ShaperBlue } from '../../../public/assets/svg/logo';
 
 const Careers: NextPage = () => {
     return (
@@ -27,7 +27,22 @@ const Careers: NextPage = () => {
                 <Box sx={{ display: { mobile: 'none', laptop: 'block' } }}>
                     <NavigationRail />
                 </Box>
-                <Box id="Intro" component="div" justifyContent="center" textAlign="center" pt={{ mobile: '20%', laptop: '10%' }}>
+                <Box display={{ mobile: 'flex', laptop: 'none' }} p="20px" alignItems="center" gap={2}>
+                    <IconButton color="primary">
+                        <Menu fontSize="large" />
+                    </IconButton>
+                    <ShaperBlue style={{ fontSize: '80px', marginTop: '4px' }} />
+                </Box>
+                <Box
+                    id="Intro"
+                    component="div"
+                    display="flex"
+                    justifyContent="center"
+                    flexDirection="column"
+                    textAlign="center"
+                    pt={{ mobile: '0%', laptop: '5%' }}
+                    gap={2}
+                >
                     <Box>
                         <Typography variant="h6" fontWeight="bold" color="secondary">
                             CAREERS
@@ -40,39 +55,9 @@ const Careers: NextPage = () => {
                         </Typography>
                         <Button text="Contact our team" type="button" variant="contained" />
                     </Box>
-                    <Image src={jumpImage} alt="group" width="1066" height="397" />
-                </Box>
-                <Box
-                    id="characteristic"
-                    component="div"
-                    display="flex"
-                    flexDirection="row"
-                    justifyContent="center"
-                    alignItems="center"
-                    m={{ mobile: '50px' }}
-                >
-                    <Box display={{ mobile: 'none', laptop: 'block' }}>
-                        <Image src={cellphoneImage} alt="cellphone" width="504.5" height="297" />
+                    <Box m={{ mobile: '0', laptop: '0 20%' }}>
+                        <Image src={jumpImage} alt="group" width="1066" height="397" />
                     </Box>
-                    <List>
-                        <ListItem>
-                            <ListItemIcon>
-                                <IsologotipoShaperBlue />
-                            </ListItemIcon>{' '}
-                            <ListItemText primaryTypographyProps={{ color: 'primary' }}>
-                                <b>This program</b> will allow you to
-                                <b>optimize your skills</b>, both professionally and personally.
-                            </ListItemText>
-                        </ListItem>
-                        <ListItem>
-                            <ListItemIcon>
-                                <IsologotipoShaperBlue />
-                            </ListItemIcon>
-                            <ListItemText primaryTypographyProps={{ color: 'primary' }}>
-                                Our team of experts will help you<b>define your career goals</b> and <b>succeed</b> in your job search.
-                            </ListItemText>
-                        </ListItem>
-                    </List>
                 </Box>
                 <Box id="careerTypes" component="div" m={{ mobile: '100px 50px', laptop: '200px 0' }} textAlign="center">
                     <Typography variant="h6" mb="10px" fontWeight="bold" color="secondary">
@@ -97,29 +82,35 @@ const Careers: NextPage = () => {
                         Once you have chosen your specific framework, you can now apply and our team will reach you.
                     </Typography>
                 </Box>
-                <Box textAlign="center" mb="12%">
+                <Box textAlign="center" mb="10%">
                     <Typography variant="h5" fontWeight="bold" color="secondary">
                         ALL CAREERS
                     </Typography>
-                    <Box display="flex" flexDirection="row" justifyContent="center" gap={{ mobile: 0, laptop: 4 }} mt="2%">
+                    <Box display="flex" flexDirection="row" justifyContent="center" gap={{ mobile: 1, laptop: 4 }} mt="2%">
                         <CertifieCard />
                         <CertifieCard />
                         <CertifieCard />
                         <CertifieCard />
                     </Box>
                 </Box>
-                <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" flexWrap="wrap-reverse" m={{ mobile: '50px' }}>
-                    <Box>
+                <Box
+                    display="flex"
+                    flexDirection={{ mobile: 'column-reverse', laptop: 'row' }}
+                    justifyContent="center"
+                    alignItems="center"
+                    flexWrap="wrap-reverse"
+                    m={{ mobile: '10% 10px' }}
+                >
+                    <Box width={{ mobile: '100%', laptop: '30%' }}>
                         <Typography variant="h5" fontWeight="bold" color="secondary">
                             OUR MEMBERSHIP
                         </Typography>
-                        <Typography variant="h4" color="primary" sx={{ whiteSpace: 'pre-line' }}>
-                            {'We help our candidates in\nfinding new and exciting jobs'}
+                        <Typography variant="h4" color="primary">
+                            We help our candidates in finding new and exciting jobs
                         </Typography>
                         <Typography color="#737373" variant="body1" mb="2%">
-                            {
-                                ' The Shaper program offers you the opportunity to work with top companies. You can be tested by multiple employers, as many as you have time to prove your skills. Our membership is designed to help you grow and succeed.'
-                            }
+                            The Shaper program offers you the opportunity to work with top companies. You can be tested by multiple employers, as many
+                            as you have time to prove your skills. Our membership is designed to help you grow and succeed.
                         </Typography>
                         <Button text="Suscribe" type="button" variant="contained" padding="16px 48px" />
                     </Box>
