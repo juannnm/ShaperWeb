@@ -37,8 +37,10 @@ const Home: NextPage = () => {
                 </Box>
                 <Box
                     sx={{
-                        width: '100%',
+                        width: '90%',
+                        ml:"8%",
                         position: 'relative',
+                        borderRadius:"20px",
                         background: 'linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706)',
                         backgroundSize: '600% 100%',
                         animation: 'gradient 16s linear infinite',
@@ -52,8 +54,6 @@ const Home: NextPage = () => {
                     <Box
                         display="flex"
                         justifyContent="center"
-                        pt="10%"
-                        pb="5%"
                         alignItems="center"
                         gap="10%"
                         flexDirection={{ mobile: 'column', laptop: 'row' }}
@@ -150,7 +150,7 @@ const Home: NextPage = () => {
                         />
                     </Box>
                 </Box>
-                <Box component="section" id="events" display="flex" flexDirection="column" justifyContent="center" alignItems="center" mt="10%">
+                {/* <Box component="section" id="events" display="flex" flexDirection="column" justifyContent="center" alignItems="center" mt="10%">
                     <Typography variant="h6" sx={{ fontWeight: 'bold' }} color="secondary">
                         Events
                     </Typography>
@@ -160,7 +160,7 @@ const Home: NextPage = () => {
                     <Box>
                         <EventList />
                     </Box>
-                </Box>
+                </Box> */}
                 <Box
                     component="div"
                     id="learn"
@@ -184,19 +184,19 @@ const Home: NextPage = () => {
                             <Typography variant="h6" color="secondary" fontWeight="bold" align="left">
                                 LEARN AND GROW
                             </Typography>
-                            <Typography variant="h4" fontWeight="bold" color="primary" align="left">
+                            <Typography variant="h4" fontWeight="bold" color="primary" align="left" width="80%">
                                 We invest in your future.
                             </Typography>
                         </Box>
-                        <Typography variant="body1" color="#737373" width="30%" align="justify">
+                        <Typography variant="body1" color="#737373" width="25%" align="justify">
                             Our team of experts will help you define your career goals and improve your skills so you can succeed in your job search.
                         </Typography>
                     </Box>
                     <Box
                         display="flex"
                         flexDirection={{ mobile: 'column', laptop: 'row' }}
-                        m={{ mobile: '0', laptop: '2% 10%' }}
-                        gap={{ mobile: 2, laptop: 2 }}
+                        m={{ mobile: '0', laptop: '2% 0 2% 100px' }}
+                        gap={{ mobile: 2, laptop: 0}}
                     >
                         <Box>
                             <Box display="flex" gap={1}>
@@ -207,11 +207,11 @@ const Home: NextPage = () => {
                                     We love teaching remotely
                                 </Typography>
                             </Box>
-                            <Typography variant="body2" color="#737373">
-                                All you need is a computer with internet access and you will dive deep into new experiences.
+                            <Typography variant="body2" color="#737373" width="60%">
+                                All you need is a computer with internet access.
                             </Typography>
                         </Box>
-                        <Box>
+                        <Box width="296px">
                             <Box display="flex" gap={1}>
                                 <Typography variant="body1" fontWeight="bold" color="secondary">
                                     02
@@ -220,21 +220,21 @@ const Home: NextPage = () => {
                                     Knowledge into practice
                                 </Typography>
                             </Box>
-                            <Typography variant="body2" color="#737373">
+                            <Typography variant="body2" color="#737373" width="70%">
                                 We provide you with the most sought-after skills in a high-demand world.
                             </Typography>
                         </Box>
-                        <Box>
+                        <Box width="296px">
                             <Box display="flex" gap={1}>
                                 <Typography variant="body1" fontWeight="bold" color="secondary">
                                     03
                                 </Typography>
                                 <Typography variant="body1" fontWeight="bold" color="primary">
-                                    Your new life starts now
+                                    You don't have to pay us now
                                 </Typography>
                             </Box>
-                            <Typography variant="body2" color="#737373">
-                                You do not have to pay us now, just learn and we will help you find your dream job.
+                            <Typography variant="body2" color="#737373" width="80%">
+                                Just learn and we will help you find your dream job, only then you will pay us back.
                             </Typography>
                         </Box>
                     </Box>
@@ -245,10 +245,9 @@ const Home: NextPage = () => {
                             HOW IT WORKS
                         </Typography>
                         <Typography variant="h3" fontWeight="bold" color="primary" width="50%">
-                            We have created the highest standards for people like you: You can measure your needs over time and choose between 2
-                            options.
+                            Highest standards made just for you.
                         </Typography>
-                        <Typography variant="body1" color="#737373">
+                        <Typography variant="body1" color="#737373" width="30%">
                             You can measure your needs over time and choose between 2 options.Full-time and Part-time.
                         </Typography>
                     </Box>
@@ -302,17 +301,17 @@ const Home: NextPage = () => {
                             <Typography variant="h5" fontWeight="bold" color="secondary">
                                 WATCH AND LEARN
                             </Typography>
-                            <Typography variant="h4" fontWeight="bold" color="primary">
+                            <Typography variant="h4" fontWeight="bold" color="primary" width="70%">
                                 Enjoy our online courses for free
                             </Typography>
-                            <Typography variant="body1" color="#737373">
-                                Now you can learn with the best experts in the sector without schedule and whenever you want, no strings-attached.
+                            <Typography variant="body1" color="#737373" width="70%">
+                                Now you can learn with the best experts in the sector without schedule, no strings-attached.
                             </Typography>
                         </Box>
-                        <Button text="Watch now" type="button" variant="contained" padding="16px 48px" />
+                        <Button text="Go to courses" type="button" variant="contained" padding="16px 48px" />
                     </Box>
                 </Box>
-                <Box component="div" id="services" display="flex" flexDirection="column" gap={5} mt="10%" alignItems="center">
+                {/* <Box component="div" id="services" display="flex" flexDirection="column" gap={5} mt="10%" alignItems="center">
                     <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center">
                         <Typography variant="h5" fontWeight="bold" color="secondary">
                             THE SERVICES WE OFFERS
@@ -350,7 +349,7 @@ const Home: NextPage = () => {
                             background="#FFB8D1"
                         />
                     </Box>
-                </Box>
+                </Box> */}
                 <Box
                     component="div"
                     id="membership"
@@ -367,11 +366,11 @@ const Home: NextPage = () => {
                             <Typography variant="h5" fontWeight="bold" color="primary">
                                 New and exciting jobs.
                             </Typography>
-                            <Typography variant="body1" color="#737373">
+                            <Typography variant="body1" color="#737373" width="65%">
                                 Our platform gives you the opportunity to work with top companies. Prove your skills and get hired.
                             </Typography>
                         </Box>
-                        <Button text="Suscribe" type="button" variant="contained" padding="16px 48px" />
+                        <Button text="Join us" type="button" variant="contained" padding="16px 48px" />
                     </Box>
                     <Box width={{ laptop: '500px' }}>
                         <Image src={MemberImage} alt="Member" width="460px" height="411px" />
@@ -411,11 +410,11 @@ const Home: NextPage = () => {
                     m={{ mobile: '10% 25px', laptop: '0 0  10% 0' }}
                     gap={{ mobile: 2, laptop: '5%' }}
                 >
-                    <Box textAlign="center">
-                        <Typography variant="h6" fontWeight="bold" color="secondary">
+                    <Box textAlign="center" width="400px">
+                        <Typography variant="h6" color="secondary">
                             TEAM WORK
                         </Typography>
-                        <Typography variant="h5" fontWeight="bold" color="primary">
+                        <Typography variant="h5" fontWeight="bold" color="primary" width="45%" textAlign="left" ml="130px">
                             Meet the awesome and creative members of our staff.
                         </Typography>
                     </Box>
