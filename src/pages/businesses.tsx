@@ -5,6 +5,7 @@ import {
     StarBorderRounded,
     TimelineOutlined,
     TrendingDownRounded,
+    Menu,
 } from '@mui/icons-material';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
@@ -18,6 +19,8 @@ import ReadyForWork from '../../public/assets/png/businesses/ready-for-work.png'
 import Network from '../../public/assets/png/businesses/network.png';
 import { Footer } from '../controller/components/surfaces/Footer/Footer';
 import { NavigationRail } from '../controller/components/surfaces/NavigationRail/NavigationRail';
+import { IconButton } from 'react-ui-controller';
+import { LogoShaperBusinessWhite, ShaperWhite } from '../../public/assets/svg/logo';
 
 const Businesses = () => {
     return (
@@ -37,8 +40,16 @@ const Businesses = () => {
                     background: 'linear-gradient(180deg, #050E3F 0%, #A54CDB 100%);',
                 }}
             >
-                <NavigationRail bgColor="none" />
-                <Box ml="100px">
+                <Box display={{ mobile: 'none', laptop: 'block' }}>
+                    <NavigationRail />
+                </Box>
+                <Box display={{ mobile: 'flex', laptop: 'none' }} p="20px" alignItems="center" gap={2}>
+                    <IconButton color="background">
+                        <Menu fontSize="large" />
+                    </IconButton>
+                    <ShaperWhite style={{ fontSize: '80px', marginTop: '4px' }} />
+                </Box>
+                <Box ml={{ mobile: 0, laaptop: '100px' }}>
                     <Box
                         display="flex"
                         justifyContent="center"
@@ -48,7 +59,7 @@ const Businesses = () => {
                         flexWrap={{ mobile: 'wrap-reverse', laptop: 'nowrap' }}
                         m={{ mobile: '0 10%' }}
                     >
-                        <Box display="flex" flexDirection="column" width="50%">
+                        <Box display="flex" flexDirection="column" width={{ mobile: '100%', laptop: '50%' }}>
                             <Typography variant="h6" color="secondary" fontWeight="bold">
                                 COMPANIES
                             </Typography>
@@ -65,7 +76,7 @@ const Businesses = () => {
                             <Image src={Woman} alt="woman" width="500px" height="350px" />
                         </Box>
                     </Box>
-                    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" gap={10} pb="10%" m={{ mobile: '0 10%' }}>
+                    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" gap={10} pb="10%" m={{ mobile: '0 5%' }}>
                         <Box display="flex" alignItems="center" gap="10%">
                             <Box
                                 display="flex"
@@ -78,7 +89,7 @@ const Businesses = () => {
                                     WebkitBackdropFilter: 'blur(10px)',
                                 }}
                             >
-                                <StarBorderRounded sx={{ fontSize: '150px', color: '#8BB5F3' }} />
+                                <StarBorderRounded sx={{ fontSize: { mobile: '100px', laptop: '100px' }, color: '#8BB5F3' }} />
                             </Box>
                             <Box maxWidth={600}>
                                 <Typography variant="h6" fontWeight="bold" color="white">
@@ -102,7 +113,7 @@ const Businesses = () => {
                                     WebkitBackdropFilter: 'blur(10px)',
                                 }}
                             >
-                                <SettingsOutlined sx={{ fontSize: '150px', color: '#D8A2F1' }} />
+                                <SettingsOutlined sx={{ fontSize: '100px', color: '#D8A2F1' }} />
                             </Box>
                             <Box maxWidth={600}>
                                 <Typography variant="h6" color="white" fontWeight="bold">
@@ -125,7 +136,7 @@ const Businesses = () => {
                                     WebkitBackdropFilter: 'blur(10px)',
                                 }}
                             >
-                                <PersonSearchOutlined sx={{ fontSize: '150px', color: '#FFB8D1' }} />
+                                <PersonSearchOutlined sx={{ fontSize: '100px', color: '#FFB8D1' }} />
                             </Box>
                             <Box maxWidth={600}>
                                 <Typography variant="h6" color="white" fontWeight="bold">
@@ -149,7 +160,7 @@ const Businesses = () => {
                                     WebkitBackdropFilter: 'blur(10px)',
                                 }}
                             >
-                                <TimelineOutlined sx={{ fontSize: '150px', color: '#FFAD94' }} />
+                                <TimelineOutlined sx={{ fontSize: '100px', color: '#FFAD94' }} />
                             </Box>
                             <Box maxWidth={600}>
                                 <Typography variant="h6" color="white" fontWeight="bold">
@@ -173,7 +184,7 @@ const Businesses = () => {
                                     WebkitBackdropFilter: 'blur(10px)',
                                 }}
                             >
-                                <CreditCardOutlined sx={{ fontSize: '150px', color: '#FFE3A2' }} />
+                                <CreditCardOutlined sx={{ fontSize: '100px', color: '#FFE3A2' }} />
                             </Box>
                             <Box maxWidth={600}>
                                 <Typography variant="h6" color="white" fontWeight="bold">
@@ -197,7 +208,7 @@ const Businesses = () => {
                                     WebkitBackdropFilter: 'blur(10px)',
                                 }}
                             >
-                                <TrendingDownRounded sx={{ fontSize: '150px', color: '#ADD59C' }} />
+                                <TrendingDownRounded sx={{ fontSize: '100px', color: '#ADD59C' }} />
                             </Box>
                             <Box maxWidth={600}>
                                 <Typography variant="h6" color="white" fontWeight="bold">
@@ -216,7 +227,7 @@ const Businesses = () => {
                         flexWrap={{ mobile: 'wrap-reverse', laptop: 'nowrap' }}
                         m={{ mobile: '0 10%' }}
                     >
-                        <Box display="flex" flexDirection="column" width="50%">
+                        <Box display="flex" flexDirection="column" width={{ mobile: '100%', laptop: '50%' }}>
                             <Typography variant="h6" color="white" fontWeight="bold">
                                 UNIVERSITIES
                             </Typography>
@@ -230,8 +241,15 @@ const Businesses = () => {
                         </Box>
                         <Image src={Boy} alt="boy" />
                     </Box>
-                    <Box display="flex" justifyContent="center" alignItems="center" gap="10%" m={{ mobile: '0 10%', desktop: '10% 0' }}>
-                        <Box display="flex" flexDirection="column" width="30%">
+                    <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        gap="10%"
+                        m={{ mobile: '10%', desktop: '10% 0' }}
+                        flexDirection={{ mobile: 'column', laptop: 'row' }}
+                    >
+                        <Box display="flex" flexDirection="column" width={{ mobile: '100%', laptop: '30%' }}>
                             <Typography variant="h5" color="white" fontWeight="bold">
                                 Drive value and growth
                             </Typography>
@@ -240,11 +258,22 @@ const Businesses = () => {
                                 for their first practice.
                             </Typography>
                         </Box>
-                        <Image src={Pc} alt="pc" height="300px" width="300px" />
+                        <Box display={{ mobile: 'none', laptop: 'block' }}>
+                            <Image src={Pc} alt="pc" height="300px" width="300px" />
+                        </Box>
                     </Box>
-                    <Box display="flex" justifyContent="center" alignItems="center" gap="10%" m={{ mobile: '0 10%', desktop: '10% 0' }}>
-                        <Image src={BeCreative} alt="pc" height="300px" width="300px" />
-                        <Box display="flex" flexDirection="column" width="30%">
+                    <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        gap="10%"
+                        m={{ mobile: '10%', desktop: '10% 0' }}
+                        flexDirection={{ mobile: 'column', laptop: 'row' }}
+                    >
+                        <Box display={{ mobile: 'none', laptop: 'block' }}>
+                            <Image src={BeCreative} alt="pc" height="300px" width="300px" />
+                        </Box>
+                        <Box display="flex" flexDirection="column" width={{ mobile: '100%', laptop: '30%' }}>
                             <Typography variant="h5" color="white" fontWeight="bold">
                                 Be creative and stay positive
                             </Typography>
@@ -254,8 +283,8 @@ const Businesses = () => {
                             </Typography>
                         </Box>
                     </Box>
-                    <Box display="flex" justifyContent="center" alignItems="center" gap="10%" m={{ mobile: '0 10%', desktop: '10% 0' }}>
-                        <Box display="flex" flexDirection="column" width="30%">
+                    <Box display="flex" justifyContent="center" alignItems="center" gap="10%" m={{ mobile: '10%', desktop: '10% 0' }}>
+                        <Box display="flex" flexDirection="column" width={{ mobile: '100%', laptop: '30%' }}>
                             <Typography variant="h5" color="white" fontWeight="bold">
                                 Ready for work
                             </Typography>
@@ -264,11 +293,15 @@ const Businesses = () => {
                                 challenges and have a sense of achievement.
                             </Typography>
                         </Box>
-                        <Image src={ReadyForWork} alt="pc" height="300px" width="300px" />
+                        <Box display={{ mobile: 'none', laptop: 'block' }}>
+                            <Image src={ReadyForWork} alt="pc" height="300px" width="300px" />
+                        </Box>
                     </Box>
-                    <Box display="flex" justifyContent="center" alignItems="center" gap="10%" m={{ mobile: '0 10%', desktop: '10% 0' }}>
-                        <Image src={Network} alt="pc" height="300px" width="300px" />
-                        <Box display="flex" flexDirection="column" width="30%">
+                    <Box display="flex" justifyContent="center" alignItems="center" gap="10%" m={{ mobile: '10%', desktop: '10% 0' }}>
+                        <Box display={{ mobile: 'none', laptop: 'block' }}>
+                            <Image src={Network} alt="pc" height="300px" width="300px" />
+                        </Box>
+                        <Box display="flex" flexDirection="column" width={{ mobile: '100%', laptop: '30%' }}>
                             <Typography variant="h5" color="white" fontWeight="bold">
                                 Build a strong network
                             </Typography>
@@ -277,7 +310,7 @@ const Businesses = () => {
                             </Typography>
                         </Box>
                     </Box>
-                    <Box display="flex" justifyContent="center" m={{ mobile: '0 10%', desktop: '10% 0' }}>
+                    <Box display="flex" justifyContent="center" m={{ mobile: '10%', desktop: '10% 0' }}>
                         <Box display="flex" flexDirection="column">
                             <Typography variant="h6" color="white" fontWeight="bold">
                                 TESTIMONIAL
