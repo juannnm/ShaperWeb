@@ -3257,10 +3257,10 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react-ui-controller@^0.0.47":
-  "integrity" "sha512-8KsCvT7b4rdLRBpV2fSarVm/DS3mFSx1prPCg/dLHjJ4WFngBB/Xx0bcO5RkZWZyS+SeKJIGCZN2UFLly/oGpw=="
-  "resolved" "https://registry.npmjs.org/react-ui-controller/-/react-ui-controller-0.0.47.tgz"
-  "version" "0.0.47"
+"react-ui-controller@^0.0.48":
+  "integrity" "sha512-EeGu/sw3sb8Zwl8m0ehCI2k2u8dtZhXH2+gpntcdghaaaARExmekjAS9C80zM1nvXspE7eqH/4TPlUafkm/vEw=="
+  "resolved" "https://registry.npmjs.org/react-ui-controller/-/react-ui-controller-0.0.48.tgz"
+  "version" "0.0.48"
   dependencies:
     "@emotion/react" "^11.10.5"
     "@emotion/styled" "^11.10.5"

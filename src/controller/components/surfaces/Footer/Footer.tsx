@@ -43,7 +43,7 @@ export const Footer = () => {
                 p={{ mobile: '50px 10px', laptop: '35px 25%' }}
                 gap={5}
             >
-                <Box display="flex" flexDirection={{ mobile: 'column', laptop: 'column' }} justifyContent="center" alignItems="center">
+                <Box display="flex" flexDirection={{ mobile: 'column', laptop: 'column' }} justifyContent="center" alignItems="center" gap={2}>
                     <Typography variant="h6" color="white" fontWeight="bold">
                         Register To Our Newsletter
                     </Typography>
@@ -72,8 +72,8 @@ export const Footer = () => {
                     </Box>
                 </Box>
                 <Box display="flex" flexDirection="row" gap={5}>
-                    <Box display="flex" flexDirection="column">
-                        <Typography fontWeight="bold" color="white" variant="h5">
+                    <Box display="flex" flexDirection="column" gap={2}>
+                        <Typography fontWeight="bold" color="white" variant="h6">
                             Last seen
                         </Typography>
                         <LinkButton
@@ -107,8 +107,8 @@ export const Footer = () => {
                             href="/"
                         />
                     </Box>
-                    <Box display="flex" flexDirection="column">
-                        <Typography fontWeight="bold" color="white" variant="h5">
+                    <Box display="flex" flexDirection="column" gap={2}>
+                        <Typography fontWeight="bold" color="white" variant="h6">
                             Shaper
                         </Typography>
                         <LinkButton
@@ -145,7 +145,7 @@ export const Footer = () => {
                 </Box>
             </Box>
             <Divider />
-            <Box textAlign="center">
+            <Box textAlign="center" p={'2.5% 0'}>
                 <Typography color="white">Copyright @ Shaper 2022. All Rights Reserved.</Typography>
             </Box>
         </Box>

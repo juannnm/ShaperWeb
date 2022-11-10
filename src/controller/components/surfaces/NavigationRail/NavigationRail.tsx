@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { NavigationRail as RUCNavigationRail, IconButton, LinkButton, Button } from 'react-ui-controller';
-import { Login, ExploreOutlined, SchoolOutlined, BusinessOutlined, Fingerprint, ContactSupportOutlined } from '@mui/icons-material';
+import { darken } from '@mui/system';
+import { Login, ExploreOutlined, SchoolOutlined, WorkOutlineOutlined, Fingerprint, ContactSupportOutlined } from '@mui/icons-material';
 import { IsologotipoShaperBlue } from '../../../../../public/assets/svg/logo';
 import { useRouter } from 'next/router';
 import React from 'react';
@@ -21,12 +22,12 @@ export const NavigationRail = ({ bgColor }: IProps) => {
                         display="flex"
                         flexDirection="column"
                         alignItems="center"
-                        sx={{ '&:hover button': { backgroundColor: '#ddd' }, '&:hover a': { color: '#ccc' } }}
+                        sx={{ '&:hover button': { backgroundColor: '#a8c7fa' }, '&:hover a': { color: darken('#050E3F', 3), fontWeight: 'bold' } }}
                     >
                         <IconButton>
-                            <IsologotipoShaperBlue />
+                            <IsologotipoShaperBlue style={{ fontSize: '20px' }} />
                         </IconButton>
-                        <LinkButton text="Home" variant="subtitle1" />
+                        <LinkButton text="Home" variant="body2" />
                     </Box>
                 </Link>
             ),
@@ -39,32 +40,30 @@ export const NavigationRail = ({ bgColor }: IProps) => {
                         display="flex"
                         flexDirection="column"
                         alignItems="center"
-                        sx={{ '&:hover button': { backgroundColor: '#ddd' }, '&:hover a': { color: '#ccc' } }}
+                        sx={{ '&:hover button': { backgroundColor: '#a8c7fa' }, '&:hover a': { color: darken('#050E3F', 3), fontWeight: 'bold' } }}
                     >
                         <IconButton>
-                            <ExploreOutlined color="primary" fontSize="large" />
+                            <ExploreOutlined color="primary" fontSize="medium" />
                         </IconButton>
-                        <LinkButton text="Get Started" variant="subtitle1" />
+                        <LinkButton text="Get Started" variant="body2" />
                     </Box>
                 </Link>
             ),
         },
         {
             component: (
-                <Link href="/college" passHref key="academy">
-                    <Box
-                        component="div"
-                        display="flex"
-                        flexDirection="column"
-                        alignItems="center"
-                        sx={{ '&:hover button': { backgroundColor: '#ddd' }, '&:hover a': { color: '#ccc' } }}
-                    >
-                        <IconButton>
-                            <SchoolOutlined color="primary" fontSize="large" />
-                        </IconButton>
-                        <LinkButton text="College" variant="subtitle1" />
-                    </Box>
-                </Link>
+                <Box
+                    component="div"
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    sx={{ '&:hover button': { backgroundColor: '#a8c7fa' }, '&:hover a': { color: darken('#050E3F', 3), fontWeight: 'bold' } }}
+                >
+                    <IconButton>
+                        <SchoolOutlined color="primary" fontSize="medium" />
+                    </IconButton>
+                    <LinkButton text="College" variant="body2" />
+                </Box>
             ),
             layer: {
                 components: [
@@ -85,12 +84,12 @@ export const NavigationRail = ({ bgColor }: IProps) => {
                         display="flex"
                         flexDirection="column"
                         alignItems="center"
-                        sx={{ '&:hover button': { backgroundColor: '#ddd' }, '&:hover a': { color: '#ccc' } }}
+                        sx={{ '&:hover button': { backgroundColor: '#a8c7fa' }, '&:hover a': { color: darken('#050E3F', 3), fontWeight: 'bold' } }}
                     >
                         <IconButton>
-                            <BusinessOutlined color="primary" fontSize="large" />
+                            <WorkOutlineOutlined color="primary" fontSize="medium" />
                         </IconButton>
-                        <LinkButton text="Businesses" variant="subtitle1" />
+                        <LinkButton text="Businesses" variant="body2" />
                     </Box>
                 </Link>
             ),
@@ -103,12 +102,12 @@ export const NavigationRail = ({ bgColor }: IProps) => {
                         display="flex"
                         flexDirection="column"
                         alignItems="center"
-                        sx={{ '&:hover button': { backgroundColor: '#ddd' }, '&:hover a': { color: '#ccc' } }}
+                        sx={{ '&:hover button': { backgroundColor: '#a8c7fa' }, '&:hover a': { color: darken('#050E3F', 3), fontWeight: 'bold' } }}
                     >
                         <IconButton>
-                            <Fingerprint color="primary" fontSize="large" />
+                            <Fingerprint color="primary" fontSize="medium" />
                         </IconButton>
-                        <LinkButton text="About Us" variant="subtitle1" />
+                        <LinkButton text="About Us" variant="body2" />
                     </Box>
                 </Link>
             ),
@@ -121,12 +120,12 @@ export const NavigationRail = ({ bgColor }: IProps) => {
                         display="flex"
                         flexDirection="column"
                         alignItems="center"
-                        sx={{ '&:hover button': { backgroundColor: '#ddd' }, '&:hover a': { color: '#ccc' } }}
+                        sx={{ '&:hover button': { backgroundColor: '#a8c7fa' }, '&:hover a': { color: darken('#050E3F', 3), fontWeight: 'bold' } }}
                     >
                         <IconButton>
-                            <ContactSupportOutlined color="primary" fontSize="large" />
+                            <ContactSupportOutlined color="primary" fontSize="medium" />
                         </IconButton>
-                        <LinkButton text="Contact" variant="subtitle1" />
+                        <LinkButton text="Contact" variant="body2" />
                     </Box>
                 </Link>
             ),
