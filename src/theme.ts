@@ -63,7 +63,7 @@ theme.typography.h3 = {
     lineHeight: '44px',
     fontWeight: 'bold',
     [theme.breakpoints.down('laptop')]: {
-        fontSize: '25px',
+        fontSize: '24px',
         lineHeight: '30px',
     },
 };
@@ -72,8 +72,8 @@ theme.typography.h5 = {
     fontSize: '28px',
     lineHeight: '36px',
     [theme.breakpoints.down('laptop')]: {
-        fontSize: '16px',
-        lineHeight: '20px',
+        fontSize: '20px',
+        lineHeight: '24px',
     },
 };
 theme.typography.h6 = {
@@ -81,8 +81,8 @@ theme.typography.h6 = {
     fontSize: '24px',
     lineHeight: '32px',
     [theme.breakpoints.down('laptop')]: {
-        fontSize: '20px',
-        lineHeight: '23px',
+        fontSize: '16px',
+        lineHeight: '20px',
     },
 };
 
@@ -91,8 +91,8 @@ theme.typography.body1 = {
     fontSize: '16px',
     lineHeight: '24px',
     [theme.breakpoints.down('laptop')]: {
-        fontSize: '16px',
-        lineHeight: '24px',
+        fontSize: '14px',
+        lineHeight: '20px',
     },
 };
 theme.typography.body2 = {

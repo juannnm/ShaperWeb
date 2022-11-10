@@ -17,12 +17,12 @@ export const ShaperFor = (props: IProps) => {
             background={props.background}
             description={{
                 components: (
-                    <Box key="container" display="flex" flexDirection="column" height={{ mobile: '150px', laptop: '250px' }} gap="2%">
+                    <Box key="container" display="flex" flexDirection="column" height={{ mobile: '150px', laptop: '175px' }} gap="2%">
                         <Box display="flex" flexDirection={{ mobile: 'row', laptop: 'column' }} alignItems="center">
-                            <Typography key="title" variant="h5" sx={{ textAlign: 'center', color: props.titleBold.color }}>
+                            <Typography key="title" variant="h6" sx={{ textAlign: 'center', color: props.titleBold.color }} fontWeight="light">
                                 {props.title && props.title.toUpperCase()}
                             </Typography>
-                            <Typography key="title" variant="h3" sx={{ textAlign: 'center', fontWeight: 'bold', color: props.titleBold.color }}>
+                            <Typography key="title" variant="h5" sx={{ textAlign: 'center', fontWeight: 'bold', color: props.titleBold.color }}>
                                 {props.titleBold && props.titleBold.text.toUpperCase()}
                             </Typography>
                         </Box>
@@ -41,7 +41,7 @@ export const ShaperFor = (props: IProps) => {
             // @ts-ignore
             direction={{ mobile: 'row', laptop: 'column' }}
             // @ts-ignore
-            width={{ mobile: '370px', laptop: '400px' }}
+            width={{ mobile: '340px', laptop: '350px' }}
             actions={
                 <Button
                     text="Learn More"
@@ -56,11 +56,7 @@ export const ShaperFor = (props: IProps) => {
             boxShadow="0px 2px 24px 3px #00000040"
             // @ts-ignore
             padding={{ mobile: '16px', laptop: '32px' }}
-            elevated={false}
             borderRadius={props.borderRadius}
         />
     );
 };
-
-// Notas
-// EL boton queda al borde de la carta, consultar como solucionarlo
