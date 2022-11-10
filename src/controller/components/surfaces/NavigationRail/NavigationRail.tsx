@@ -51,20 +51,18 @@ export const NavigationRail = ({ bgColor }: IProps) => {
         },
         {
             component: (
-                <Link href="/college" passHref key="academy">
-                    <Box
-                        component="div"
-                        display="flex"
-                        flexDirection="column"
-                        alignItems="center"
-                        sx={{ '&:hover button': { backgroundColor: '#ddd' }, '&:hover a': { color: '#ccc' } }}
-                    >
-                        <IconButton>
-                            <SchoolOutlined color="primary" fontSize="large" />
-                        </IconButton>
-                        <LinkButton text="College" variant="subtitle1" />
-                    </Box>
-                </Link>
+                <Box
+                    component="div"
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    sx={{ '&:hover button': { backgroundColor: '#ddd' }, '&:hover a': { color: '#ccc' } }}
+                >
+                    <IconButton>
+                        <SchoolOutlined color="primary" fontSize="large" />
+                    </IconButton>
+                    <LinkButton text="College" variant="subtitle1" />
+                </Box>
             ),
             layer: {
                 components: [
