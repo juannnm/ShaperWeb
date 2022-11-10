@@ -1,19 +1,19 @@
-import React from 'react';
-import { Footer } from '../controller/components/surfaces/Footer/Footer';
-import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar';
-import { Accordion, AccordionActions, AccordionDetails, AccordionSummary, Box, Typography } from '@mui/material';
-import type { NextPage } from 'next';
-import { Button } from 'react-ui-controller';
-import Image from 'next/image';
-import groupImage from '../../public/assets/png/Academy/Group of Guys.png';
-import girlImage from '../../public/assets/png/Academy/Mask group.jpg';
-import phoneImage from '../../public/assets/png/Academy/Mask group 1.jpg';
-import graphicImage from '../../public/assets/png/Academy/Mask group 2.jpg';
-import girl2Image from '../../public/assets/png/Academy/foto 2.png';
-import { InterestCard } from '../controller/components/card/InterestCard';
-import { CourseCard } from '../controller/components/card/CourseCard';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from '@mui/material';
+import { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
+import React from 'react';
+import { Button } from 'react-ui-controller';
+import girl2Image from '../../../public/assets/png/Academy/foto 2.png';
+import groupImage from '../../../public/assets/png/Academy/Group of Guys.png';
+import phoneImage from '../../../public/assets/png/Academy/Mask group 1.jpg';
+import graphicImage from '../../../public/assets/png/Academy/Mask group 2.jpg';
+import girlImage from '../../../public/assets/png/Academy/Mask group.jpg';
+import { CourseCard } from '../../controller/components/card/CourseCard';
+import { InterestCard } from '../../controller/components/card/InterestCard';
+import { Footer } from '../../controller/components/surfaces/Footer/Footer';
+import { NavigationRail } from '../../controller/components/surfaces/NavigationRail/NavigationRail';
 
 const Courses: NextPage = () => {
     const [expanded, setExpanded] = React.useState<string | false>(false);
@@ -35,9 +35,9 @@ const Courses: NextPage = () => {
             </Head>
             <Box component="main">
                 <Box sx={{ display: { mobile: 'none', laptop: 'block' } }}>
-                    <TopAppBar bgColor="white" />
+                    <NavigationRail />
                 </Box>
-                <Box id="Intro" component="div" justifyContent="center" textAlign="center" m={{ xs: '10%' }} mt={{ xs: '20%', lg: '10%' }}>
+                <Box id="Intro" component="div" justifyContent="center" textAlign="center" p={{ mobile: '20%', desktop: '10%' }}>
                     <Box>
                         <Typography variant="h6" fontWeight="bold" color="secondary">
                             COURSES
@@ -68,7 +68,7 @@ const Courses: NextPage = () => {
                                 In Shaper Academy you can enjoy
                             </Typography>
                             <Typography variant="body1" color="#737373" sx={{ whiteSpace: 'pre-line' }}>
-                                {'The best online courses wherever you are, without\nschedule and whenever you want.'}
+                                In Shaper Academy you can enjoy the best online courses wherever you are, without schedule.
                             </Typography>
                         </Box>
                     </Box>
@@ -76,10 +76,10 @@ const Courses: NextPage = () => {
                         <Image src={phoneImage} alt="phone" width="300px" height="237.85" />
                         <Box display="flex" flexDirection="column" width="500px">
                             <Typography variant="h5" color="primary" fontWeight="bold" sx={{ whiteSpace: 'pre-line' }} width={{ desktop: '500px' }}>
-                                {' You will be able to learn the most\n useful methods and techniques'}
+                                You will be able to learn the most useful methods and techniques on the market in high quality.
                             </Typography>
                             <Typography variant="body1" color="#737373" sx={{ whiteSpace: 'pre-line' }}>
-                                {'On the market in high quality, so you will not miss a\n single detail, without limitations.'}
+                                We offer courses in different areas to let you optimize your skills with a top team of professionals.
                             </Typography>
                         </Box>
                     </Box>
@@ -157,17 +157,19 @@ const Courses: NextPage = () => {
                     </Accordion>
                 </Box>
                 <Box component="div" display="flex" flexDirection="row" justifyContent="center" flexWrap="wrap-reverse" m={{ mobile: '10% 10px' }}>
-                    <Box>
-                        <Typography variant="h5" fontWeight="bold" color="secondary">
-                            OUR MEMBERSHIP
-                        </Typography>
-                        <Typography variant="h4" color="primary">
-                            {'We help our candidates in finding new and exciting jobs'}
-                        </Typography>
-                        <Typography color="#737373" variant="body1" mb="2%">
-                            The Shaper program offers you the opportunity to work with top companies. You can be tested by multiple employers, as many
-                            as you have time to prove your skills. Our membership is designed to help you grow and succeed.
-                        </Typography>
+                    <Box display="flex" flexDirection="column" width="50%" justifyContent="space-evenly">
+                        <Box>
+                            <Typography variant="h5" fontWeight="bold" color="secondary">
+                                OUR MEMBERSHIP
+                            </Typography>
+                            <Typography variant="h4" color="primary">
+                                {'We help our candidates in finding new and exciting jobs'}
+                            </Typography>
+                            <Typography color="#737373" variant="body1" mb="2%">
+                                The Shaper program offers you the opportunity to work with top companies. You can be tested by multiple employers, as
+                                many as you have time to prove your skills. Our membership is designed to help you grow and succeed.
+                            </Typography>
+                        </Box>
                         <Button text="Suscribe" type="button" variant="contained" padding="16px 48px" />
                     </Box>
                     <Image src={girl2Image} alt="girl" width="422px" height="368px" />

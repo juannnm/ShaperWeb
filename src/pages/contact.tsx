@@ -1,11 +1,10 @@
-import React from 'react';
-import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar';
-import { Box, Typography } from '@mui/material';
-import { Footer } from '../controller/components/surfaces/Footer/Footer';
+import { Box } from '@mui/material';
+import Head from 'next/head';
 import Image from 'next/image';
 import women from '../../public/assets/png/Contact us/imagen cont.png';
 import { UserForm } from '../controller/components/form/UserForm';
-import Head from 'next/head';
+import { Footer } from '../controller/components/surfaces/Footer/Footer';
+import { NavigationRail } from '../controller/components/surfaces/NavigationRail/NavigationRail';
 
 const Contact = () => {
     return (
@@ -20,9 +19,9 @@ const Contact = () => {
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <Box>
-              <Box display={{mobile:"none", laptop:"block"}}>
-                <TopAppBar bgColor="white" />
-              </Box>
+                <Box display={{ mobile: 'none', laptop: 'block' }}>
+                    <NavigationRail bgColor="white" />
+                </Box>
                 <Box
                     component="div"
                     sx={{
@@ -37,7 +36,7 @@ const Contact = () => {
                 >
                     <Box
                         display="flex"
-                        flexDirection={{mobile:"column", laptop:"row"}}
+                        flexDirection={{ mobile: 'column', laptop: 'row' }}
                         sx={{
                             m: '150px auto',
                             bgcolor: 'rgba(255,255,255,0.4)',
@@ -47,7 +46,7 @@ const Contact = () => {
                     >
                         <UserForm />
                         <Box>
-                          <Image src={women} alt="women" width="883" height="758" />
+                            <Image src={women} alt="women" width="883" height="758" />
                         </Box>
                     </Box>
                 </Box>

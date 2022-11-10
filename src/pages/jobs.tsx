@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar';
+import { TopAppBar } from '../controller/components/surfaces/NavigationRail/NavigationRail';
 
 const Jobs = () => {
     return (

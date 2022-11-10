@@ -1,13 +1,13 @@
-import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar';
-import Head from 'next/head';
 import { Box, Typography } from '@mui/material';
+import Head from 'next/head';
 import Image from 'next/image';
-import { Footer } from '../controller/components/surfaces/Footer/Footer';
-import Ella from '../../public/assets/png/About us/ELLA.png';
 import Arlo from '../../public/assets/png/About us/ARLO.png';
 import Charlie from '../../public/assets/png/About us/CHARLIE.png';
+import Ella from '../../public/assets/png/About us/ELLA.png';
 import Oliver from '../../public/assets/png/About us/OLIVER.png';
 import GroupImage from '../../public/assets/png/About us/Rectangle 2633.png';
+import { Footer } from '../controller/components/surfaces/Footer/Footer';
+import { NavigationRail } from '../controller/components/surfaces/NavigationRail/NavigationRail';
 
 const AboutUs = () => {
     return (
@@ -22,8 +22,8 @@ const AboutUs = () => {
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <Box>
-                <TopAppBar bgColor="white" />
-                <Box component="div" id="intro" display="flex" flexDirection="column" justifyContent="center" textAlign="center" mt="200px">
+                <NavigationRail bgColor="white" />
+                <Box component="div" id="intro" display="flex" flexDirection="column" justifyContent="center" textAlign="center" pt="200px">
                     <Typography variant="h5" fontWeight="bold" color="secondary">
                         TITULO
                     </Typography>
@@ -53,21 +53,21 @@ const AboutUs = () => {
                         <br /> fringilla ex id dui. convallis. Praesent risus ipsum{' '}
                     </Typography>
                     <Box display="flex" justifyContent="center" mb="5%" mt="5%" flexWrap="wrap" gap={3}>
-                      <Box width={{mobile:"150px"}}>
-                        <Image src={Oliver} alt="character" width="228px" height="236.62px" />
-                      </Box>
-                      <Box width={{mobile:"150px"}}>
-                        <Image src={Arlo} alt="character" width="228px" height="236.62px" />
-                      </Box>
-                      <Box width={{mobile:"150px"}}>
-                        <Image src={Charlie} alt="character" width="228px" height="236.62px" />
-                      </Box>
-                      <Box width={{mobile:"150px"}}>
-                        <Image src={Ella} alt="character" width="228px" height="236.62px" />
-                      </Box>
+                        <Box width={{ mobile: '150px' }}>
+                            <Image src={Oliver} alt="character" width="228px" height="236.62px" />
+                        </Box>
+                        <Box width={{ mobile: '150px' }}>
+                            <Image src={Arlo} alt="character" width="228px" height="236.62px" />
+                        </Box>
+                        <Box width={{ mobile: '150px' }}>
+                            <Image src={Charlie} alt="character" width="228px" height="236.62px" />
+                        </Box>
+                        <Box width={{ mobile: '150px' }}>
+                            <Image src={Ella} alt="character" width="228px" height="236.62px" />
+                        </Box>
                     </Box>
                 </Box>
-                <Box component="div" id="values" width="70vw" m={{desktop:"50px 300px"}} textAlign="center">
+                <Box component="div" id="values" width="70vw" m={{ desktop: '50px 300px' }} textAlign="center">
                     <Typography variant="h5" color="secondary" fontWeight="bold">
                         OUR VALUES
                     </Typography>
@@ -173,7 +173,7 @@ const AboutUs = () => {
                     <Typography variant="subtitle1" color="primary">
                         quis urna libero, quam nec viverra volutpat sed lobortis, placerat Nam commodo faucibus vitae eu volutpat orci vitae risus{' '}
                     </Typography>
-                    <Box display="flex" flexDirection="row" justifyContent="center" mt="20%" m={{mobile:"20% 10%"}} flexWrap="wrap">
+                    <Box display="flex" flexDirection="row" justifyContent="center" mt="20%" m={{ mobile: '20% 10%' }} flexWrap="wrap">
                         <Box textAlign="left" mr="30px">
                             <Box display="flex" gap="5%">
                                 <Typography fontWeight="bold" color="secondary">

@@ -1,25 +1,24 @@
+import { Cast, Groups, Settings, Stairs } from '@mui/icons-material';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { Box, Divider, Typography } from '@mui/material';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Box, Divider, Typography } from '@mui/material';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import { Cast, Settings, Groups, Stairs } from '@mui/icons-material';
-import TabletImage from '../../public/assets/png/Home/imagenvideos.png';
-import MemberImage from '../../public/assets/png/Home/foto 3.png';
-import Ella from '../../public/assets/png/Home/ella.png';
-import Charlie from '../../public/assets/png/Home/charlie.png';
-import Arlo from '../../public/assets/png/Home/arlo.png';
-import Oliver from '../../public/assets/png/Home/oliver.png';
-import { GoogleLogo, MetaLogo, MicrosoftLogo, SpotifyLogo, TeslaLogo, TikTokLogo } from '../../public/assets/svg/Home/Clients';
-import { ShaperFor } from '../controller/components/card/ShaperFor';
-import { ServiceCard } from '../controller/components/card/ServiceCard';
-import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar';
-import { Footer } from '../controller/components/surfaces/Footer/Footer';
 import Image from 'next/image';
 import { Button } from 'react-ui-controller';
-import { EventList } from '../controller/components/data-display/EventList/EventList';
+import Arlo from '../../public/assets/png/Home/arlo.png';
+import Charlie from '../../public/assets/png/Home/charlie.png';
+import Ella from '../../public/assets/png/Home/ella.png';
+import MemberImage from '../../public/assets/png/Home/foto 3.png';
 import Characters from '../../public/assets/png/Home/imagen header.png';
+import TabletImage from '../../public/assets/png/Home/imagenvideos.png';
+import Oliver from '../../public/assets/png/Home/oliver.png';
+import { GoogleLogo, MicrosoftLogo, SpotifyLogo, TeslaLogo, TikTokLogo } from '../../public/assets/svg/Home/Clients';
 import { CareerCard } from '../controller/components/card/CareerCard';
-import { useTheme } from '@mui/material';
+import { ServiceCard } from '../controller/components/card/ServiceCard';
+import { ShaperFor } from '../controller/components/card/ShaperFor';
+import { EventList } from '../controller/components/data-display/EventList/EventList';
+import { Footer } from '../controller/components/surfaces/Footer/Footer';
+import { NavigationRail } from '../controller/components/surfaces/NavigationRail/NavigationRail';
 
 const Home: NextPage = () => {
     return (
@@ -34,7 +33,7 @@ const Home: NextPage = () => {
             </Head>
             <Box component="main">
                 <Box sx={{ display: { mobile: 'none', laptop: 'block' } }}>
-                    <TopAppBar bgColor="none" />
+                    <NavigationRail />
                 </Box>
                 <Box
                     sx={{
@@ -115,8 +114,8 @@ const Home: NextPage = () => {
                         }}
                     >
                         <ShaperFor
-                            title="start at the"
-                            titleBold={{ text: 'academy', color: 'blue' }}
+                            title="get started at"
+                            titleBold={{ text: 'college', color: 'blue' }}
                             description={{
                                 text: 'Watch our free courses and become an expert with our career plans.',
                                 color: '#737373',
@@ -128,7 +127,7 @@ const Home: NextPage = () => {
                         <Divider orientation="vertical" flexItem variant="middle" />
                         <ShaperFor
                             title="become a"
-                            titleBold={{ text: 'tester', color: 'red' }}
+                            titleBold={{ text: 'member', color: 'red' }}
                             description={{
                                 text: 'Prove your skills by completing your profile and qualify for the job search that suits you.',
                                 color: '#737373',
@@ -179,80 +178,75 @@ const Home: NextPage = () => {
                         justifyContent="center"
                         textAlign="center"
                         mt="10%"
-                        gap={2}
+                        gap={5}
                     >
                         <Box display="flex" flexDirection="column">
-                            <Typography variant="h6" color="secondary" fontWeight="bold">
+                            <Typography variant="h6" color="secondary" fontWeight="bold" align="left">
                                 LEARN AND GROW
                             </Typography>
-                            <Typography variant="h4" fontWeight="bold" color="primary">
-                                {'A whole new level of commitment'}
+                            <Typography variant="h4" fontWeight="bold" color="primary" align="left">
+                                We invest in your future.
                             </Typography>
                         </Box>
-                        <Typography variant="body1" color="#737373">
-                            {
-                                'Our team of experts will help you define your career goals and improve your skills to helpyou succeed in your job search.'
-                            }
+                        <Typography variant="body1" color="#737373" width="30%" align="justify">
+                            Our team of experts will help you define your career goals and improve your skills so you can succeed in your job search.
                         </Typography>
                     </Box>
                     <Box
                         display="flex"
                         flexDirection={{ mobile: 'column', laptop: 'row' }}
                         m={{ mobile: '0', laptop: '2% 10%' }}
-                        gap={{ mobile: 2, laptop: 8 }}
+                        gap={{ mobile: 2, laptop: 2 }}
                     >
                         <Box>
                             <Box display="flex" gap={1}>
-                                <Typography variant="subtitle1" fontWeight="bold" color="secondary">
+                                <Typography variant="body1" fontWeight="bold" color="secondary">
                                     01
                                 </Typography>
-                                <Typography variant="subtitle1" fontWeight="bold" color="primary">
+                                <Typography variant="body1" fontWeight="bold" color="primary">
                                     We love teaching remotely
                                 </Typography>
                             </Box>
                             <Typography variant="body2" color="#737373">
-                                A new world of possibilities will open the doors to your new life. All you need is a computer with internet access and
-                                you will dive deep into new experiences that will transform your reality into growth.
+                                All you need is a computer with internet access and you will dive deep into new experiences.
                             </Typography>
                         </Box>
                         <Box>
                             <Box display="flex" gap={1}>
-                                <Typography variant="subtitle1" fontWeight="bold" color="secondary">
+                                <Typography variant="body1" fontWeight="bold" color="secondary">
                                     02
                                 </Typography>
-                                <Typography variant="subtitle1" fontWeight="bold" color="primary">
+                                <Typography variant="body1" fontWeight="bold" color="primary">
                                     Knowledge into practice
                                 </Typography>
                             </Box>
                             <Typography variant="body2" color="#737373">
-                                We provide you with the most sought-after skills in a high- demand world where you can put all your knowledge into
-                                practice on real projects with real companies, so you can stay competitive as you start your new career.
+                                We provide you with the most sought-after skills in a high-demand world.
                             </Typography>
                         </Box>
                         <Box>
                             <Box display="flex" gap={1}>
-                                <Typography variant="subtitle1" fontWeight="bold" color="secondary">
+                                <Typography variant="body1" fontWeight="bold" color="secondary">
                                     03
                                 </Typography>
-                                <Typography variant="subtitle1" fontWeight="bold" color="primary">
+                                <Typography variant="body1" fontWeight="bold" color="primary">
                                     Your new life starts now
                                 </Typography>
                             </Box>
                             <Typography variant="body2" color="#737373">
-                                We invest in your future so you only have to focus on what really matters. KNOWLEDGE. You do not have to pay us now,
-                                just learn and when your career is completed, we will help you find your dream job, and only then will you pay us
-                                back.
+                                You do not have to pay us now, just learn and we will help you find your dream job.
                             </Typography>
                         </Box>
                     </Box>
                 </Box>
                 <Box component="div" id="how-it-work" display="flex" flexDirection="column" mt="10%">
-                    <Box textAlign="center" display="flex" flexDirection="column" gap={2}>
+                    <Box textAlign="center" display="flex" flexDirection="column" gap={2} alignItems="center">
                         <Typography variant="h5" fontWeight="bold" color="secondary">
                             HOW IT WORKS
                         </Typography>
-                        <Typography variant="h3" fontWeight="bold" color="primary">
-                            Highest standards made just for you
+                        <Typography variant="h3" fontWeight="bold" color="primary" width="50%">
+                            We have created the highest standards for people like you: You can measure your needs over time and choose between 2
+                            options.
                         </Typography>
                         <Typography variant="body1" color="#737373">
                             You can measure your needs over time and choose between 2 options.Full-time and Part-time.
@@ -299,36 +293,32 @@ const Home: NextPage = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Box component="div" id="WatchandLearn" display="flex" flexDirection="row" justifyContent="center" mt="10%">
+                <Box component="div" id="watch" display="flex" flexDirection="row" justifyContent="center" mt="10%">
                     <Box width={{ mobile: 0, md: '500px', laptop: '500px' }}>
                         <Image src={TabletImage} alt="image" width="436px" height="271px" />
                     </Box>
-                    <Box display="flex" flexDirection="column" ml="5%" justifyContent="space-between" mt="0">
+                    <Box display="flex" flexDirection="column" justifyContent="space-evenly" mt="0" width="30%">
                         <Box>
                             <Typography variant="h5" fontWeight="bold" color="secondary">
                                 WATCH AND LEARN
                             </Typography>
                             <Typography variant="h4" fontWeight="bold" color="primary">
-                                Enjoy our online
-                                <br /> courses for free
+                                Enjoy our online courses for free
+                            </Typography>
+                            <Typography variant="body1" color="#737373">
+                                Now you can learn with the best experts in the sector without schedule and whenever you want, no strings-attached.
                             </Typography>
                         </Box>
-                        <Typography variant="body1" color="#737373">
-                            Now you can learn with the best experts in the
-                            <br /> sector without schedule and whenever you want,
-                            <br /> no strings-attached.
-                        </Typography>
-                        <Button text="Watch now" type="button" variant="contained" padding="0 65px" />
+                        <Button text="Watch now" type="button" variant="contained" padding="16px 48px" />
                     </Box>
                 </Box>
-                <Box component="div" id="services" display="flex" flexDirection="column" gap={5} mt="10%">
-                    <Box textAlign="center">
+                <Box component="div" id="services" display="flex" flexDirection="column" gap={5} mt="10%" alignItems="center">
+                    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center">
                         <Typography variant="h5" fontWeight="bold" color="secondary">
                             THE SERVICES WE OFFERS
                         </Typography>
-                        <Typography variant="h3" fontWeight="bold" color="primary">
-                            Our business perception and exceptional
-                            <br /> experience give us an edge over our competitors
+                        <Typography variant="h3" fontWeight="bold" color="primary" width="50%">
+                            Our business perception and exceptional experience gives us an edge over our competitors.
                         </Typography>
                         <Typography variant="h6" color="primary">
                             We analyze, explore, create and deliver.
@@ -337,13 +327,13 @@ const Home: NextPage = () => {
                     <Box display="flex" flexDirection="row" justifyContent="center" flexWrap="wrap" gap={2} rowGap={3}>
                         <ServiceCard
                             title="ON-Demand"
-                            description="Get direct access to specialist permanent or contract talent."
+                            description="Get instant access to qualified talent on a permanent or contract basis and ensure your success in the workplace."
                             background="#8BB5F3"
                             icon={<Cast color="primary" sx={{ fontSize: { mobile: '25px', laptop: '45px' } }} />}
                         />
                         <ServiceCard
                             title={'Project\nResource'}
-                            description="Experienced teams of interim project delivery professionals to help businesses deliver complex digital solutions."
+                            description="We offer teams of interim experts to assist businesses in delivering sophisticated digital solutions."
                             background="#ADD59C"
                             icon={<Settings color="primary" sx={{ fontSize: { mobile: '25px', laptop: '45px' } }} />}
                         />
@@ -355,7 +345,7 @@ const Home: NextPage = () => {
                         />
                         <ServiceCard
                             title="Career"
-                            description="Our process ensures we match candidates with opportunities to meet your company’s culture and hiring needs."
+                            description=" Our methodology ensures that we match candidates with opportunities that meet hiring needs and company culture. "
                             icon={<Stairs color="primary" sx={{ fontSize: { mobile: '25px', laptop: '45px' } }} />}
                             background="#FFB8D1"
                         />
@@ -374,13 +364,11 @@ const Home: NextPage = () => {
                             <Typography variant="h6" fontWeight="bold" color="secondary">
                                 GET HIRED
                             </Typography>
-                            <Typography variant="h5" fontWeight="bold" color="primary" sx={{ whiteSpace: 'pre-line' }}>
-                                {'New and exciting jobs'}
+                            <Typography variant="h5" fontWeight="bold" color="primary">
+                                New and exciting jobs.
                             </Typography>
-                            <Typography variant="body1" color="#737373" sx={{ whiteSpace: 'pre-line' }}>
-                                {
-                                    'We help you discover a challenging new career. Our\n platform gives you the opportunity to work with top\n companies. You can prove your skills and get hired.'
-                                }
+                            <Typography variant="body1" color="#737373">
+                                Our platform gives you the opportunity to work with top companies. Prove your skills and get hired.
                             </Typography>
                         </Box>
                         <Button text="Suscribe" type="button" variant="contained" padding="16px 48px" />
@@ -394,7 +382,7 @@ const Home: NextPage = () => {
                         title="shaper for"
                         titleBold={{ text: 'business', color: '#3C7E1F' }}
                         description={{
-                            text: 'If you are a company and would like to attract the best talent, this is your opportunity. Join Shaper Membership for business and enjoy the benefits.',
+                            text: 'If you are a company and would like to attract the best talent, this is your opportunity to enjoy the benefits.',
                             color: 'primary',
                         }}
                         background="#ffffff"
@@ -428,7 +416,7 @@ const Home: NextPage = () => {
                             TEAM WORK
                         </Typography>
                         <Typography variant="h5" fontWeight="bold" color="primary">
-                            Meet the awesome nand creative members of our staff
+                            Meet the awesome and creative members of our staff.
                         </Typography>
                     </Box>
                     <Box display="flex" flexDirection="row" flexWrap="wrap" gap={3} justifyContent="center">

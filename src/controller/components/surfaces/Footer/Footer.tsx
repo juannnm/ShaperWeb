@@ -94,7 +94,7 @@ export const Footer = () => {
                 </Box>
             </Box>
             <Divider />
-            <Box textAlign="center" m="20px" height="5vh">
+            <Box textAlign="center">
                 <Typography color="white">Copyright @ Shaper 2022. All Rights Reserved.</Typography>
             </Box>
         </Box>

@@ -1,16 +1,16 @@
-import { TopAppBar } from '../controller/components/surfaces/TopAppBar/TopAppBar';
-import { Footer } from '../controller/components/surfaces/Footer/Footer';
-import { NextPage } from 'next';
 import { Box, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
-import { Button } from 'react-ui-controller';
-import Image from 'next/image';
-import jumpImage from '../../public/assets/png/Academy/FOTOS.png';
-import cellphoneImage from '../../public/assets/png/Academy/imagen.png';
-import guyImage from '../../public/assets/png/Academy/foto 1.png';
-import { CareerCard } from '../controller/components/card/CareerCard';
+import { NextPage } from 'next';
 import Head from 'next/head';
-import { IsologotipoShaperBlue } from '../../public/assets/svg/logo';
-import { CertifieCard } from '../controller/components/card/CertifieCard';
+import Image from 'next/image';
+import { Button } from 'react-ui-controller';
+import guyImage from '../../../public/assets/png/Academy/foto 1.png';
+import jumpImage from '../../../public/assets/png/Academy/FOTOS.png';
+import cellphoneImage from '../../../public/assets/png/Academy/imagen.png';
+import { IsologotipoShaperBlue } from '../../../public/assets/svg/logo/index';
+import { CareerCard } from '../../controller/components/card/CareerCard';
+import { CertifieCard } from '../../controller/components/card/CertifieCard';
+import { Footer } from '../../controller/components/surfaces/Footer/Footer';
+import { NavigationRail } from '../../controller/components/surfaces/NavigationRail/NavigationRail';
 
 const Careers: NextPage = () => {
     return (
@@ -25,25 +25,18 @@ const Careers: NextPage = () => {
             </Head>
             <Box>
                 <Box sx={{ display: { mobile: 'none', laptop: 'block' } }}>
-                    <TopAppBar bgColor="white" />
+                    <NavigationRail />
                 </Box>
-                <Box
-                    id="Intro"
-                    component="div"
-                    justifyContent="center"
-                    textAlign="center"
-                    m={{ mobile: '10%' }}
-                    mt={{ mobile: '20%', laptop: '10%' }}
-                >
+                <Box id="Intro" component="div" justifyContent="center" textAlign="center" pt={{ mobile: '20%', laptop: '10%' }}>
                     <Box>
                         <Typography variant="h6" fontWeight="bold" color="secondary">
                             CAREERS
                         </Typography>
                         <Typography variant="h4" fontWeight="bold" color="primary">
-                            Shaping a new reality for everyone
+                            Shaping a new reality for everyone.
                         </Typography>
                         <Typography variant="body1" color="primary" mb="1%">
-                            Start a new career and get your dream job
+                            Start a new career and get your dream job.
                         </Typography>
                         <Button text="Contact our team" type="button" variant="contained" />
                     </Box>
@@ -76,8 +69,7 @@ const Careers: NextPage = () => {
                                 <IsologotipoShaperBlue />
                             </ListItemIcon>
                             <ListItemText primaryTypographyProps={{ color: 'primary' }}>
-                                Our team of experts will help you<b>define your career goals</b> and improve your skills to <b>help you succeed</b> in
-                                your job search.
+                                Our team of experts will help you<b>define your career goals</b> and <b>succeed</b> in your job search.
                             </ListItemText>
                         </ListItem>
                     </List>
@@ -87,22 +79,22 @@ const Careers: NextPage = () => {
                         OUR PROCESS IS REALLY SIMPLE
                     </Typography>
                     <Typography variant="h4" fontWeight="bold" color="primary">
-                        You can measure your needs over time and choose between 2 options
+                        You can measure your needs over time and choose between 2 options.
                     </Typography>
                     <Box display="flex" flexDirection="row" justifyContent="center" gap={4} m="35px 0px" flexWrap="wrap">
                         <CareerCard
                             title="Part-time Career"
-                            description="Within our part-time career you can learn remotely with our team of experts and even complete assignments after work with our online academic campus."
+                            description="You can learn remotely with our team of experts and even complete assignments after work with our online academic campus."
                             hours="40"
                         />
                         <CareerCard
                             title="Full-time Career"
-                            description="Our full-time career is designed to fully support you and guide you through a detailed process that will give you all the answers you are looking for to be the best in your new profession."
+                            description="Our full-time career is designed to fully support you and guide you through a detailed process to be the best in your new profession."
                             hours="80"
                         />
                     </Box>
-                    <Typography variant="h6" textAlign="center" mt="5%" color="primary" sx={{ whiteSpace: 'pre-line' }}>
-                        {'Once you have chosen your specific framework, you can now apply and our team will reach you'}
+                    <Typography variant="h6" textAlign="center" mt="5%" color="primary">
+                        Once you have chosen your specific framework, you can now apply and our team will reach you.
                     </Typography>
                 </Box>
                 <Box textAlign="center" mb="12%">
