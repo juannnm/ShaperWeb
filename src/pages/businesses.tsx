@@ -11,9 +11,11 @@ import { Box } from '@mui/system';
 import Head from 'next/head';
 import Image from 'next/image';
 import Boy from '../../public/assets/png/businesses/boy.png';
-import Boy2 from '../../public/assets/png/businesses/boy2.png';
 import Pc from '../../public/assets/png/businesses/pc.png';
+import BeCreative from '../../public/assets/png/businesses/be-creative.png';
 import Woman from '../../public/assets/png/businesses/women.png';
+import ReadyForWork from '../../public/assets/png/businesses/ready-for-work.png';
+import Network from '../../public/assets/png/businesses/network.png';
 import { Footer } from '../controller/components/surfaces/Footer/Footer';
 import { NavigationRail } from '../controller/components/surfaces/NavigationRail/NavigationRail';
 
@@ -83,7 +85,7 @@ const Businesses = () => {
                                     Project Discovery
                                 </Typography>
                                 <Typography variant="body1" color="white">
-                                    It's pretty simple. You just need to tell us what you want to develop and we will do everything to make your
+                                    It&apos;s pretty simple. You just need to tell us what you want to develop and we will do everything to make your
                                     project successful.
                                 </Typography>
                             </Box>
@@ -107,7 +109,7 @@ const Businesses = () => {
                                     Project Manager
                                 </Typography>
                                 <Typography variant="body1" sx={{ whiteSpace: 'pre-line' }} color="white">
-                                    Now we'll assign you one of our project managers to assist you with your candidate search.
+                                    Now we&apos;ll assign you one of our project managers to assist you with your candidate search.
                                 </Typography>
                             </Box>
                         </Box>
@@ -207,13 +209,19 @@ const Businesses = () => {
                             </Box>
                         </Box>
                     </Box>
-                    <Box display="flex" justifyContent="center" alignItems="center" flexWrap={{ mobile: 'wrap-reverse', laptop: 'nowrap' }} m={{ mobile: '0 10%' }}>
+                    <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        flexWrap={{ mobile: 'wrap-reverse', laptop: 'nowrap' }}
+                        m={{ mobile: '0 10%' }}
+                    >
                         <Box display="flex" flexDirection="column" width="50%">
                             <Typography variant="h6" color="white" fontWeight="bold">
                                 UNIVERSITIES
                             </Typography>
                             <Typography variant="h5" sx={{ whiteSpace: 'pre-line' }} color="white">
-                                Let’s your students step up.
+                                Let&apos;s your students step up.
                             </Typography>
                             <Typography align="justify" sx={{ whiteSpace: 'pre-line' }} color="white">
                                 Students can join our network to start a new career path and meet some of the best employers in the industry by
@@ -223,11 +231,11 @@ const Businesses = () => {
                         <Image src={Boy} alt="boy" />
                     </Box>
                     <Box display="flex" justifyContent="center" alignItems="center" gap="10%" m={{ mobile: '0 10%', desktop: '10% 0' }}>
-                        <Box display="flex" flexDirection="column" width="50%">
-                            <Typography variant="h5" sx={{ whiteSpace: 'pre-line' }} color="white" fontWeight="bold">
+                        <Box display="flex" flexDirection="column" width="30%">
+                            <Typography variant="h5" color="white" fontWeight="bold">
                                 Drive value and growth
                             </Typography>
-                            <Typography align="justify" sx={{ whiteSpace: 'pre-line' }} color="white">
+                            <Typography align="justify" color="white">
                                 Benefit from innovative teaching and credentials that employers value - all with the flexibility and value they need
                                 for their first practice.
                             </Typography>
@@ -235,20 +243,39 @@ const Businesses = () => {
                         <Image src={Pc} alt="pc" height="300px" width="300px" />
                     </Box>
                     <Box display="flex" justifyContent="center" alignItems="center" gap="10%" m={{ mobile: '0 10%', desktop: '10% 0' }}>
-                        <Box display="flex" flexDirection="column">
-                            <Typography variant="h6" color="white" fontWeight="bold">
-                                MEMBERSHIP
+                        <Image src={BeCreative} alt="pc" height="300px" width="300px" />
+                        <Box display="flex" flexDirection="column" width="30%">
+                            <Typography variant="h5" color="white" fontWeight="bold">
+                                Be creative and stay positive
                             </Typography>
-                            <Typography variant="h5" sx={{ whiteSpace: 'pre-line' }} color="white" fontWeight="bold">
-                                {'FOR BUSINESS'}
-                            </Typography>
-                            <Typography align="justify" sx={{ whiteSpace: 'pre-line' }} color="white">
-                                {
-                                    'Offers suppliers the opportunity to increase brand\n awareness and collaborate with a range of stakeholders\n to drive value and growth. Our membership offers\n several benefits for your business.'
-                                }
+                            <Typography align="justify" color="white">
+                                Shaper education introduces students to new research and technology. Studying our programs encourages creative and
+                                independent thinking.
                             </Typography>
                         </Box>
-                        <Image src={Boy2} alt="boy2" />
+                    </Box>
+                    <Box display="flex" justifyContent="center" alignItems="center" gap="10%" m={{ mobile: '0 10%', desktop: '10% 0' }}>
+                        <Box display="flex" flexDirection="column" width="30%">
+                            <Typography variant="h5" color="white" fontWeight="bold">
+                                Ready for work
+                            </Typography>
+                            <Typography align="justify" color="white">
+                                Our team of experts will show you how to put all these skills into practise. This will help you overcome intellectual
+                                challenges and have a sense of achievement.
+                            </Typography>
+                        </Box>
+                        <Image src={ReadyForWork} alt="pc" height="300px" width="300px" />
+                    </Box>
+                    <Box display="flex" justifyContent="center" alignItems="center" gap="10%" m={{ mobile: '0 10%', desktop: '10% 0' }}>
+                        <Image src={Network} alt="pc" height="300px" width="300px" />
+                        <Box display="flex" flexDirection="column" width="30%">
+                            <Typography variant="h5" color="white" fontWeight="bold">
+                                Build a strong network
+                            </Typography>
+                            <Typography align="justify" color="white">
+                                Meet friends and mentors who will become future contacts and colleagues.
+                            </Typography>
+                        </Box>
                     </Box>
                     <Box display="flex" justifyContent="center" m={{ mobile: '0 10%', desktop: '10% 0' }}>
                         <Box display="flex" flexDirection="column">
