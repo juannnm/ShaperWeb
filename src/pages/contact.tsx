@@ -20,7 +20,9 @@ const Contact = () => {
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <Box>
+              <Box display={{mobile:"none", laptop:"block"}}>
                 <TopAppBar bgColor="white" />
+              </Box>
                 <Box
                     component="div"
                     sx={{
@@ -31,10 +33,11 @@ const Contact = () => {
                     }}
                     display="flex"
                     flexDirection="column"
+                    flexWrap="wrap"
                 >
                     <Box
                         display="flex"
-                        flexDirection="row"
+                        flexDirection={{mobile:"column", laptop:"row"}}
                         sx={{
                             m: '150px auto',
                             bgcolor: 'rgba(255,255,255,0.4)',
@@ -43,7 +46,9 @@ const Contact = () => {
                         }}
                     >
                         <UserForm />
-                        <Image src={women} alt="women" width="883" height="758" />
+                        <Box>
+                          <Image src={women} alt="women" width="883" height="758" />
+                        </Box>
                     </Box>
                 </Box>
                 <Footer />
