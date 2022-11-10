@@ -2,7 +2,6 @@ import { CardMedia, Typography, Box } from '@mui/material';
 import { Card } from 'react-ui-controller';
 import Image from 'next/image';
 import Ella from '../../../../public/assets/png/Ella.nuevo.feliz.png';
-import bg from '../../../../public/assets/png/fondo-02.png';
 
 export const CharacterCard = () => {
     return (

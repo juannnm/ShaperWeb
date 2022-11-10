@@ -24,9 +24,11 @@ export const InterestCard = (props: IProps) => {
                 padding: '16px',
             }}
             actions={<Button key="button" type="button" variant="contained" text={props.button} size="large" padding="16px 48px" />}
+            // @ts-ignore
             height={{ mobile: '160px', laptop: '120px' }}
             direction="row"
             boxShadow="0px 2px 11px 0px #00000040;"
+            // @ts-ignore
             justifyContent={{ mobile: 'row', laptop: 'space-between' }}
         />
     );

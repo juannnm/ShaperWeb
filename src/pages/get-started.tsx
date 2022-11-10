@@ -200,6 +200,7 @@ const Membership = () => {
                                 color: 'white',
                             }}
                             buttonColor="secondary"
+                            borderRadius="20px"
                         />
                         <ShaperFor
                             background="#050E3F"
@@ -210,6 +211,7 @@ const Membership = () => {
                                 color: 'white',
                             }}
                             buttonColor="secondary"
+                            borderRadius="20px"
                         />
                     </Box>
                 </Box>

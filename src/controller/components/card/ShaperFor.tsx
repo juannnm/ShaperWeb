@@ -38,7 +38,9 @@ export const ShaperFor = (props: IProps) => {
                 ),
                 padding: '0px',
             }}
+            // @ts-ignore
             direction={{ mobile: 'row', laptop: 'column' }}
+            // @ts-ignore
             width={{ mobile: '370px', laptop: '400px' }}
             actions={
                 <Button
@@ -47,10 +49,12 @@ export const ShaperFor = (props: IProps) => {
                     key="LearnMore"
                     variant="contained"
                     color={props.buttonColor}
+                    // @ts-ignore
                     padding={{ mobile: '16px 32px', laptop: '16px 48px' }}
                 />
             }
             boxShadow="0px 2px 24px 3px #00000040"
+            // @ts-ignore
             padding={{ mobile: '16px', laptop: '32px' }}
             elevated={false}
             borderRadius={props.borderRadius}

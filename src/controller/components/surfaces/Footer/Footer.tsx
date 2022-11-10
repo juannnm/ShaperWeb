@@ -76,21 +76,71 @@ export const Footer = () => {
                         <Typography fontWeight="bold" color="white" variant="h5">
                             Last seen
                         </Typography>
-                        <LinkButton text="Motion Graphics" color="white" href="/" />
-                        <LinkButton text="UX/UI Design" color="white" href="/" />
-                        <LinkButton text="Business" color="white" href="/" />
-                        <LinkButton text="Nombre Curso" color="white" href="/" />
-                        <LinkButton text="Nombre Curso" color="white" href="/" />
+                        <LinkButton
+                            text="Motion Graphics"
+                            // @ts-ignore
+                            color="white"
+                            href="/"
+                        />
+                        <LinkButton
+                            text="UX/UI Design"
+                            // @ts-ignore
+                            color="white"
+                            href="/"
+                        />
+                        <LinkButton
+                            text="Business"
+                            // @ts-ignore
+                            color="white"
+                            href="/"
+                        />
+                        <LinkButton
+                            text="Nombre Curso"
+                            // @ts-ignore
+                            color="white"
+                            href="/"
+                        />
+                        <LinkButton
+                            text="Nombre Curso"
+                            // @ts-ignore
+                            color="white"
+                            href="/"
+                        />
                     </Box>
                     <Box display="flex" flexDirection="column">
                         <Typography fontWeight="bold" color="white" variant="h5">
                             Shaper
                         </Typography>
-                        <LinkButton text="Academy" color="white" href="/" />
-                        <LinkButton text="Certified Careers" color="white" href="/" />
-                        <LinkButton text="Companies" color="white" href="/" />
-                        <LinkButton text="About Us" color="white" href="/" />
-                        <LinkButton text="Contact Us" color="white" href="/" />
+                        <LinkButton
+                            text="Academy"
+                            // @ts-ignore
+                            color="white"
+                            href="/"
+                        />
+                        <LinkButton
+                            text="Certified Careers"
+                            // @ts-ignore
+                            color="white"
+                            href="/"
+                        />
+                        <LinkButton
+                            text="Companies"
+                            // @ts-ignore
+                            color="white"
+                            href="/"
+                        />
+                        <LinkButton
+                            text="About Us"
+                            // @ts-ignore
+                            color="white"
+                            href="/"
+                        />
+                        <LinkButton
+                            text="Contact Us"
+                            // @ts-ignore
+                            color="white"
+                            href="/"
+                        />
                     </Box>
                 </Box>
             </Box>
