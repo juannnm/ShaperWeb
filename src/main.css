@@ -1,22 +1,4 @@
 @font-face {
-    font-family: UbuntuRegular;
-    src: url('../public/assets/fonts/Ubuntu-Regular.ttf');
-    format: ('tff');
-    font-display: swap;
-}
-@font-face {
-    font-family: UbuntuBold;
-    src: url('../public/assets/fonts/Ubuntu-Bold.ttf');
-    format: ('tff');
-    font-display: swap;
-}
-@font-face {
-    font-family: UbuntuMedium;
-    src: url('../public/assets/fonts/Ubuntu-Medium.ttf');
-    format: ('tff');
-    font-display: swap;
-}
-@font-face {
     font-family: RobotoRegular;
     src: url('../public/assets/fonts/Roboto-Regular.ttf');
     format: ('tff');
@@ -25,6 +7,12 @@
 @font-face {
     font-family: RobotoMedium;
     src: url('../public/assets/fonts/Roboto-Medium.ttf');
+    format: ('tff');
+    font-display: swap;
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url('../public/assets/fonts/Roboto-Bold.ttf');
     format: ('tff');
     font-display: swap;
 }

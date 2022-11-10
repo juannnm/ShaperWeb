@@ -32,9 +32,9 @@ let theme = createTheme({
         },
     },
     typography: {
-        fontFamily: 'UbuntuRegular, UbuntuMedium, UbuntuBold, RobotoRegular, RobotoMedium',
+        fontFamily: 'RobotoRegular, RobotoMedium, RobotoBold',
         h4: {
-            fontFamily: 'UbuntuBold',
+            fontFamily: 'RobotoBold',
         },
 
         subtitle1: {
@@ -46,7 +46,7 @@ let theme = createTheme({
     },
 });
 theme.typography.h2 = {
-    fontFamily: 'UbuntuBold',
+    fontFamily: 'RobotoBold',
     fontSize: '70px',
     lineHeight: '70px',
     [theme.breakpoints.down('laptop')]: {
@@ -55,7 +55,7 @@ theme.typography.h2 = {
     },
 };
 theme.typography.h3 = {
-    fontFamily: 'UbuntuBold',
+    fontFamily: 'RobotoBold',
     fontSize: '40px',
     lineHeight: '50px',
     fontWeight: 'bold',
@@ -65,7 +65,7 @@ theme.typography.h3 = {
     },
 };
 theme.typography.h5 = {
-    fontFamily: 'UbuntuRegular',
+    fontFamily: 'RobotoRegular',
     fontSize: '30px',
     lineHeight: '40px',
     [theme.breakpoints.down('laptop')]: {
@@ -74,7 +74,7 @@ theme.typography.h5 = {
     },
 };
 theme.typography.h6 = {
-    fontFamily: 'UbuntuRegular',
+    fontFamily: 'RobotoRegular',
     fontWeight: 'normal',
     fontSize: '25px',
     lineHeight: '40px',
@@ -101,7 +101,7 @@ theme.typography.body2 = {
     },
 };
 theme.typography.button = {
-    fontFamily: 'UbuntuBold',
+    fontFamily: 'RobotoBold',
     fontSize: '21px',
     [theme.breakpoints.down('laptop')]: {
         fontSize: '16px',
