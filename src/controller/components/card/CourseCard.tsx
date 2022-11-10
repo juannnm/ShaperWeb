@@ -14,6 +14,7 @@ export const CourseCard = () => {
                         <Typography variant="body2">Some strange text I write to fill space</Typography>
                     </Box>
                 ),
+                // @ts-ignore
                 padding: { mobile: '8px', laptop: '16px' },
             }}
             height="130px"
