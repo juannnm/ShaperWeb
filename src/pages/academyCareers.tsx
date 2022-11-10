@@ -109,7 +109,7 @@ const Careers: NextPage = () => {
                     <Typography variant="h5" fontWeight="bold" color="secondary">
                         ALL CAREERS
                     </Typography>
-                    <Box display="flex" flexDirection="row" justifyContent="center" gap={4} mt="2%">
+                    <Box display="flex" flexDirection="row" justifyContent="center" gap={{ mobile: 0, laptop: 4 }} mt="2%">
                         <CertifieCard />
                         <CertifieCard />
                         <CertifieCard />

@@ -7,15 +7,18 @@ export const CourseCard = () => {
             background="white"
             description={{
                 components: (
-                    <Box key="container">
-                        <Typography variant="h5">Great Course</Typography>
-                        <Typography sx={{ fontSize: '10px' }}>Some strange text I write to fill space</Typography>
+                    <Box key="container" display="flex" flexDirection="column" justifyContent="space-evenly" gap={2}>
+                        <Typography variant="body1" fontWeight="bold">
+                            Great Course
+                        </Typography>
+                        <Typography variant="body2">Some strange text I write to fill space</Typography>
                     </Box>
                 ),
-                padding: '16px',
+                padding: { mobile: '8px', laptop: '16px' },
             }}
             height="130px"
             width="130px"
+            padding="0px"
         />
     );
 };

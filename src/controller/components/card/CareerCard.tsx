@@ -41,7 +41,7 @@ export const CareerCard = ({ title, description, hours, background = '#FFFFFF' }
             }
             background={background}
             height="inherit"
-            width="500px"
+            width={{ mobile: '370px', laptop: '500px' }}
             direction="column"
             alignment="left"
             boxShadow="0px 2px 12px 0px #00000040"

@@ -258,8 +258,14 @@ const Home: NextPage = () => {
                             You can measure your needs over time and choose between 2 options.Full-time and Part-time.
                         </Typography>
                     </Box>
-                    <Box display="flex" flexDirection="row" justifyContent="center" mt="5%" gap="5%">
-                        <Box display="flex" flexDirection="column" justifyContent="space-evenly">
+                    <Box
+                        display="flex"
+                        flexDirection={{ mobile: 'column', laptop: 'row' }}
+                        justifyContent="center"
+                        mt="5%"
+                        gap={{ mobile: 4, laptop: '5%' }}
+                    >
+                        <Box display="flex" flexDirection="column" justifyContent="space-evenly" alignItems="center" gap={{ mobile: 2, laptop: 0 }}>
                             <Box display="flex" flexDirection="row" alignItems="center">
                                 <CheckCircleIcon color="secondary" />
                                 <Typography variant="h6" color="primary">
@@ -279,7 +285,7 @@ const Home: NextPage = () => {
                                 </Typography>
                             </Box>
                         </Box>
-                        <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" gap={5}>
+                        <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" gap={{ mobile: 2, laptop: 5 }}>
                             <Box display="flex" justifyContent="space-evenly" width="100%">
                                 <Button type="button" variant="contained" color="secondary" text="Full-time Career" />
                                 <Button type="button" variant="contained" color="secondary" text="Part-time Career" />

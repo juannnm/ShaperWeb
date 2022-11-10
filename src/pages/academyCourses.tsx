@@ -97,21 +97,19 @@ const Courses: NextPage = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Box id="Dropdown" component="div" m="200px">
+                <Box id="Dropdown" component="div" m={{ mobile: '0px', laptop: '200px' }}>
                     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Typography>Art & Design</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" m="35px 0">
-                                <CourseCard />
+                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" flexWrap="wrap" gap={2} rowGap={2}>
                                 <CourseCard />
                                 <CourseCard />
                                 <CourseCard />
                                 <CourseCard />
                             </Box>
-                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" m="35px 0">
-                                <CourseCard />
+                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" flexWrap="wrap" gap={2} rowGap={2}>
                                 <CourseCard />
                                 <CourseCard />
                                 <CourseCard />
@@ -121,18 +119,16 @@ const Courses: NextPage = () => {
                     </Accordion>
                     <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography>Art & Design</Typography>
+                            <Typography>Tech</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" m="35px 0">
-                                <CourseCard />
+                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" gap={2} flexWrap="wrap" rowGap={2}>
                                 <CourseCard />
                                 <CourseCard />
                                 <CourseCard />
                                 <CourseCard />
                             </Box>
-                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" m="35px 0">
-                                <CourseCard />
+                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" gap={2} flexWrap="wrap" rowGap={2}>
                                 <CourseCard />
                                 <CourseCard />
                                 <CourseCard />
@@ -142,18 +138,16 @@ const Courses: NextPage = () => {
                     </Accordion>
                     <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography>Art & Design</Typography>
+                            <Typography>Digital Marketing</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" m="35px 0">
-                                <CourseCard />
+                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" gap={2} flexWrap="wrap" rowGap={2}>
                                 <CourseCard />
                                 <CourseCard />
                                 <CourseCard />
                                 <CourseCard />
                             </Box>
-                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" m="35px 0">
-                                <CourseCard />
+                            <Box display="flex" flexDirection="row" justifyContent="space-evenly" gap={2} flexWrap="wrap" rowGap={2}>
                                 <CourseCard />
                                 <CourseCard />
                                 <CourseCard />
