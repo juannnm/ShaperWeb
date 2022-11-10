@@ -129,14 +129,14 @@ const Membership = () => {
                     display="flex"
                     justifyContent="center"
                     alignItems="center"
-                    p={{ mobile: '40% 10%', desktop: '10% 0' }}
+                    p={{ mobile: '40% 10%', laptop: '10% 0' }}
                     flexWrap={{ mobile: 'wrap-reverse' }}
                 >
-                    <Box display="flex" flexDirection="column" width="50%">
-                        <Typography variant="h6" fontWeight="bold" color="secondary">
+                    <Box display="flex" flexDirection="column" width="30%" m=" 0 10%">
+                        <Typography variant="h6" fontWeight="bold" color="primary">
                             A new life is here.
                         </Typography>
-                        <Typography variant="h5" color="primary" fontWeight="bold" width="50%">
+                        <Typography variant="body1" color="primary" width="65%">
                             You can join our testing program to unlock skills, become known by top companies and get hired.
                         </Typography>
                     </Box>
@@ -157,25 +157,20 @@ const Membership = () => {
                 <Box
                     display="flex"
                     justifyContent="center"
-                    m={{ mobile: '40% 10%', desktop: '10% 0' }}
+                    m={{ mobile: '40% 10%', laptop: '10% 0 10% 10%' }}
                     gap="2%"
                     alignItems="center"
                     flexWrap={{ mobile: 'wrap-reverse' }}
                 >
-                    <Box display="flex" flexDirection="column" justifyContent="flex-start">
+                    <Box display="flex" flexDirection="column" justifyContent="flex-start" width="400px">
                         <Typography variant="h6" color="secondary" fontWeight="bold">
                             OUR MEMBERSHIP
                         </Typography>
                         <Typography variant="h5" color="primary" fontWeight="bold">
-                            We help our candidates in
-                            <br /> finding new and exciting jobs
+                            New and exciting jobs
                         </Typography>
                         <Typography variant="body1" align="justify" color="#737373" mb="5%">
-                            The Shaper program offers you the opportunity to work
-                            <br /> with top companies. You can be tested by multiple
-                            <br /> employers, as many as you have time to prove your
-                            <br /> skills. Our membership is designed to help you grow
-                            <br /> and succeed.
+                            Our platform gives you the opportunity to work with top companies. Prove your skills and get hired.
                         </Typography>
                         <Button text="Suscribe" type="button" variant="contained" size="medium" padding="16px 48px" />
                     </Box>
@@ -190,6 +185,7 @@ const Membership = () => {
                         justifyContent="center"
                         gap={{ mobile: 2, laptop: 2 }}
                         flexWrap="wrap"
+                        ml="10%"
                     >
                         <ShaperFor
                             background="#050E3F"
