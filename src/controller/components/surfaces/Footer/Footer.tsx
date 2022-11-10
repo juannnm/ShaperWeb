@@ -55,6 +55,7 @@ export const Footer = () => {
                             size="medium"
                             handleChange={() => {}}
                             value=""
+                            // @ts-ignore
                             type="text"
                         />
                         <IconButton color="primary">
