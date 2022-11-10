@@ -49,7 +49,7 @@ const Businesses = () => {
                     </IconButton>
                     <ShaperWhite style={{ fontSize: '80px', marginTop: '4px' }} />
                 </Box>
-                <Box ml={{ mobile: 0, laaptop: '100px' }}>
+                <Box ml={{ mobile: 0, laptop: '100px' }}>
                     <Box
                         display="flex"
                         justifyContent="center"
