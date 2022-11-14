@@ -24,7 +24,7 @@ export const CareerCard = ({ title, description, hours, background = '#FFFFFF' }
                         </Box>
                     </Box>
                 ),
-                padding: '8px',
+                padding: '1px',
             }}
             actions={
                 <Box display="flex" justifyContent="space-between" alignItems="center" width="100%">
@@ -42,7 +42,7 @@ export const CareerCard = ({ title, description, hours, background = '#FFFFFF' }
             background={background}
             height="inherit"
             // @ts-ignore
-            width={{ mobile: '370px', laptop: '400px' }}
+            width={{ mobile: '370px', laptop: '562px' }}
             direction="column"
             alignment="left"
             boxShadow="0px 2px 12px 0px #00000040"
