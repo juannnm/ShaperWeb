@@ -14,20 +14,21 @@ export const NewFooter = () => {
     >
       <Box
         display="flex"
-        flexDirection="row"
+        flexDirection={{mobile:"column", laptop:"row"}}
         alignItems="center"
         justifyContent="center"
         mb="60px"
+        gap={2}
       >
-        <Box display="flex" flexDirection="column" gap={8} ml="10%" alignSelf="flex-start">
+        <Box display="flex" flexDirection={{mobile:"row", laptop:"column"}} gap={8} ml="10%" alignSelf="flex-start">
           <IsologotipoShaperBlue style={{ fontSize: "30px" }} />
-          <Typography width="480px">
+          <Typography width={{mobile:"200px", laptop:"480px"}}>
             We help clients attract, hire, and retain best in-class candidates
             worldwide, creating first-level certification programs to assist our
             candidates in finding new, and exciting jobs.
           </Typography>
         </Box>
-        <Box display="flex" flexDirection="row" justifyContent="space-evenly" width="80%" ml="0">
+        <Box display="flex" flexDirection="row" justifyContent="space-evenly" width="80%" ml="0" gap={{mobile:"30px"}}>
           <Box display="flex" flexDirection="column" gap={2}>
             <Typography fontWeight="bold" color="#050E3F" variant="body1">
               Social
@@ -90,7 +91,7 @@ export const NewFooter = () => {
           </Box>
         </Box>
       </Box>
-      <Box display="flex" flexDirection="row" justifyContent="center" gap={10}>
+      <Box display="flex" flexDirection="row" justifyContent="center" gap={{mobile:"20px", laptop:"100px"}}>
         <ShaperBlue style={{width:"60px", height:"24px"}}/>
         <Link href="/" underline="hover" variant="body1">Privacy Policy</Link>
         <Link href="/" underline="hover" variant="body1">Terms of Service</Link>

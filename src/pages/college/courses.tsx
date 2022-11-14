@@ -13,7 +13,7 @@ import girlImage from '../../../public/assets/png/Academy/Mask group.jpg';
 import { ShaperBlue } from '../../../public/assets/svg/logo';
 import { CourseCard } from '../../controller/components/card/CourseCard';
 import { InterestCard } from '../../controller/components/card/InterestCard';
-import { Footer } from '../../controller/components/surfaces/Footer/Footer';
+import { NewFooter } from '../../controller/components/surfaces/Footer/newFooter';  
 import { NavigationRail } from '../../controller/components/surfaces/NavigationRail/NavigationRail';
 
 const Courses: NextPage = () => {
@@ -187,7 +187,7 @@ const Courses: NextPage = () => {
                 <Box component="div" display="flex" justifyContent="center" m="100px 5px">
                     <InterestCard title={'Are you interested in looking at study careers?'} button="Apply" />
                 </Box>
-                <Footer />
+                <NewFooter />
             </Box>
         </div>
     );

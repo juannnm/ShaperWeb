@@ -29,6 +29,7 @@ import { ShaperFor_v2 } from "../controller/components/card/Shaperfor_v2";
 import { EventList } from "../controller/components/data-display/EventList/EventList";
 import { Footer } from "../controller/components/surfaces/Footer/Footer";
 import { NewFooter } from "../controller/components/surfaces/Footer/newFooter";
+import { NavigationDrawer } from "../controller/components/surfaces/NavigationDrawer/NavigationDrawer";
 import { NavigationRail } from "../controller/components/surfaces/NavigationRail/NavigationRail";
 
 const Home: NextPage = () => {
@@ -63,13 +64,14 @@ const Home: NextPage = () => {
         <Box
           display={{ mobile: "flex", laptop: "none" }}
           p="20px"
-          alignItems="center"
-          gap={2}
+
+          
         >
-          <IconButton color="primary">
+          {/* <IconButton color="primary">
             <Menu fontSize="large" />
           </IconButton>
-          <ShaperBlue style={{ fontSize: "80px", marginTop: "4px" }} />
+          <ShaperBlue style={{ fontSize: "80px", marginTop: "4px" }} /> */}
+          <NavigationDrawer/>
         </Box>
         <Box ml={{ mobile: 0, laptop: "100px" }}>
           <Box
@@ -93,9 +95,9 @@ const Home: NextPage = () => {
               display="flex"
               justifyContent="center"
               alignItems="center"
-              gap="10%"
-              flexDirection={{ mobile: "column", laptop: "row" }}
-              padding={{ mobile: "10% 2%", laptop: "10%" }}
+              gap={2}
+              flexDirection="column"
+              padding={{ mobile: "50% 2%", laptop: "10%" }}
             >
               <Box display="flex" flexDirection="column" textAlign="center">
                 <Typography variant="h2" color="white" fontWeight="bold">
@@ -105,20 +107,20 @@ const Home: NextPage = () => {
                   {" "}
                   Unlock skills, become known and get hired by top companies.
                 </Typography>
-                <Button text="Get Started"/>
+                
               </Box>
-              {/* <Box>
-                                <Image src={Characters} alt="group" height="504.5px" width="621.5px" />
-                            </Box> */}
+              <Button text="Get started" type="button" variant="contained"/>
             </Box>
           </Box>
           <Box
             component="div"
             display="flex"
-            flexDirection="row"
+            flexDirection={{mobile:"column", laptop:"row"}}
             justifyContent="center"
+            alignContent="center"
             gap={7}
             mt="10%"
+            ml={{mobile:"14.36%", laptop:'5%'}}
           >
             <PathCard
               title="Get started at College"
@@ -142,6 +144,7 @@ const Home: NextPage = () => {
             mt="10%"
             m="10% auto 0 auto"
             width="80%"
+            gap={2}
           >
             <Typography variant="h3" color="primary" alignSelf="left" ml="6%">
               Helping clients worlwide
@@ -153,7 +156,7 @@ const Home: NextPage = () => {
               alignContent="center"
               flexWrap="wrap"
               gap={{ mobile: 1, laptop: 5 }}
-              height="80px"
+              //height="80px"
             >
               <MicrosoftLogo style={{ fontSize: "120px" }} />
               <GoogleLogo style={{ fontSize: "120px" }} />
@@ -161,75 +164,7 @@ const Home: NextPage = () => {
               <TeslaLogo style={{ fontSize: "120px" }} />
               <TikTokLogo style={{ fontSize: "120px" }} />
             </Box>
-          </Box>{" "}
-          {/* <Box
-                        component="section"
-                        id="paths"
-                        mt="10%"
-                        display="flex"
-                        justifyContent="center"
-                        alignItems="center"
-                        flexDirection={{ mobile: 'column', laptop: 'row' }}
-                    >
-                        <Box
-                            display="flex"
-                            flexDirection={{ mobile: 'column', laptop: 'row' }}
-                            borderRadius="20px"
-                            justifyContent="center"
-                            flexWrap="wrap"
-                            sx={{
-                                background: 'linear-gradient(90deg, #9BBECF40, #DAAFE840, #FEBEC040, #FFC49E40, #FFC49E40)',
-                                width: 'fit-content',
-                            }}
-                        >
-                            <ShaperFor
-                                title="get started at"
-                                titleBold={{ text: 'college', color: 'blue' }}
-                                description={{
-                                    text: 'Watch our free courses and become an expert with our career plans.',
-                                    color: '#737373',
-                                }}
-                                background="transparent"
-                                buttonColor="primary"
-                                borderRadius="0px"
-                            />
-                            <Divider orientation="vertical" flexItem variant="middle" />
-                            <ShaperFor
-                                title="become a"
-                                titleBold={{ text: 'member', color: 'red' }}
-                                description={{
-                                    text: 'Prove your skills by completing your profile and qualify for the job search that suits you.',
-                                    color: '#737373',
-                                }}
-                                background="transparent"
-                                buttonColor="primary"
-                                borderRadius="0px"
-                            />
-                            <Divider orientation="vertical" flexItem variant="middle" />
-                            <ShaperFor
-                                title="we help"
-                                titleBold={{ text: 'companies', color: 'purple' }}
-                                description={{
-                                    text: 'To obtain the best qualified talent in the market through our hiring platform.',
-                                    color: '#737373',
-                                }}
-                                background="transparent"
-                                buttonColor="primary"
-                                borderRadius="0px"
-                            />
-                        </Box>
-                    </Box> */}
-          {/* <Box component="section" id="events" display="flex" flexDirection="column" justifyContent="center" alignItems="center" mt="10%">
-                        <Typography variant="h6" sx={{ fontWeight: 'bold' }} color="secondary">
-                            Events
-                        </Typography>
-                        <Typography variant="h3" sx={{ fontWeight: 'bold' }} color="primary">
-                            Community meetings
-                        </Typography>
-                        <Box>
-                            <EventList />
-                        </Box>
-                    </Box> */}
+          </Box>
           <Box
             component="div"
             id="learn"
@@ -282,7 +217,7 @@ const Home: NextPage = () => {
             <Box
               component="div"
               display="flex"
-              flexDirection="row"
+              flexDirection={{mobile:"column", laptop:"row"}}
               justifyContent="center"
               gap={7}
               mt="2%"
@@ -316,7 +251,7 @@ const Home: NextPage = () => {
               display="flex"
               flexDirection="column"
               alignItems="left"
-              ml="24%"
+              ml={{mobile:"14%", laptop:"24%"}}
             >
               <Typography variant="h6" fontWeight="bold" color="secondary">
                 HOW IT WORKS
@@ -475,45 +410,6 @@ const Home: NextPage = () => {
               />
             </Box>
           </Box>
-          {/* <Box component="div" id="services" display="flex" flexDirection="column" gap={5} mt="10%" alignItems="center">
-                    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center">
-                        <Typography variant="h5" fontWeight="bold" color="secondary">
-                            THE SERVICES WE OFFERS
-                        </Typography>
-                        <Typography variant="h3" fontWeight="bold" color="primary" width="50%">
-                            Our business perception and exceptional experience gives us an edge over our competitors.
-                        </Typography>
-                        <Typography variant="h6" color="primary">
-                            We analyze, explore, create and deliver.
-                        </Typography>
-                    </Box>
-                    <Box display="flex" flexDirection="row" justifyContent="center" flexWrap="wrap" gap={2} rowGap={3}>
-                        <ServiceCard
-                            title="ON-Demand"
-                            description="Get instant access to qualified talent on a permanent or contract basis and ensure your success in the workplace."
-                            background="#8BB5F3"
-                            icon={<Cast color="primary" sx={{ fontSize: { mobile: '25px', laptop: '45px' } }} />}
-                        />
-                        <ServiceCard
-                            title={'Project\nResource'}
-                            description="We offer teams of interim experts to assist businesses in delivering sophisticated digital solutions."
-                            background="#ADD59C"
-                            icon={<Settings color="primary" sx={{ fontSize: { mobile: '25px', laptop: '45px' } }} />}
-                        />
-                        <ServiceCard
-                            title="Bootcamp"
-                            description="We make sure you understand all facets of modern development techniques and technologies through our program."
-                            icon={<Groups color="primary" sx={{ fontSize: { mobile: '25px', laptop: '45px' } }} />}
-                            background="#FFAD94"
-                        />
-                        <ServiceCard
-                            title="Career"
-                            description=" Our methodology ensures that we match candidates with opportunities that meet hiring needs and company culture. "
-                            icon={<Stairs color="primary" sx={{ fontSize: { mobile: '25px', laptop: '45px' } }} />}
-                            background="#FFB8D1"
-                        />
-                    </Box>
-                </Box> */}
           <Box
             component="div"
             id="membership"

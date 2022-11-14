@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { IconButton } from 'react-ui-controller';
 import women from '../../public/assets/png/Contact us/imagen cont.png';
 import { UserForm } from '../controller/components/form/UserForm';
-import { Footer } from '../controller/components/surfaces/Footer/Footer';
+import { NewFooter } from '../controller/components/surfaces/Footer/newFooter';
 import { NavigationRail } from '../controller/components/surfaces/NavigationRail/NavigationRail';
 import { Menu } from '@mui/icons-material';
 import { ShaperBlue } from '../../public/assets/svg/logo';
@@ -61,7 +61,7 @@ const Contact = () => {
                     </Box>
                 </Box>
 
-                <Footer />
+                <NewFooter />
             </Box>
         </div>
     );
