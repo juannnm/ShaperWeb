@@ -17,7 +17,7 @@ export const ShaperFor = (props: IProps) => {
             background={props.background}
             description={{
                 components: (
-                    <Box key="container" display="flex" flexDirection="column" height={{ mobile: '150px', laptop: '175px' }} gap="2%">
+                    <Box key="container" display="flex" flexDirection="column" height={{ mobile: '150px', laptop: '200px' }} gap="2%">
                         <Box display="flex" flexDirection={{ mobile: 'row', laptop: 'column' }} alignItems="center">
                             <Typography key="title" variant="h6" sx={{ textAlign: 'center', color: props.titleBold.color }} fontWeight="light">
                                 {props.title && props.title.toUpperCase()}

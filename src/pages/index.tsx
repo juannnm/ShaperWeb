@@ -187,21 +187,34 @@ const Home: NextPage = () => {
                             mt="10%"
                             gap={2}
                         >
-                            <Box display="flex" flexDirection="column">
-                                <Typography variant="h6" color="secondary" fontWeight="bold" align="left">
-                                    LEARN AND GROW
-                                </Typography>
-                                <Typography variant="h4" fontWeight="bold" color="primary" align="left" width="80%">
-                                    We invest in your future.
-                                </Typography>
-                                <Typography variant="body1" color="#737373" width={{ mobile: '100%', laptop: '25%' }} align="justify">
+                            <Box
+                                display="flex"
+                                flexDirection={{ mobile: 'column', laptop: 'row' }}
+                                alignItems="center"
+                                justifyContent="center"
+                                gap={4}
+                            >
+                                <Box>
+                                    <Typography variant="h6" color="secondary" fontWeight="bold" align="left">
+                                        LEARN AND GROW
+                                    </Typography>
+                                    <Typography variant="h4" fontWeight="bold" color="primary" align="left">
+                                        We invest in your future.
+                                    </Typography>
+                                </Box>
+                                <Typography variant="body1" color="#737373" width={{ mobile: '100%', laptop: '30%' }} align="justify">
                                     Our team of experts will help you define your career goals and improve your skills so you can succeed in your job
                                     search.
                                 </Typography>
                             </Box>
                         </Box>
-                        <Box display="flex" flexDirection={{ mobile: 'column', laptop: 'row' }} gap={{ mobile: 1, laptop: 0 }}>
-                            <Box>
+                        <Box
+                            display="flex"
+                            flexDirection={{ mobile: 'column', laptop: 'row' }}
+                            gap={{ mobile: 1, laptop: 0 }}
+                            justifyContent="center"
+                        >
+                            <Box maxWidth="300px">
                                 <Box display="flex" gap={1}>
                                     <Typography variant="body1" fontWeight="bold" color="secondary">
                                         01
@@ -210,11 +223,11 @@ const Home: NextPage = () => {
                                         We love teaching remotely
                                     </Typography>
                                 </Box>
-                                <Typography variant="body2" color="#737373" width={{ mobile: '100%', laptop: '60' }}>
+                                <Typography variant="body2" color="#737373" width={{ mobile: '100%', laptop: '80%' }}>
                                     All you need is a computer with internet access.
                                 </Typography>
                             </Box>
-                            <Box>
+                            <Box maxWidth="300px">
                                 <Box display="flex" gap={1}>
                                     <Typography variant="body1" fontWeight="bold" color="secondary">
                                         02
@@ -223,11 +236,11 @@ const Home: NextPage = () => {
                                         Knowledge into practice
                                     </Typography>
                                 </Box>
-                                <Typography variant="body2" color="#737373" width={{ mobile: '100%', laptop: '60' }}>
+                                <Typography variant="body2" color="#737373" width={{ mobile: '100%', laptop: '80%' }}>
                                     We provide you with the most sought-after skills in a high-demand world.
                                 </Typography>
                             </Box>
-                            <Box>
+                            <Box maxWidth="300px">
                                 <Box display="flex" gap={1}>
                                     <Typography variant="body1" fontWeight="bold" color="secondary">
                                         03
@@ -236,7 +249,7 @@ const Home: NextPage = () => {
                                         You don&apos;t have to pay us now
                                     </Typography>
                                 </Box>
-                                <Typography variant="body2" color="#737373" width={{ mobile: '100%', laptop: '60' }}>
+                                <Typography variant="body2" color="#737373" width={{ mobile: '100%', laptop: '80%' }}>
                                     Just learn and we will help you find your dream job, only then you will pay us back.
                                 </Typography>
                             </Box>
@@ -439,10 +452,11 @@ const Home: NextPage = () => {
                         flexDirection="row"
                         flexWrap="wrap"
                         justifyContent="center"
+                        alignItems="center"
                         m={{ mobile: '10% 25px', laptop: '0 0  10% 0' }}
-                        gap={{ mobile: 2, laptop: '5%' }}
+                        gap={{ mobile: 2, laptop: 2 }}
                     >
-                        <Box textAlign="center" width="400px">
+                        <Box textAlign="left" width="400px">
                             <Typography variant="h6" color="secondary">
                                 TEAM WORK
                             </Typography>
@@ -450,7 +464,7 @@ const Home: NextPage = () => {
                                 variant="h5"
                                 fontWeight="bold"
                                 color="primary"
-                                width={{ mobile: '100%', laptop: '45%' }}
+                                width={{ mobile: '100%', laptop: '60%' }}
                                 textAlign={{ mobile: 'center', laptop: 'left' }}
                             >
                                 Meet the awesome and creative members of our staff.
