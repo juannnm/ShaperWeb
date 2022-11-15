@@ -11,6 +11,7 @@ import { CertifieCard } from '../../controller/components/card/CertifieCard';
 import { NewFooter } from '../../controller/components/surfaces/Footer/newFooter';
 import { NavigationRail } from '../../controller/components/surfaces/NavigationRail/NavigationRail';
 import { ShaperBlue } from '../../../public/assets/svg/logo';
+import { PathOrderCard } from '../../controller/components/card/PathOrderCard';
 
 const Careers: NextPage = () => {
     return (
@@ -50,20 +51,94 @@ const Careers: NextPage = () => {
                         <Typography variant="h4" fontWeight="bold" color="primary">
                             Shaping a new reality for everyone.
                         </Typography>
-                        <Typography variant="body1" color="primary" mb="1%">
-                            Start a new career and get your dream job.
+                        <Typography variant="body1" color="primary" m="1px auto" mb="1%" width="27%">
+                        You can change your life by investing in your growth through our  Income Sharing Agreement (ISA). This system and your commitment will help us get you the job of your dreams.
                         </Typography>
-                        <Button text="Contact our team" type="button" variant="contained" />
+                        <Button text="Apply" type="button" variant="contained" />
                     </Box>
                     <Box m={{ mobile: '0', laptop: '0 20%' }}>
                         <Image src={jumpImage} alt="group" width="1066" height="397" />
                     </Box>
                 </Box>
+                <Box
+            component="div"
+            id="learn"
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            gap={2}
+            m={{ mobile: "15px", laptop: "0px" }}
+          >
+            <Box
+              display="flex"
+              flexDirection={{ mobile: "column", laptop: "row" }}
+              alignItems="center"
+              justifyContent="center"
+              textAlign="center"
+              mt="10%"
+              ml="15%"
+              gap={2}
+            >
+              <Box display="flex" flexDirection="column">
+                <Typography
+                  variant="h6"
+                  color="secondary"
+                  fontWeight="bold"
+                  align="left"
+                >
+                  LEARN AND GROW
+                </Typography>
+                <Typography
+                  variant="h4"
+                  fontWeight="bold"
+                  color="primary"
+                  align="left"
+                  width="80%"
+                >
+                  We invest in your future.
+                </Typography>
+                <Typography
+                  fontFamily="RobotoRegular"
+                  fontSize="22px"
+                  color="#737373"
+                  width="80%"
+                  align="justify"
+                >
+                  Our team of experts will help you define your career goals and
+                  improve your skills so you can succeed in your job search.
+                </Typography>
+              </Box>
+            </Box>
+            <Box
+              component="div"
+              display="flex"
+              flexDirection={{mobile:"column", laptop:"row"}}
+              justifyContent="center"
+              gap={7}
+              mt="2%"
+            >
+              <PathOrderCard
+                bgtext="01"
+                title="We love teaching remotely"
+                content="All you need is a computer with Internet access"
+              />
+              <PathOrderCard
+                bgtext="02"
+                title="Knowledge into practice"
+                content="We provide you with the most sought-after skills in a high-demand world."
+              />
+              <PathOrderCard
+                bgtext="03"
+                title="You don't have to pay us now"
+                content="Just learn and we will help you find your dream job, only then you will pay us back."
+              />
+            </Box>
+          </Box>
                 <Box id="careerTypes" component="div" m={{ mobile: '100px 50px', laptop: '200px 0' }} textAlign="center">
                     <Typography variant="h6" mb="10px" fontWeight="bold" color="secondary">
-                        OUR PROCESS IS REALLY SIMPLE
+                        GET READY
                     </Typography>
-                    <Typography variant="h4" fontWeight="bold" color="primary">
+                    <Typography variant="h4" fontWeight="bold" color="primary" width="40%" m="0 auto">
                         You can measure your needs over time and choose between 2 options.
                     </Typography>
                     <Box display="flex" flexDirection="row" justifyContent="center" gap={4} m="35px 0px" flexWrap="wrap">

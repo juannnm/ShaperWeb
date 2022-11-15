@@ -18,7 +18,7 @@ export const CareerCard = ({ title, description, hours, background = '#FFFFFF' }
                             <Typography gutterBottom variant="h6" sx={{ fontWeight: 'bold' }} align="center" color="secondary">
                                 {title}
                             </Typography>
-                            <Typography variant="body1" color="#737373">
+                            <Typography variant="body1" color="#737373" width="72%">
                                 {description}
                             </Typography>
                         </Box>
@@ -42,7 +42,7 @@ export const CareerCard = ({ title, description, hours, background = '#FFFFFF' }
             background={background}
             height="inherit"
             // @ts-ignore
-            width={{ mobile: '370px', laptop: '562px' }}
+            width={{ mobile: '370px', laptop: '443.5px' }}
             direction="column"
             alignment="left"
             boxShadow="0px 2px 12px 0px #00000040"
