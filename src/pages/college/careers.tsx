@@ -8,7 +8,7 @@ import guyImage from '../../../public/assets/png/Academy/foto 1.png';
 import jumpImage from '../../../public/assets/png/Academy/FOTOS.png';
 import { CareerCard } from '../../controller/components/card/CareerCard';
 import { CertifieCard } from '../../controller/components/card/CertifieCard';
-import { Footer } from '../../controller/components/surfaces/Footer/Footer';
+import { NewFooter } from '../../controller/components/surfaces/Footer/newFooter';
 import { NavigationRail } from '../../controller/components/surfaces/NavigationRail/NavigationRail';
 import { ShaperBlue } from '../../../public/assets/svg/logo';
 
@@ -116,7 +116,7 @@ const Careers: NextPage = () => {
                     </Box>
                     <Image src={guyImage} alt="guy" height="470px" width="511.5px" />
                 </Box>
-                <Footer />
+                <NewFooter />
             </Box>
         </div>
     );

@@ -17,7 +17,7 @@ import BeCreative from '../../public/assets/png/businesses/be-creative.png';
 import Woman from '../../public/assets/png/businesses/women.png';
 import ReadyForWork from '../../public/assets/png/businesses/ready-for-work.png';
 import Network from '../../public/assets/png/businesses/network.png';
-import { Footer } from '../controller/components/surfaces/Footer/Footer';
+import { NewFooter } from '../controller/components/surfaces/Footer/newFooter';
 import { NavigationRail } from '../controller/components/surfaces/NavigationRail/NavigationRail';
 import { IconButton } from 'react-ui-controller';
 import { LogoShaperBusinessWhite, ShaperWhite } from '../../public/assets/svg/logo';
@@ -320,7 +320,7 @@ const Businesses = () => {
                             </Typography>
                         </Box>
                     </Box>
-                    <Footer />
+                    <NewFooter />
                 </Box>
             </Box>
         </div>

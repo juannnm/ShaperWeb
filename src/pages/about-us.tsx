@@ -6,7 +6,7 @@ import Charlie from "../../public/assets/png/About us/CHARLIE.png";
 import Ella from "../../public/assets/png/About us/ELLA.png";
 import Oliver from "../../public/assets/png/About us/OLIVER.png";
 import GroupImage from "../../public/assets/png/About us/Rectangle 2633.png";
-import { Footer } from "../controller/components/surfaces/Footer/Footer";
+import { NewFooter } from "../controller/components/surfaces/Footer/newFooter";
 import { NavigationRail } from "../controller/components/surfaces/NavigationRail/NavigationRail";
 import { IconButton } from "react-ui-controller";
 import { Menu } from "@mui/icons-material";
@@ -397,7 +397,7 @@ const AboutUs = () => {
             />
           </Box>
         </Box>
-        <Footer />
+        <NewFooter />
       </Box>
     </div>
   );

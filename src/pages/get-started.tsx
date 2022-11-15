@@ -13,7 +13,7 @@ import GirlMembership from '../../public/assets/png/membership/girl.png';
 import groupImage from '../../public/assets/png/Membership/group.png';
 import PeopleMembership from '../../public/assets/png/membership/people.png';
 import { ShaperFor } from '../controller/components/card/ShaperFor';
-import { Footer } from '../controller/components/surfaces/Footer/Footer';
+import { NewFooter } from '../controller/components/surfaces/Footer/newFooter';
 import { NavigationRail } from '../controller/components/surfaces/NavigationRail/NavigationRail';
 import { ShaperBlue } from '../../public/assets/svg/logo';
 
@@ -199,7 +199,7 @@ const Membership = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Footer />
+                <NewFooter />
             </Box>
         </div>
     );
