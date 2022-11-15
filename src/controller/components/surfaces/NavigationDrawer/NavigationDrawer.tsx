@@ -16,7 +16,7 @@ import { ShaperBlue } from "../../../../../public/assets/svg/logo";
 import Link from "next/link";
 import { darken } from "@mui/system";
 import { IsologotipoShaperBlue } from "../../../../../public/assets/svg/logo";
-import { LinkButton } from "react-ui-controller";
+import { Button, LinkButton } from "react-ui-controller";
 import {
   Login,
   ExploreOutlined,
@@ -25,6 +25,8 @@ import {
   Fingerprint,
   ContactSupportOutlined,
 } from "@mui/icons-material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+
 export const NavigationDrawer = () => {
   const [open, setOpen] = React.useState(false);
 
@@ -53,130 +55,155 @@ export const NavigationDrawer = () => {
         onClose={() => setOpen(false)}
         anchor="left"
       >
-        <Box>
-          <Link href="/" passHref key="home">
-            <Box
-              sx={{
-                "&:hover button": { backgroundColor: "#a8c7fa" },
-                "&:hover a": {
-                  color: darken("#050E3F", 3),
-                  fontWeight: "bold",
-                },
-              }}
-            >
-              <IconButton>
-                <IsologotipoShaperBlue style={{ fontSize: "20px" }} />
-              </IconButton>
-              <LinkButton text="Home" variant="body2" />
-            </Box>
-          </Link>
+        <Box display="flex" flexDirection="column">
+          <Box padding="35px 12px 0px 27px">
+            <IconButton color="inherit" onClick={() => setOpen(false)}>
+              <Menu fontSize="large" />
+            </IconButton>
+          </Box>
+          <Box mt="20px" padding="35px 12px 0px 27px">
+            <Link href="/" passHref key="home">
+              <Box
+                sx={{
+                  "&:hover button": { backgroundColor: "#a8c7fa" },
+                  "&:hover a": {
+                    color: darken("#050E3F", 3),
+                    fontWeight: "bold",
+                  },
+                }}
+              >
+                <IconButton sx={{mr:"10px"}}>
+                  <IsologotipoShaperBlue style={{ fontSize: "30px" }} />
+                </IconButton>
+                <LinkButton text="Home" variant="body2" />
+              </Box>
+            </Link>
 
-          <Link href="/" passHref key="home">
-            <Box
-              component="div"
-              display="flex"
-              flexDirection="row"
-              alignItems="center"
-              sx={{
-                "&:hover button": { backgroundColor: "#a8c7fa" },
-                "&:hover a": {
-                  color: darken("#050E3F", 3),
-                  fontWeight: "bold",
-                },
-              }}
-            >
-              <IconButton>
-                <ExploreOutlined color="primary" fontSize="medium" />
-              </IconButton>
-              <LinkButton text="Get Started" variant="body2" />
-            </Box>
-          </Link>
+            <Link href="/get-started" passHref key="home">
+              <Box
+                m="20px 0"
+                component="div"
+                display="flex"
+                flexDirection="row"
+                alignItems="center"
+                sx={{
+                  "&:hover button": { backgroundColor: "#a8c7fa" },
+                  "&:hover a": {
+                    color: darken("#050E3F", 3),
+                    fontWeight: "bold",
+                  },
+                }}
+              >
+                <IconButton>
+                  <ExploreOutlined color="primary" fontSize="large" />
+                </IconButton>
+                <LinkButton text="Get Started" variant="body2" />
 
-          <Link href="/" passHref key="home">
-            <Box
-              component="div"
-              display="flex"
-              flexDirection="row"
-              alignItems="center"
-              sx={{
-                "&:hover button": { backgroundColor: "#a8c7fa" },
-                "&:hover a": {
-                  color: darken("#050E3F", 3),
-                  fontWeight: "bold",
-                },
-              }}
-            >
-              <IconButton>
-                <SchoolOutlined color="primary" fontSize="medium" />
-              </IconButton>
-              <LinkButton text="College" variant="body2" />
-            </Box>
-          </Link>
+              </Box>
+            </Link>
 
-          <Link href="/" passHref key="home">
-            <Box
-              component="div"
-              display="flex"
-              flexDirection="row"
-              alignItems="center"
-              sx={{
-                "&:hover button": { backgroundColor: "#a8c7fa" },
-                "&:hover a": {
-                  color: darken("#050E3F", 3),
-                  fontWeight: "bold",
-                },
-              }}
-            >
-              <IconButton>
-                <WorkOutlineOutlined color="primary" fontSize="medium" />
-              </IconButton>
-              <LinkButton text="Business" variant="body2" />
-            </Box>
-          </Link>
+            <Link href="/college-courses" passHref key="home">
+              <Box
+                component="div"
+                display="flex"
+                flexDirection="row"
+                alignItems="center"
+                sx={{
+                  "&:hover button": { backgroundColor: "#a8c7fa" },
+                  "&:hover a": {
+                    color: darken("#050E3F", 3),
+                    fontWeight: "bold",
+                  },
+                }}
+              >
+                <IconButton>
+                  <SchoolOutlined color="primary" fontSize="large" />
+                </IconButton>
+                <LinkButton text="College" variant="body2" />
+                <IconButton >
+                  <ArrowForwardIcon
+                    color="primary"
+                    fontSize="large"
+                    sx={{ ml: "100px" }}
+                  />
+                </IconButton>
+              </Box>
+            </Link>
 
-          <Link href="/" passHref key="home">
-            <Box
-              component="div"
-              display="flex"
-              flexDirection="row"
-              alignItems="center"
-              sx={{
-                "&:hover button": { backgroundColor: "#a8c7fa" },
-                "&:hover a": {
-                  color: darken("#050E3F", 3),
-                  fontWeight: "bold",
-                },
-              }}
-            >
-              <IconButton>
-                <Fingerprint color="primary" fontSize="medium" />
-              </IconButton>
-              <LinkButton text="About Us" variant="body2" />
-            </Box>
-          </Link>
+            <Link href="/business" passHref key="home">
+              <Box
+                m="20px 0"
+                component="div"
+                display="flex"
+                flexDirection="row"
+                alignItems="center"
+                sx={{
+                  "&:hover button": { backgroundColor: "#a8c7fa" },
+                  "&:hover a": {
+                    color: darken("#050E3F", 3),
+                    fontWeight: "bold",
+                  },
+                }}
+              >
+                <IconButton>
+                  <WorkOutlineOutlined color="primary" fontSize="large" />
+                </IconButton>
+                <LinkButton text="Business" variant="body2" />
+                <IconButton>
+                  <ArrowForwardIcon
+                    color="primary"
+                    fontSize="large"
+                    sx={{ ml: "90px" }}
+                  />
+                </IconButton>
+              </Box>
+            </Link>
 
-          <Link href="/" passHref key="home">
-            <Box
-              component="div"
-              display="flex"
-              flexDirection="row"
-              alignItems="center"
-              sx={{
-                "&:hover button": { backgroundColor: "#a8c7fa" },
-                "&:hover a": {
-                  color: darken("#050E3F", 3),
-                  fontWeight: "bold",
-                },
-              }}
-            >
-              <IconButton>
-                <ContactSupportOutlined color="primary" fontSize="medium" />
-              </IconButton>
-              <LinkButton text="Contact" variant="body2" />
-            </Box>
-          </Link>
+            <Link href="/about-us" passHref key="home">
+              <Box
+                component="div"
+                display="flex"
+                flexDirection="row"
+                alignItems="center"
+                sx={{
+                  "&:hover button": { backgroundColor: "#a8c7fa" },
+                  "&:hover a": {
+                    color: darken("#050E3F", 3),
+                    fontWeight: "bold",
+                  },
+                }}
+              >
+                <IconButton>
+                  <Fingerprint color="primary" fontSize="large" />
+                </IconButton>
+                <LinkButton text="About Us" variant="body2" />
+              </Box>
+            </Link>
+
+            <Link href="/contact" passHref key="home">
+              <Box
+                m="20px 0"
+                component="div"
+                display="flex"
+                flexDirection="row"
+                alignItems="center"
+                sx={{
+                  "&:hover button": { backgroundColor: "#a8c7fa" },
+                  "&:hover a": {
+                    color: darken("#050E3F", 3),
+                    fontWeight: "bold",
+                  },
+                }}
+              >
+                <IconButton>
+                  <ContactSupportOutlined color="primary" fontSize="large" />
+                </IconButton>
+                <LinkButton text="Contact" variant="body2" />
+              </Box>
+            </Link>
+          </Box>
         </Box>
-        <Box>
+        <Box mt="auto" mb="20px">
           <Link href="/sign-in" key="login">
             <Box
               component="div"
@@ -184,9 +211,13 @@ export const NavigationDrawer = () => {
               flexDirection="column"
               alignItems="center"
             >
-              <IconButton title="Login">
-                <Login />
-              </IconButton>
+              <Button
+                variant="outlined"
+                text="Sign in"
+                type="button"
+                padding="0 45px"
+                borderRadius="12px"
+              />
             </Box>
           </Link>
         </Box>
