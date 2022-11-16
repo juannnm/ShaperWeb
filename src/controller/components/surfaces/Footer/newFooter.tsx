@@ -22,7 +22,7 @@ export const NewFooter = () => {
       >
         <Box display="flex" flexDirection={{mobile:"row", laptop:"column"}} gap={8} ml="10%" alignSelf="flex-start">
           <IsologotipoShaperBlue style={{ fontSize: "30px" }} />
-          <Typography width={{mobile:"200px", laptop:"480px"}}>
+          <Typography width={{mobile:"200px", laptop:"380px"}}>
             We help clients attract, hire, and retain best in-class candidates
             worldwide, creating first-level certification programs to assist our
             candidates in finding new, and exciting jobs.

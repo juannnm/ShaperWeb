@@ -64,8 +64,6 @@ const Home: NextPage = () => {
         <Box
           display={{ mobile: "flex", laptop: "none" }}
           p="20px"
-
-          
         >
           {/* <IconButton color="primary">
             <Menu fontSize="large" />
@@ -120,7 +118,7 @@ const Home: NextPage = () => {
             alignContent="center"
             gap={7}
             mt="10%"
-            ml={{mobile:"14.36%", laptop:'5%'}}
+            ml={{mobile:"14.36%", laptop:'2%'}}
           >
             <PathCard
               title="Get started at College"
@@ -165,80 +163,7 @@ const Home: NextPage = () => {
               <TikTokLogo style={{ fontSize: "120px" }} />
             </Box>
           </Box>
-          <Box
-            component="div"
-            id="learn"
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            gap={2}
-            m={{ mobile: "15px", laptop: "0px" }}
-          >
-            <Box
-              display="flex"
-              flexDirection={{ mobile: "column", laptop: "row" }}
-              alignItems="center"
-              justifyContent="center"
-              textAlign="center"
-              mt="10%"
-              ml="15%"
-              gap={2}
-            >
-              <Box display="flex" flexDirection="column">
-                <Typography
-                  variant="h6"
-                  color="secondary"
-                  fontWeight="bold"
-                  align="left"
-                >
-                  LEARN AND GROW
-                </Typography>
-                <Typography
-                  variant="h4"
-                  fontWeight="bold"
-                  color="primary"
-                  align="left"
-                  width="80%"
-                >
-                  We invest in your future.
-                </Typography>
-                <Typography
-                  fontFamily="RobotoRegular"
-                  fontSize="22px"
-                  color="#737373"
-                  width="80%"
-                  align="justify"
-                >
-                  Our team of experts will help you define your career goals and
-                  improve your skills so you can succeed in your job search.
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              component="div"
-              display="flex"
-              flexDirection={{mobile:"column", laptop:"row"}}
-              justifyContent="center"
-              gap={7}
-              mt="2%"
-            >
-              <PathOrderCard
-                bgtext="01"
-                title="We love teaching remotely"
-                content="All you need is a computer with Internet access"
-              />
-              <PathOrderCard
-                bgtext="02"
-                title="Knowledge into practice"
-                content="We provide you with the most sought-after skills in a high-demand world."
-              />
-              <PathOrderCard
-                bgtext="03"
-                title="You don't have to pay us now"
-                content="Just learn and we will help you find your dream job, only then you will pay us back."
-              />
-            </Box>
-          </Box>
+          
           <Box
             component="div"
             id="how-it-work"
@@ -425,9 +350,8 @@ const Home: NextPage = () => {
               flexDirection="column"
               justifyContent="center"
               gap="5%"
-              alignItems="center"
+              alignItems="left"
             >
-              <Box>
                 <Typography variant="h5"  color="secondary">
                   GET HIRED
                 </Typography>
@@ -448,7 +372,6 @@ const Home: NextPage = () => {
                 variant="contained"
                 padding="16px 32px"
               />
-              </Box>
              
             </Box>
             <Box width={{ laptop: "500px" }}>
@@ -519,10 +442,10 @@ const Home: NextPage = () => {
                   width="183px"
                   height="270px"
                 />
-                <Typography variant="body1" fontWeight="bold" color="primary">
+                <Typography variant="body1" fontWeight="bold" color="primary" ml="10px">
                   Ella
                 </Typography>
-                <Typography variant="body1" color="#737373">Academy</Typography>
+                <Typography variant="body1" color="#737373" ml="10px">Academy</Typography>
               </Box>
                 <Box height="383px" width="183px" bgcolor="#F9FAFA" borderRadius="20px">
                   <Image
@@ -531,10 +454,10 @@ const Home: NextPage = () => {
                     width="183px"
                     height="270px"
                   />
-                  <Typography fontWeight="bold" color="primary">
+                  <Typography variant="body1" fontWeight="bold" color="primary" ml="10px">
                     Oliver
                   </Typography>
-                  <Typography color="#737373">Community</Typography>
+                  <Typography variant="body1" color="#737373" ml="10px">Community</Typography>
               </Box>
               <Box height="383px" width="183px" bgcolor="#F9FAFA" borderRadius="20px">
                 <Image
@@ -543,10 +466,10 @@ const Home: NextPage = () => {
                   width="183px"
                   height="270px"
                 />
-                <Typography fontWeight="bold" color="primary">
+                <Typography variant="body1" fontWeight="bold" color="primary" ml="10px">
                   Arlo
                 </Typography>
-                <Typography color="#737373">Careers</Typography>
+                <Typography variant="body1" color="#737373" ml="10px">Careers</Typography>
               </Box>
               <Box height="383px" width="183px" bgcolor="#F9FAFA" borderRadius="20px">
                 <Image
@@ -555,10 +478,10 @@ const Home: NextPage = () => {
                   width="183px"
                   height="270px"
                 />
-                <Typography fontWeight="bold" color="primary">
+                <Typography variant="body1" fontWeight="bold" color="primary" ml="10px">
                   Charlie
                 </Typography>
-                <Typography color="#737373">Guide</Typography>
+                <Typography variant="body1" color="#737373" ml="10px">Guide</Typography>
               </Box>
             </Box>
           </Box>
