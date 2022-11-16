@@ -1,6 +1,6 @@
 import { Menu } from "@mui/icons-material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -61,15 +61,12 @@ const Home: NextPage = () => {
         <Box sx={{ display: { mobile: "none", laptop: "block" } }}>
           <NavigationRail />
         </Box>
-        <Box
-          display={{ mobile: "flex", laptop: "none" }}
-          p="20px"
-        >
+        <Box display={{ mobile: "flex", laptop: "none" }} p="20px">
           {/* <IconButton color="primary">
             <Menu fontSize="large" />
           </IconButton>
           <ShaperBlue style={{ fontSize: "80px", marginTop: "4px" }} /> */}
-          <NavigationDrawer/>
+          <NavigationDrawer />
         </Box>
         <Box ml={{ mobile: 0, laptop: "100px" }}>
           <Box
@@ -105,20 +102,19 @@ const Home: NextPage = () => {
                   {" "}
                   Unlock skills, become known and get hired by top companies.
                 </Typography>
-                
               </Box>
-              <Button text="Get started" type="button" variant="contained"/>
+              <Button text="Get started" type="button" variant="contained" />
             </Box>
           </Box>
           <Box
             component="div"
             display="flex"
-            flexDirection={{mobile:"column", laptop:"row"}}
+            flexDirection={{ mobile: "column", laptop: "row" }}
             justifyContent="center"
             alignContent="center"
             gap={7}
             mt="10%"
-            ml={{mobile:"14.36%", laptop:'2%'}}
+            ml={{ mobile: "14.36%", laptop: "2%" }}
           >
             <PathCard
               title="Get started at College"
@@ -133,256 +129,20 @@ const Home: NextPage = () => {
               content="To obtain the best qualified talent in the market through our hiring platform."
             />
           </Box>
+
           <Box
             component="div"
-            id="Companies"
+            id="options"
             display="flex"
-            flexDirection="column"
+            flexDirection="row"
             justifyContent="center"
-            mt="10%"
-            m="10% auto 0 auto"
-            width="80%"
-            gap={2}
+            flexWrap="wrap"
+            gap={10}
+            mb="10%"
           >
-            <Typography variant="h3" color="primary" alignSelf="left" ml="6%">
-              Helping clients worlwide
-            </Typography>
-            <Box
-              display="flex"
-              flexDirection="row"
-              justifyContent="space-evenly"
-              alignContent="center"
-              flexWrap="wrap"
-              gap={{ mobile: 1, laptop: 5 }}
-              //height="80px"
-            >
-              <MicrosoftLogo style={{ fontSize: "120px" }} />
-              <GoogleLogo style={{ fontSize: "120px" }} />
-              <SpotifyLogo style={{ fontSize: "120px" }} />
-              <TeslaLogo style={{ fontSize: "120px" }} />
-              <TikTokLogo style={{ fontSize: "120px" }} />
-            </Box>
+              
           </Box>
-          
-          <Box
-            component="div"
-            id="how-it-work"
-            display="flex"
-            flexDirection="column"
-            mt="10%"
-          >
-            <Box
-              textAlign="left"
-              display="flex"
-              flexDirection="column"
-              alignItems="left"
-              ml={{mobile:"14%", laptop:"24%"}}
-            >
-              <Typography variant="h6" fontWeight="bold" color="secondary">
-                HOW IT WORKS
-              </Typography>
-              <Typography
-                variant="h4"
-                fontWeight="bold"
-                color="primary"
-                width={{ mobile: "100%", laptop: "50%" }}
-              >
-                Highest standards made just for you.
-              </Typography>
-              <Typography
-                fontFamily="RobotoRegular"
-                fontSize="22px"
-                variant="body1"
-                color="#737373"
-              >
-                You can measure your needs over time and choose between 2
-                options.Full-time and Part-time.
-              </Typography>
-            </Box>
-            <Box
-              display="flex"
-              flexDirection={{ mobile: "column", laptop: "row" }}
-              justifyContent="center"
-              mt="5%"
-              gap={{ mobile: 4, laptop: "5%" }}
-            >
-              <Box
-                display="flex"
-                flexDirection="column"
-                justifyContent="space-evenly"
-                alignItems="center"
-                gap={{ mobile: 2, laptop: 0 }}
-              >
-                <Box
-                  display="flex"
-                  flexDirection="row"
-                  alignItems="center"
-                  minWidth={200}
-                  gap={2}
-                >
-                  <CheckCircleIcon color="secondary" />
-                  <Typography variant="h6" color="primary">
-                    100% Remote
-                  </Typography>
-                </Box>
-                <Box
-                  display="flex"
-                  flexDirection="row"
-                  alignItems="center"
-                  minWidth={200}
-                  gap={2}
-                >
-                  <CheckCircleIcon color="secondary" />
-                  <Typography variant="h6" color="primary">
-                    1:1 Support
-                  </Typography>
-                </Box>
-                <Box
-                  display="flex"
-                  flexDirection="row"
-                  alignItems="center"
-                  minWidth={200}
-                  gap={2}
-                >
-                  <CheckCircleIcon color="secondary" />
-                  <Typography variant="h6" color="primary">
-                    Community
-                  </Typography>
-                </Box>
-              </Box>
-              <Box
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                flexDirection="column"
-                gap={{ mobile: 2, laptop: 5 }}
-              >
-                <Box display="flex" justifyContent="space-evenly" width="100%">
-                  <Button
-                    type="button"
-                    variant="contained"
-                    color="secondary"
-                    text="Full-time Career"
-                  />
-                  <Button
-                    type="button"
-                    variant="contained"
-                    color="secondary"
-                    text="Part-time Career"
-                  />
-                </Box>
-                <CareerCard
-                  title="Full-time Career"
-                  description="Our full-time career is designed to fully support you and guide you through a detailed process to be the best in your new profession."
-                  hours="80"
-                  background="linear-gradient(90deg, #9BBECF40, #DAAFE840, #FEBEC040, #FFC49E40, #FFC49E40)"
-                />
-              </Box>
-            </Box>
-          </Box>
-          <Box
-            component="div"
-            id="watch"
-            display="flex"
-            flexDirection={{ mobile: "column", laptop: "row" }}
-            justifyContent="center"
-            mt="10%"
-            p="0 10px"
-            gap={2}
-          >
-            <Box width={{ md: "500px", laptop: "500px" }}>
-              <Image
-                src={TabletImage}
-                alt="image"
-                width="436px"
-                height="271px"
-              />
-            </Box>
-            <Box
-              display="flex"
-              flexDirection="column"
-              justifyContent="space-evenly"
-              mt="0"
-              width={{ mobile: "100%", laptop: "30%" }}
-              gap={2}
-            >
-              <Box>
-                <Typography variant="h5" fontWeight="bold" color="secondary">
-                  WATCH AND LEARN
-                </Typography>
-                <Typography
-                  variant="h4"
-                  fontWeight="bold"
-                  color="primary"
-                  width={{ mobile: "100%", laptop: "70%" }}
-                >
-                  Enjoy our online courses for free
-                </Typography>
-                <Typography
-                  variant="body1"
-                  color="#737373"
-                  width={{ mobile: "100%", laptop: "70%" }}
-                >
-                  Now you can learn with the best experts in the sector without
-                  schedule, no strings-attached.
-                </Typography>
-              </Box>
-              <Button
-                text="Go to courses"
-                type="button"
-                variant="contained"
-                padding="16px 48px"
-              />
-            </Box>
-          </Box>
-          <Box
-            component="div"
-            id="membership"
-            display="flex"
-            flexDirection={{ mobile: "column-reverse", laptop: "row" }}
-            justifyContent="center"
-            m="10% 0"
-            ml="5%"
-          >
-            <Box
-              textAlign={{ mobile: "center", laptop: "left" }}
-              display="flex"
-              flexDirection="column"
-              justifyContent="center"
-              gap="5%"
-              alignItems="left"
-            >
-                <Typography variant="h5"  color="secondary">
-                  GET HIRED
-                </Typography>
-                <Typography variant="h4" fontWeight="bold" color="primary">
-                  New and exciting jobs.
-                </Typography>
-                <Typography
-                  variant="body1"
-                  color="#737373"
-                  width={{ mobile: "100%", laptop: "45%" }}
-                >
-                  Our platform gives you the opportunity to work with top
-                  companies. Prove your skills and get hired.
-                </Typography>
-                <Button
-                text="Join us"
-                type="button"
-                variant="contained"
-                padding="16px 32px"
-              />
-             
-            </Box>
-            <Box width={{ laptop: "500px" }}>
-              <Image
-                src={MemberImage}
-                alt="Member"
-                width="460px"
-                height="411px"
-              />
-            </Box>
-          </Box>
+
           <Box
             component="div"
             id="options"
@@ -420,11 +180,7 @@ const Home: NextPage = () => {
               <Typography variant="h6" color="secondary">
                 TEAM WORK
               </Typography>
-              <Typography
-                variant="h5"
-                fontWeight="bold"
-                color="primary"
-              >
+              <Typography variant="h5" fontWeight="bold" color="primary">
                 Meet our staff.
               </Typography>
             </Box>
@@ -435,53 +191,81 @@ const Home: NextPage = () => {
               gap={5}
               justifyContent="center"
             >
-              <Box height="383px" width="183px" bgcolor="#F9FAFA" borderRadius="20px">
-                <Image
-                  src={Ella}
-                  alt="Ella"
-                  width="183px"
-                  height="270px"
-                />
-                <Typography variant="body1" fontWeight="bold" color="primary" ml="10px">
+              <Box
+                height="383px"
+                width="183px"
+                bgcolor="#F9FAFA"
+                borderRadius="20px"
+              >
+                <Image src={Ella} alt="Ella" width="183px" height="270px" />
+                <Typography
+                  variant="body1"
+                  fontWeight="bold"
+                  color="primary"
+                  ml="10px"
+                >
                   Ella
                 </Typography>
-                <Typography variant="body1" color="#737373" ml="10px">Academy</Typography>
+                <Typography variant="body1" color="#737373" ml="10px">
+                  Academy
+                </Typography>
               </Box>
-                <Box height="383px" width="183px" bgcolor="#F9FAFA" borderRadius="20px">
-                  <Image
-                    src={Oliver}
-                    alt="Ella"
-                    width="183px"
-                    height="270px"
-                  />
-                  <Typography variant="body1" fontWeight="bold" color="primary" ml="10px">
-                    Oliver
-                  </Typography>
-                  <Typography variant="body1" color="#737373" ml="10px">Community</Typography>
+              <Box
+                height="383px"
+                width="183px"
+                bgcolor="#F9FAFA"
+                borderRadius="20px"
+              >
+                <Image src={Oliver} alt="Ella" width="183px" height="270px" />
+                <Typography
+                  variant="body1"
+                  fontWeight="bold"
+                  color="primary"
+                  ml="10px"
+                >
+                  Oliver
+                </Typography>
+                <Typography variant="body1" color="#737373" ml="10px">
+                  Community
+                </Typography>
               </Box>
-              <Box height="383px" width="183px" bgcolor="#F9FAFA" borderRadius="20px">
-                <Image
-                  src={Arlo}
-                  alt="Ella"
-                  width="183px"
-                  height="270px"
-                />
-                <Typography variant="body1" fontWeight="bold" color="primary" ml="10px">
+              <Box
+                height="383px"
+                width="183px"
+                bgcolor="#F9FAFA"
+                borderRadius="20px"
+              >
+                <Image src={Arlo} alt="Ella" width="183px" height="270px" />
+                <Typography
+                  variant="body1"
+                  fontWeight="bold"
+                  color="primary"
+                  ml="10px"
+                >
                   Arlo
                 </Typography>
-                <Typography variant="body1" color="#737373" ml="10px">Careers</Typography>
+                <Typography variant="body1" color="#737373" ml="10px">
+                  Careers
+                </Typography>
               </Box>
-              <Box height="383px" width="183px" bgcolor="#F9FAFA" borderRadius="20px">
-                <Image
-                  src={Charlie}
-                  alt="Ella"
-                  width="183px"
-                  height="270px"
-                />
-                <Typography variant="body1" fontWeight="bold" color="primary" ml="10px">
+              <Box
+                height="383px"
+                width="183px"
+                bgcolor="#F9FAFA"
+                borderRadius="20px"
+              >
+                <Image src={Charlie} alt="Ella" width="183px" height="270px" />
+                <Typography
+                  variant="body1"
+                  fontWeight="bold"
+                  color="primary"
+                  ml="10px"
+                >
                   Charlie
                 </Typography>
-                <Typography variant="body1" color="#737373" ml="10px">Guide</Typography>
+                <Typography variant="body1" color="#737373" ml="10px">
+                  Guide
+                </Typography>
               </Box>
             </Box>
           </Box>
