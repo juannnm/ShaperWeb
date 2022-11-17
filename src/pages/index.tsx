@@ -27,6 +27,7 @@ import { ServiceCard } from "../controller/components/card/ServiceCard";
 import { ShaperFor } from "../controller/components/card/ShaperFor";
 import { ShaperFor_v2 } from "../controller/components/card/Shaperfor_v2";
 import { EventList } from "../controller/components/data-display/EventList/EventList";
+import { DisplayAccordion } from "../controller/components/surfaces/Accordion/Accordion";
 import { Footer } from "../controller/components/surfaces/Footer/Footer";
 import { NewFooter } from "../controller/components/surfaces/Footer/newFooter";
 import { NavigationDrawer } from "../controller/components/surfaces/NavigationDrawer/NavigationDrawer";
@@ -129,7 +130,9 @@ const Home: NextPage = () => {
               content="To obtain the best qualified talent in the market through our hiring platform."
             />
           </Box>
-
+          <Box component="div" display='flex' width="100%" justifyContent="center" >
+            <DisplayAccordion/>
+          </Box>
           <Box
             component="div"
             id="options"

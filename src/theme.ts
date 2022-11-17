@@ -77,7 +77,7 @@ theme.typography.h5 = {
     },
 };
 theme.typography.h6 = {
-    fontFamily: 'RobotoBold',
+    fontFamily: 'RobotoRegular',
     fontSize: '24px',
     lineHeight: '32px',
     [theme.breakpoints.down('laptop')]: {
