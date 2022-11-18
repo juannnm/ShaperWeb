@@ -42,9 +42,6 @@ let theme = createTheme({
 
         subtitle1: {
             fontWeight: 'normal',
-            '&:hover': {
-                fontWeight: 'bold',
-            },
         },
     },
 });
@@ -58,7 +55,7 @@ theme.typography.h2 = {
     },
 };
 theme.typography.h3 = {
-    fontFamily: 'RobotoBold',
+    fontFamily: 'RobotoRegular',
     fontSize: '36px',
     lineHeight: '44px',
     fontWeight: 'bold',
@@ -68,7 +65,7 @@ theme.typography.h3 = {
     },
 };
 theme.typography.h5 = {
-    fontFamily: 'RobotoBold',
+    fontFamily: 'RobotoRegular',
     fontSize: '28px',
     lineHeight: '36px',
     [theme.breakpoints.down('laptop')]: {

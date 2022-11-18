@@ -16,3 +16,4 @@
     format: ('tff');
     font-display: swap;
 }
+@import "react-alice-carousel/lib/alice-carousel.css"
