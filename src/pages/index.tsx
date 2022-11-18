@@ -1,6 +1,6 @@
 import { Menu } from "@mui/icons-material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button as MuiButton } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -23,11 +23,9 @@ import { ShaperBlue } from "../../public/assets/svg/logo";
 import { CareerCard } from "../controller/components/card/CareerCard";
 import { PathCard } from "../controller/components/card/PathCard";
 import { PathOrderCard } from "../controller/components/card/PathOrderCard";
-import { ServiceCard } from "../controller/components/card/ServiceCard";
-import { ShaperFor } from "../controller/components/card/ShaperFor";
 import { ShaperFor_v2 } from "../controller/components/card/Shaperfor_v2";
-import { EventList } from "../controller/components/data-display/EventList/EventList";
-import { Footer } from "../controller/components/surfaces/Footer/Footer";
+import { AliCarousel } from "../controller/components/data-display/Carousel/Carrousel_v2";
+import { DisplayAccordion } from "../controller/components/surfaces/Accordion/Accordion";
 import { NewFooter } from "../controller/components/surfaces/Footer/newFooter";
 import { NavigationDrawer } from "../controller/components/surfaces/NavigationDrawer/NavigationDrawer";
 import { NavigationRail } from "../controller/components/surfaces/NavigationRail/NavigationRail";
@@ -129,7 +127,65 @@ const Home: NextPage = () => {
               content="To obtain the best qualified talent in the market through our hiring platform."
             />
           </Box>
-
+          <Box ml="30%" mr="30%">
+              <Box>
+                <Typography variant="h6" color="secondary">
+                  Learn and Grow
+                </Typography>
+                <Typography variant="h2" color="primary" width="50%">
+                  We invest in your future
+                </Typography>
+              </Box>
+              <DisplayAccordion />
+            </Box>
+          <Box 
+            component="div"
+            height="780px"
+            mt="45px"
+            mb="45px"
+            display="flex"
+            justifyContent="center"
+            alignContent="center"
+            sx={{background:"radial-gradient(circle, rgba(70,87,209,1) 0%, rgba(255,255,255,1) 39%)"}}
+          >
+            <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" textAlign="center"  width="60%" m="auto" gap={2}>
+              <Typography variant="h6" color="secondary">Get Hired</Typography>
+              <Typography variant="h2" color="primary">New and exciting jobs</Typography>
+              <Typography variant="body1" width="50%" alignSelf='center'>Our platform gives you the opportunity to work with top companies. Prove your skills and get hired.</Typography>
+              <Button text="Open positions" type="button" variant="contained"/>
+            </Box>
+          </Box>
+          
+          <Box
+            component="div"
+            display="flex"
+            flexDirection="column"
+            width="100%"
+            justifyContent="center"
+            alignContent="center"
+            pt="70px"
+            mt="5%"
+            sx={{
+              background:
+                "linear-gradient(180deg, rgba(255,255,255,1) 0%,  rgba(194,196,212,1) 16%, rgba(148,151,180,1) 37%, rgba(5,14,80,1) 100%)",
+            }}
+          >
+            
+            <Box mt="8%">
+              <Box ml="30%" display="flex" flexDirection="column" gap={1}>
+                <MuiButton variant="contained" sx={{width:"120px", bgcolor:"rgba(5,14,80,1)", p:"8px 2px", borderRadius:"10px", mb:"8px"}}>Our Courses</MuiButton>
+                <Typography variant="h6" color="secondary">WATCH AND LEARN</Typography>
+                <Typography variant="h2" color="primary">Enjoy our online courses for free</Typography>
+                <Typography variant="body1" color="white">Now you can learn with the best experts in the sector without schedule, no string-attached.</Typography>
+              </Box>
+              <Box mt="70px">
+                <AliCarousel direction="ltr" />
+              </Box>
+              <Box mt="45px" mb="150px">
+                <AliCarousel direction="rtl" />
+              </Box>
+            </Box>
+          </Box>
           <Box
             component="div"
             id="options"
@@ -139,9 +195,7 @@ const Home: NextPage = () => {
             flexWrap="wrap"
             gap={10}
             mb="10%"
-          >
-              
-          </Box>
+          ></Box>
 
           <Box
             component="div"
